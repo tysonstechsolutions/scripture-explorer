@@ -1,0 +1,138 @@
+import type { Era } from "./types";
+
+export const ERAS: Era[] = [
+  {
+    id: "creation-patriarchs",
+    order: 1,
+    name: "Creation & The Patriarchs",
+    dateRange: "~4000–1800 BC",
+    tldr: "God creates the world, humanity falls, and chooses Abraham to start a nation that will bless all peoples.",
+    bibleBooks: ["Genesis"],
+    color: "bg-emerald-500",
+  },
+  {
+    id: "exodus-law",
+    order: 2,
+    name: "Exodus & The Law",
+    dateRange: "~1400–1200 BC",
+    tldr: "Moses leads Israel out of Egyptian slavery and receives God's law at Mount Sinai.",
+    bibleBooks: ["Exodus", "Leviticus", "Numbers", "Deuteronomy"],
+    color: "bg-amber-500",
+  },
+  {
+    id: "judges-tribal",
+    order: 3,
+    name: "Judges & Tribal Period",
+    dateRange: "~1200–1050 BC",
+    tldr: "Israel settles Canaan but cycles through rebellion, oppression, and deliverance by judges.",
+    bibleBooks: ["Joshua", "Judges", "Ruth"],
+    color: "bg-orange-500",
+  },
+  {
+    id: "united-kingdom",
+    order: 4,
+    name: "United Kingdom",
+    dateRange: "~1050–930 BC",
+    tldr: "Israel unites under Saul, flourishes under David, and reaches its peak under Solomon.",
+    bibleBooks: ["1 Samuel", "2 Samuel", "1 Kings 1-11", "1 Chronicles", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon"],
+    color: "bg-yellow-500",
+  },
+  {
+    id: "divided-kingdom",
+    order: 5,
+    name: "Divided Kingdom & Prophets",
+    dateRange: "~930–586 BC",
+    tldr: "The kingdom splits into Israel (north) and Judah (south), with prophets warning of coming judgment.",
+    bibleBooks: ["1 Kings 12-22", "2 Kings", "2 Chronicles", "Isaiah", "Jeremiah", "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah"],
+    color: "bg-red-500",
+  },
+  {
+    id: "babylonian-exile",
+    order: 6,
+    name: "Babylonian Exile",
+    dateRange: "~586–538 BC",
+    tldr: "Jerusalem falls, the temple is destroyed, and Judah's people are exiled to Babylon.",
+    bibleBooks: ["Lamentations", "Ezekiel", "Daniel"],
+    color: "bg-purple-500",
+  },
+  {
+    id: "return-rebuilding",
+    order: 7,
+    name: "Return & Rebuilding",
+    dateRange: "~538–400 BC",
+    tldr: "Persia conquers Babylon and allows Jews to return home, rebuild the temple, and restore worship.",
+    bibleBooks: ["Ezra", "Nehemiah", "Esther", "Haggai", "Zechariah", "Malachi"],
+    color: "bg-blue-500",
+  },
+  {
+    id: "silent-period",
+    order: 8,
+    name: "The Silent Period",
+    dateRange: "~400 BC–4 BC",
+    tldr: "No new prophets, but Greek and Roman empires shape the world Jesus will enter.",
+    bibleBooks: [],
+    color: "bg-slate-500",
+  },
+  {
+    id: "life-of-jesus",
+    order: 9,
+    name: "Life of Jesus",
+    dateRange: "~4 BC–33 AD",
+    tldr: "God becomes human, teaches, heals, dies for humanity's sins, and rises from the dead.",
+    bibleBooks: ["Matthew", "Mark", "Luke", "John"],
+    color: "bg-sky-500",
+  },
+  {
+    id: "early-church",
+    order: 10,
+    name: "Early Church & Apostolic Age",
+    dateRange: "~33–100 AD",
+    tldr: "The church explodes from Jerusalem across the Roman Empire through apostolic teaching and martyrdom.",
+    bibleBooks: ["Acts", "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians", "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter", "1 John", "2 John", "3 John", "Jude", "Revelation"],
+    color: "bg-indigo-500",
+  },
+  {
+    id: "church-fathers",
+    order: 11,
+    name: "Church Fathers & Canon Formation",
+    dateRange: "~100–400 AD",
+    tldr: "Early church leaders define doctrine, fight heresies, and establish which books belong in the Bible.",
+    bibleBooks: [],
+    color: "bg-violet-500",
+  },
+  {
+    id: "medieval-church",
+    order: 12,
+    name: "Medieval Church",
+    dateRange: "~400–1500 AD",
+    tldr: "Christianity becomes the dominant religion of Europe, with monasteries preserving knowledge through the Dark Ages.",
+    bibleBooks: [],
+    color: "bg-stone-500",
+  },
+  {
+    id: "reformation",
+    order: 13,
+    name: "Reformation & Translation",
+    dateRange: "~1500–1700 AD",
+    tldr: "Luther, Calvin, and others reform the church; the Bible is translated into common languages.",
+    bibleBooks: [],
+    color: "bg-teal-500",
+  },
+  {
+    id: "modern-era",
+    order: 14,
+    name: "Modern Era & Global Spread",
+    dateRange: "~1700–Present",
+    tldr: "Christianity spreads globally, faces Enlightenment challenges, and diversifies into thousands of denominations.",
+    bibleBooks: [],
+    color: "bg-rose-500",
+  },
+];
+
+export function getEraById(id: string): Era | undefined {
+  return ERAS.find((era) => era.id === id);
+}
+
+export function getEraByOrder(order: number): Era | undefined {
+  return ERAS.find((era) => era.order === order);
+}
