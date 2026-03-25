@@ -1,0 +1,50 @@
+import type { ApiBibleResponse, BibleChapter } from "./types";
+
+const API_BASE = "https://api.scripture.api.bible/v1";
+
+// KJV Bible ID from API.Bible
+const KJV_BIBLE_ID = "de4e12af7f28f599-02";
+
+interface FetchChapterOptions {
+  bookId: string;
+  chapter: number;
+}
+
+export async function fetchChapter({ bookId, chapter }: FetchChapterOptions): Promise<BibleChapter> {
+  const chapterId = `${bookId}.${chapter}`;
+
+  const response = await fetch(
+    `${API_BASE}/bibles/${KJV_BIBLE_ID}/chapters/${chapterId}?content-type=text&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false`,
+    {
+      headers: {
+        "api-key": process.env.API_BIBLE_KEY!,
+      },
+      next: {
+        revalidate: 60 * 60 * 24 * 30, // Cache for 30 days
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`API.Bible error: ${response.status} ${response.statusText}`);
+  }
+
+  const json: ApiBibleResponse<{
+    id: string;
+    bibleId: string;
+    bookId: string;
+    number: string;
+    reference: string;
+    content: string;
+    verseCount: number;
+  }> = await response.json();
+
+  return {
+    id: json.data.id,
+    bookId: json.data.bookId,
+    number: json.data.number,
+    reference: json.data.reference,
+    content: json.data.content,
+    verseCount: json.data.verseCount,
+  };
+}
