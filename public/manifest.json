@@ -1,0 +1,43 @@
+{
+  "name": "Scripture Explorer",
+  "short_name": "Scripture",
+  "description": "An interactive Bible study platform for exploring Scripture from Genesis to modern day",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#5d4a3a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["books", "education", "lifestyle"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Read Bible",
+      "url": "/read",
+      "description": "Start reading the Bible"
+    },
+    {
+      "name": "Timeline",
+      "url": "/timeline",
+      "description": "Explore biblical history"
+    },
+    {
+      "name": "Ask AI",
+      "url": "/ask",
+      "description": "Ask questions about the Bible"
+    }
+  ]
+}
