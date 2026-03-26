@@ -37,6 +37,7 @@ export default async function ChapterPage({ params }: PageProps) {
       <main className="p-4 max-w-2xl mx-auto">
         <ChapterReader
           bookSlug={bookSlug}
+          bookId={book.id}
           chapter={chapter}
           initialContent={chapterData.content}
           initialReference={chapterData.reference}
