@@ -2,11 +2,13 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import type { TextSize, Theme, Lens } from "@/lib/supabase/types";
+import { DEFAULT_TRANSLATION } from "@/lib/bible/translations";
 
 interface Preferences {
   textSize: TextSize;
   theme: Theme;
   defaultLens: Lens | null;
+  translation: string;
   hasCompletedOnboarding: boolean;
 }
 
@@ -15,6 +17,7 @@ interface PreferencesContextType {
   setTextSize: (size: TextSize) => void;
   setTheme: (theme: Theme) => void;
   setDefaultLens: (lens: Lens | null) => void;
+  setTranslation: (translationId: string) => void;
   completeOnboarding: () => void;
 }
 
@@ -22,6 +25,7 @@ const defaultPreferences: Preferences = {
   textSize: "medium",
   theme: "light",
   defaultLens: null,
+  translation: DEFAULT_TRANSLATION,
   hasCompletedOnboarding: false,
 };
 
@@ -83,6 +87,10 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
     setPreferences((prev) => ({ ...prev, defaultLens }));
   };
 
+  const setTranslation = (translation: string) => {
+    setPreferences((prev) => ({ ...prev, translation }));
+  };
+
   const completeOnboarding = () => {
     setPreferences((prev) => ({ ...prev, hasCompletedOnboarding: true }));
   };
@@ -99,6 +107,7 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
         setTextSize,
         setTheme,
         setDefaultLens,
+        setTranslation,
         completeOnboarding,
       }}
     >

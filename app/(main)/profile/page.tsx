@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Heart } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { TextSizeSelector } from "@/components/shared/TextSizeSelector";
+import { TranslationPicker } from "@/components/shared/TranslationPicker";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -18,6 +19,15 @@ export default function ProfilePage() {
           </CardHeader>
           <CardContent>
             <TextSizeSelector />
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-body font-semibold">Bible Translation</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <TranslationPicker showLabel={false} />
           </CardContent>
         </Card>
 

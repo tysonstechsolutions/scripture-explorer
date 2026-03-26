@@ -1,20 +1,23 @@
 import type { ApiBibleResponse, BibleChapter } from "./types";
+import { DEFAULT_TRANSLATION } from "./translations";
 
 const API_BASE = "https://api.scripture.api.bible/v1";
-
-// KJV Bible ID from API.Bible
-const KJV_BIBLE_ID = "de4e12af7f28f599-02";
 
 interface FetchChapterOptions {
   bookId: string;
   chapter: number;
+  translationId?: string;
 }
 
-export async function fetchChapter({ bookId, chapter }: FetchChapterOptions): Promise<BibleChapter> {
+export async function fetchChapter({
+  bookId,
+  chapter,
+  translationId = DEFAULT_TRANSLATION
+}: FetchChapterOptions): Promise<BibleChapter> {
   const chapterId = `${bookId}.${chapter}`;
 
   const response = await fetch(
-    `${API_BASE}/bibles/${KJV_BIBLE_ID}/chapters/${chapterId}?content-type=text&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false`,
+    `${API_BASE}/bibles/${translationId}/chapters/${chapterId}?content-type=text&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false`,
     {
       headers: {
         "api-key": process.env.API_BIBLE_KEY!,

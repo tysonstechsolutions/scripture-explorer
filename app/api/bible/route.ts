@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { fetchChapter } from "@/lib/bible/api";
 import { getBookBySlug } from "@/lib/bible/books";
+import { DEFAULT_TRANSLATION } from "@/lib/bible/translations";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const book = searchParams.get("book");
   const chapter = searchParams.get("chapter");
+  const translation = searchParams.get("translation") || DEFAULT_TRANSLATION;
 
   if (!book || !chapter) {
     return NextResponse.json(
@@ -34,11 +36,13 @@ export async function GET(request: NextRequest) {
     const data = await fetchChapter({
       bookId: bookData.id,
       chapter: chapterNum,
+      translationId: translation,
     });
 
     return NextResponse.json({
       book: bookData,
       chapter: data,
+      translation,
     });
   } catch (error) {
     console.error("Bible API error:", error);

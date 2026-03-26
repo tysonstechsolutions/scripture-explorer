@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
-import { ChapterContent } from "@/components/bible/ChapterContent";
+import { ChapterReader } from "@/components/bible/ChapterReader";
 import { BookChapterNav } from "@/components/bible/BookChapterNav";
 import { getBookBySlug } from "@/lib/bible/books";
 import { fetchChapter } from "@/lib/bible/api";
+import { DEFAULT_TRANSLATION } from "@/lib/bible/translations";
 
 interface PageProps {
   params: Promise<{
@@ -34,9 +35,12 @@ export default async function ChapterPage({ params }: PageProps) {
     <>
       <Header title={`${book.name} ${chapter}`} showBack />
       <main className="p-4 max-w-2xl mx-auto">
-        <ChapterContent
-          content={chapterData.content}
-          reference={chapterData.reference}
+        <ChapterReader
+          bookSlug={bookSlug}
+          chapter={chapter}
+          initialContent={chapterData.content}
+          initialReference={chapterData.reference}
+          initialTranslation={DEFAULT_TRANSLATION}
         />
         <BookChapterNav currentBook={book} currentChapter={chapter} />
       </main>
