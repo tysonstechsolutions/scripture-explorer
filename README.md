@@ -39,9 +39,8 @@ cp .env.local.example .env.local
 
 1. **API.Bible** - Free at https://scripture.api.bible
 2. **Anthropic** - For AI features at https://console.anthropic.com
-3. **OpenAI** - For embeddings at https://platform.openai.com
-4. **Stripe** - For donations at https://stripe.com
-5. **Supabase** - For database at https://supabase.com
+3. **Stripe** - For donations at https://stripe.com
+4. **Supabase** - For database at https://supabase.com
 
 ### Development
 
@@ -79,7 +78,6 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
 API_BIBLE_KEY=
 ANTHROPIC_API_KEY=
-OPENAI_API_KEY=
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
@@ -92,7 +90,7 @@ NEXT_PUBLIC_APP_URL=https://your-domain.com
 - **Styling**: Tailwind CSS v4
 - **UI**: shadcn/ui
 - **Database**: Supabase (PostgreSQL + pgvector)
-- **AI**: Claude (Anthropic) + OpenAI Embeddings
+- **AI**: Claude (Anthropic)
 - **Payments**: Stripe
 - **Bible API**: API.Bible
 
