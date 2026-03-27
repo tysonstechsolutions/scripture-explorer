@@ -11,7 +11,6 @@ interface PageProps {
 }
 
 async function getChapterContent(slug: string): Promise<string> {
-  // Map slug to chapter file
   const chapters = getAllChapters();
   const chapter = chapters.find(c => c.slug === slug);
 
@@ -26,10 +25,8 @@ async function getChapterContent(slug: string): Promise<string> {
   );
 
   try {
-    // Try the formatted path first
     return fs.readFileSync(filePath, 'utf-8');
   } catch {
-    // Try alternate naming
     const altPath = path.join(
       process.cwd(),
       'content',
@@ -62,7 +59,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   return {
     title: `${chapter.title} | The Story | Scripture Explorer`,
-    description: `Chapter ${chapter.order}: ${chapter.title}`,
+    description: `Chapter ${chapter.order}: ${chapter.title} - Journey through biblical history`,
   };
 }
 
@@ -76,9 +73,5 @@ export default async function StoryChapterPage({ params }: PageProps) {
 
   const content = await getChapterContent(slug);
 
-  return (
-    <div className="container py-8">
-      <StoryChapter chapter={chapter} content={content} />
-    </div>
-  );
+  return <StoryChapter chapter={chapter} content={content} />;
 }
