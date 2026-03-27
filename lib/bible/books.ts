@@ -83,3 +83,15 @@ export function getBookBySlug(slug: string): BibleBook | undefined {
 export function getBookById(id: string): BibleBook | undefined {
   return BIBLE_BOOKS.find((book) => book.id === id);
 }
+
+// Alias for getBookById (for clarity when using API book IDs)
+export function getBookByApiId(id: string): (BibleBook & { slug: string }) | undefined {
+  const book = BIBLE_BOOKS.find((book) => book.id === id);
+  if (!book) return undefined;
+  return { ...book, slug: book.name.toLowerCase().replace(/\s+/g, "-") };
+}
+
+export function getBookSlug(bookId: string): string {
+  const book = getBookById(bookId);
+  return book ? book.name.toLowerCase().replace(/\s+/g, "-") : bookId.toLowerCase();
+}

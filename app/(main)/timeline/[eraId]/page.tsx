@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, BookOpen } from "lucide-react";
 import { getEraById, ERAS } from "@/lib/timeline/eras";
 import { getBookBySlug } from "@/lib/bible/books";
+import { EraTopics } from "@/components/timeline/EraTopics";
 
 interface PageProps {
   params: Promise<{
@@ -58,7 +59,9 @@ export default async function EraDetailPage({ params }: PageProps) {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {era.bibleBooks.map((bookName) => {
-                  const book = getBookBySlug(bookName.split(" ")[0]);
+                  // Try to match the book name - handles "1 Samuel", "Song of Solomon", etc.
+                  const slug = bookName.toLowerCase().replace(/\s+/g, "-");
+                  const book = getBookBySlug(slug) || getBookBySlug(bookName);
                   const href = book
                     ? `/read/${book.name.toLowerCase().replace(/\s+/g, "-")}/1`
                     : null;
@@ -85,6 +88,9 @@ export default async function EraDetailPage({ params }: PageProps) {
             </CardContent>
           </Card>
         )}
+
+        {/* Related Topics */}
+        <EraTopics eraId={eraId} />
 
         {/* AI Content Placeholder */}
         <Card className="mb-6 border-dashed">

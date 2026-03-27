@@ -18,9 +18,10 @@ export default function ReadPage() {
               <Link
                 key={book.id}
                 href={`/read/${book.name.toLowerCase().replace(/\s+/g, "-")}/1`}
-                className="tap-target"
+                className="tap-target rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label={`Read ${book.name}, ${book.chapters} chapters`}
               >
-                <Card className="hover:bg-parchment-200 transition-colors h-full">
+                <Card className="hover:bg-parchment-200 dark:hover:bg-muted/50 transition-colors h-full">
                   <CardContent className="p-3">
                     <div className="text-body-sm font-medium truncate">{book.name}</div>
                     <div className="text-xs text-muted-foreground">{book.chapters} ch</div>
@@ -38,9 +39,10 @@ export default function ReadPage() {
               <Link
                 key={book.id}
                 href={`/read/${book.name.toLowerCase().replace(/\s+/g, "-")}/1`}
-                className="tap-target"
+                className="tap-target rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label={`Read ${book.name}, ${book.chapters} chapters`}
               >
-                <Card className="hover:bg-parchment-200 transition-colors h-full">
+                <Card className="hover:bg-parchment-200 dark:hover:bg-muted/50 transition-colors h-full">
                   <CardContent className="p-3">
                     <div className="text-body-sm font-medium truncate">{book.name}</div>
                     <div className="text-xs text-muted-foreground">{book.chapters} ch</div>

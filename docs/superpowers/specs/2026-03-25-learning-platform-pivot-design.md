@@ -108,11 +108,14 @@ interface DeepDiveSection {
 }
 
 interface ScriptureRef {
-  book: string;
+  bookId: string;    // Uses existing API.Bible format (e.g., "GEN", "JHN")
   chapter: number;
   verse: number;
-  verseEnd?: number;
+  verseEnd?: number; // For ranges like "John 3:16-17"
 }
+
+// Note: bookId matches the existing BIBLE_BOOKS[].id format in lib/bible/books.ts
+// This ensures compatibility with the existing Bible reading infrastructure
 ```
 
 ## Scripture Integration
@@ -137,9 +140,13 @@ interface ScriptureRef {
 ## Content Creation Workflow
 
 ### Admin Mode
-- Toggle in settings (hidden from casual view)
+
+**Security model:** This is a personal learning app, not a multi-user platform. Admin mode is a simple UI toggle stored in localStorage—no authentication required. The "hidden from casual view" aspect is just UX cleanliness (don't show edit buttons when reading), not security.
+
+- Toggle in settings (simple on/off switch)
 - When enabled: shows Edit buttons, draft topics, authoring tools
 - When disabled: clean reader experience
+- No password, no user accounts—this is your personal tool
 
 ### Topic Queue
 - List of planned topics by pillar
@@ -170,9 +177,23 @@ interface ScriptureRef {
 ## Technical Implementation
 
 ### Data Storage
-- Topics stored as JSON files in `/content/topics/`
-- Indexed for search and filtering
-- Can migrate to database later if needed
+
+**Directory structure (new, to be created):**
+```
+/content/
+  /topics/
+    /text/           # Text & Transmission pillar
+    /prophecy/       # Prophecy & Fulfillment pillar
+    /church/         # Church & Empire pillar
+    /judaism/        # Christianity & Judaism pillar
+    /branches/       # Branches & Beliefs pillar
+    index.json       # Topic index for fast listing/search
+```
+
+- Each topic is a JSON file: `{slug}.json`
+- Index file maintains list of all topics with metadata for listing pages
+- Index rebuilt on topic create/update/delete
+- Can migrate to database later if needed (SQLite or Postgres)
 
 ### API Routes
 - `GET /api/topics` - List topics with filtering
@@ -182,12 +203,50 @@ interface ScriptureRef {
 - `DELETE /api/topics/[slug]` - Delete topic (admin)
 
 ### AI Generation
-- Uses Claude API with carefully crafted system prompt
-- System prompt ensures:
-  - Consistent three-layer structure
-  - Intellectually honest tone
-  - Citations and source references
-  - Connection suggestions to related topics
+
+Uses Claude API (existing `getAnthropicClient()` from `lib/ai/client.ts`).
+
+**System prompt template:**
+```
+You are helping create educational content about biblical history and scholarship.
+
+Generate a topic entry with three layers:
+
+TOPIC: {title}
+PILLAR: {pillar}
+CONTEXT: {additional context or objections to address}
+
+## Layer 1: Hook (2-3 sentences)
+Write a compelling hook that:
+- Summarizes what this topic is about
+- Explains why it matters or why skeptics raise it
+- Creates curiosity to learn more
+
+## Layer 2: Overview (800-1200 words)
+Write an accessible overview that:
+- Explains what happened or what the evidence shows
+- Presents the main scholarly positions fairly
+- Addresses common objections honestly
+- Provides clear takeaways
+- Uses headers to organize sections
+
+## Layer 3: Deep Dive Sections
+Create 3-5 expandable sections for deeper exploration:
+- Include primary source quotes where relevant
+- Cite scholarly sources (author, work, year)
+- Address specific "but what about..." objections
+- Suggest connections to related topics
+
+TONE: Intellectually honest. Present evidence fairly, including challenges.
+Don't be defensive or preachy. Let the evidence speak.
+
+OUTPUT FORMAT: JSON matching the Topic interface
+```
+
+**Error handling:**
+- Retry once on API failure
+- Show error state with "Try Again" option
+- Save partial drafts to prevent data loss
 
 ### Preserved from Current Codebase
 - Bible reading infrastructure (API, translations, reader)
@@ -213,12 +272,28 @@ The following devotional features don't fit the learning focus:
 ## Phased Rollout
 
 ### Phase 1: Foundation (MVP)
-- New home page with five pillars
-- Topic listing and reading experience (all three layers)
-- 5 seed topics per pillar (25 total)
-- Scripture slide-up panel from articles
-- Basic progress tracking (Read/Unread)
-- Admin mode for content editing
+
+**Build order within Phase 1:**
+1. Content infrastructure (data model, API routes, storage)
+2. Admin mode and AI drafting workflow
+3. Generate and review 25 seed topics (5 per pillar)
+4. Reader UI (topic listing, article view, three layers)
+5. Home page with pillar navigation
+6. Scripture slide-up panel
+7. Basic progress tracking (Read/Unread)
+
+**Seed topics (created as part of Phase 1, not a prerequisite):**
+- 5 topics per pillar, 25 total
+- Generated via AI drafting, reviewed by you
+- Focuses on the most important/common questions per pillar
+- App is usable once ~10-15 topics are published
+
+**Example seed topics per pillar:**
+- **Text:** Dead Sea Scrolls, Council of Nicaea, Textual Variants, Canon Formation, Translation History
+- **Prophecy:** Isaiah's Cyrus Prediction, Daniel's Dating Debate, Messianic Prophecies, Destruction of Temple, Suffering Servant
+- **Church:** Constantine's Conversion, Great Schism, Reformation, Crusades, Inquisition
+- **Judaism:** Jewish Roots of Jesus, Parting of Ways, Medieval Antisemitism, Holocaust, Modern Dialogue
+- **Branches:** Catholic vs Orthodox, Protestant Reformation, Denominational Differences, Creeds & Councils, Modern Movements
 
 ### Phase 2: Integration
 - Connect Bible reader to learning content

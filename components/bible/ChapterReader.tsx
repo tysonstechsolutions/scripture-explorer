@@ -1,17 +1,22 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
-import { BookOpen } from "lucide-react";
+import { useEffect, useState, useCallback, lazy, Suspense } from "react";
+import { BookOpen, RefreshCw, AlertTriangle } from "lucide-react";
 import { usePreferences } from "@/contexts/PreferencesContext";
 import { ChapterContent } from "./ChapterContent";
-import { StudyPanel } from "./StudyPanel";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { SkeletonVerse, SkeletonText } from "@/components/ui/skeleton";
 import { getTranslationById, DEFAULT_TRANSLATION } from "@/lib/bible/translations";
 import { getStudyNotes } from "@/lib/study/sample-notes";
+
+// Lazy load StudyPanel since it's only shown when user clicks
+const StudyPanel = lazy(() => import("./StudyPanel").then((m) => ({ default: m.StudyPanel })));
 
 interface ChapterReaderProps {
   bookSlug: string;
   bookId: string;
+  bookName: string;
   chapter: number;
   initialContent: string;
   initialReference: string;
@@ -26,6 +31,7 @@ interface ChapterData {
 export function ChapterReader({
   bookSlug,
   bookId,
+  bookName,
   chapter,
   initialContent,
   initialReference,
@@ -38,12 +44,14 @@ export function ChapterReader({
   });
   const [currentTranslation, setCurrentTranslation] = useState(initialTranslation);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [showStudy, setShowStudy] = useState(false);
 
   const studyNotes = getStudyNotes(bookId, chapter);
 
   const fetchChapter = useCallback(async (translationId: string) => {
     setIsLoading(true);
+    setError(null);
     try {
       const response = await fetch(
         `/api/bible?book=${bookSlug}&chapter=${chapter}&translation=${translationId}`
@@ -55,8 +63,9 @@ export function ChapterReader({
         reference: json.chapter.reference,
       });
       setCurrentTranslation(translationId);
-    } catch (error) {
-      console.error("Error fetching chapter:", error);
+    } catch (err) {
+      console.error("Error fetching chapter:", err);
+      setError("Unable to load this translation. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -97,16 +106,40 @@ export function ChapterReader({
         )}
       </div>
 
-      {isLoading && (
-        <div className="absolute inset-0 bg-background/50 flex items-center justify-center z-10">
-          <div className="animate-pulse text-muted-foreground">Loading...</div>
+      {error ? (
+        <Card className="border-destructive/50 bg-destructive/5">
+          <CardContent className="p-4 text-center">
+            <AlertTriangle className="h-8 w-8 mx-auto text-destructive mb-2" />
+            <p className="text-sm text-destructive mb-3">{error}</p>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => fetchChapter(preferences.translation)}
+            >
+              <RefreshCw className="h-4 w-4 mr-2" />
+              Try Again
+            </Button>
+          </CardContent>
+        </Card>
+      ) : isLoading ? (
+        <div className="py-4" role="status" aria-label="Loading chapter content">
+          <SkeletonVerse />
         </div>
+      ) : (
+        <ChapterContent
+          content={data.content}
+          reference={data.reference}
+          bookId={bookId}
+          bookName={bookName}
+          chapter={chapter}
+          translation={currentTranslation}
+        />
       )}
 
-      <ChapterContent content={data.content} reference={data.reference} />
-
       {showStudy && studyNotes && (
-        <StudyPanel notes={studyNotes} />
+        <Suspense fallback={<div className="mt-4 p-4 border rounded-lg"><SkeletonText lines={4} /></div>}>
+          <StudyPanel notes={studyNotes} />
+        </Suspense>
       )}
     </div>
   );

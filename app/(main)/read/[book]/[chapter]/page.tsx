@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
-import { ChapterReader } from "@/components/bible/ChapterReader";
+import { ChapterReaderWrapper } from "@/components/bible/ChapterReaderWrapper";
 import { BookChapterNav } from "@/components/bible/BookChapterNav";
 import { getBookBySlug } from "@/lib/bible/books";
 import { fetchChapter } from "@/lib/bible/api";
@@ -35,9 +35,10 @@ export default async function ChapterPage({ params }: PageProps) {
     <>
       <Header title={`${book.name} ${chapter}`} showBack />
       <main className="p-4 max-w-2xl mx-auto">
-        <ChapterReader
+        <ChapterReaderWrapper
           bookSlug={bookSlug}
           bookId={book.id}
+          bookName={book.name}
           chapter={chapter}
           initialContent={chapterData.content}
           initialReference={chapterData.reference}
@@ -53,7 +54,26 @@ export async function generateMetadata({ params }: PageProps) {
   const { book: bookSlug, chapter } = await params;
   const book = getBookBySlug(bookSlug);
 
+  if (!book) {
+    return { title: "Scripture Explorer" };
+  }
+
+  const title = `${book.name} ${chapter} - Scripture Explorer`;
+  const description = `Read ${book.name} chapter ${chapter} from the Bible. Study Scripture with interactive features including highlighting, notes, and bookmarks.`;
+
   return {
-    title: book ? `${book.name} ${chapter} - Scripture Explorer` : "Scripture Explorer",
+    title,
+    description,
+    openGraph: {
+      title: `${book.name} ${chapter}`,
+      description,
+      type: "article",
+      siteName: "Scripture Explorer",
+    },
+    twitter: {
+      card: "summary",
+      title: `${book.name} ${chapter}`,
+      description,
+    },
   };
 }

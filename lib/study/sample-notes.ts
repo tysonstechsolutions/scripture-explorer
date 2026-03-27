@@ -256,6 +256,284 @@ export const SAMPLE_NOTES: Record<string, StudyNotes> = {
       bigPicture: "Genesis 1 is the opening scene of the Bible's story. A good God creates a good world and places humanity in it as His representatives. This sets up the tragedy of Genesis 3 (the Fall), the long journey of redemption, and the ultimate hope of Revelation 21-22 where God makes all things new. Everything in Scripture flows from and back to creation.",
     },
   },
+
+  "MAT.5": {
+    passage: "Matthew 5 (Sermon on the Mount)",
+    context: {
+      historical: "Jesus speaks early in His Galilean ministry, around 28-30 AD. He has begun calling disciples and His fame is spreading throughout Israel. This sermon establishes His authority as a teacher greater than Moses.",
+      cultural: "Jewish teachers typically sat to teach formally. The 'mountain' echoes Moses receiving the Law on Mount Sinai. Jesus' audience lived under Roman occupation, heavily taxed, with limited rights - making His teachings on blessing, peacemaking, and enemy-love revolutionary.",
+      literary: "The Sermon on the Mount (Matthew 5-7) is the first of five major teaching blocks in Matthew, structured to present Jesus as a new Moses giving a new Torah. The Beatitudes open with blessings, reversing worldly values.",
+      geographic: "The traditional site is a hillside near Capernaum overlooking the Sea of Galilee. This region was Jesus' primary ministry area, where many disciples came from.",
+      audience: "Primarily Jesus' disciples, but with crowds listening (Matthew 5:1, 7:28). Matthew wrote for Jewish Christians, showing how Jesus fulfills rather than abolishes the Law.",
+    },
+    perspectives: {
+      commonGround: [
+        "The Beatitudes reveal the values of God's kingdom",
+        "Jesus calls His followers to a righteousness that exceeds external rule-keeping",
+        "Love for enemies is central to Christian ethics",
+        "Jesus has authority to interpret and intensify the Law",
+        "This sermon describes the character of kingdom citizens",
+      ],
+      differentViews: [
+        {
+          view: "Blueprint for Christian living - these commands are for all believers today",
+          traditions: ["Anabaptist", "Wesleyan", "many Evangelicals"],
+          reasoning: "Jesus commands obedience (7:24-27); the Sermon describes how His followers should live",
+          heartBehind: "Taking Jesus' words seriously as direct commands for daily life",
+        },
+        {
+          view: "Impossible ideal - showing our need for grace",
+          traditions: ["Lutheran", "some Reformed"],
+          reasoning: "The demands are impossible (be perfect, 5:48) to drive us to rely on Christ's righteousness alone",
+          heartBehind: "Emphasizing grace and Christ's work rather than human achievement",
+        },
+        {
+          view: "Kingdom ethics - describing life in the age to come, beginning now",
+          traditions: ["Catholic", "Orthodox", "many Protestants"],
+          reasoning: "The Sermon describes kingdom values that disciples begin living now but will be fully realized in the new creation",
+          heartBehind: "Balancing 'already' and 'not yet' aspects of God's kingdom",
+        },
+      ],
+      unityNote: "All Christians agree the Sermon reveals God's heart, exposes our need for grace, and calls us to transformed living. Whether we emphasize obedience, grace, or kingdom hope, we're responding to the same Jesus.",
+    },
+    deepDive: {
+      keyWords: [
+        {
+          word: "Blessed",
+          original: "μακάριοι (makarioi)",
+          meaning: "Fortunate, happy, to be envied - not just a future promise but a present reality",
+          significance: "Jesus pronounces blessing on those the world considers cursed - the poor, mourning, meek. God's values invert worldly status.",
+        },
+        {
+          word: "Poor in spirit",
+          original: "πτωχοὶ τῷ πνεύματι (ptōchoi tō pneumati)",
+          meaning: "Spiritually bankrupt, recognizing one's complete need for God",
+          significance: "The kingdom belongs to those who know they have nothing to offer - the opposite of religious pride.",
+        },
+        {
+          word: "Fulfill",
+          original: "πληρῶσαι (plērōsai)",
+          meaning: "To fill full, complete, bring to intended goal",
+          significance: "Jesus doesn't abolish the Law but brings it to its fullest meaning and intended purpose.",
+        },
+      ],
+      crossReferences: [
+        { reference: "Exodus 20:1-17", connection: "The Ten Commandments - Jesus intensifies them, addressing heart as well as actions" },
+        { reference: "Leviticus 19:18", connection: "'Love your neighbor' - Jesus expands 'neighbor' to include enemies" },
+        { reference: "Isaiah 61:1-3", connection: "Good news to the poor, comfort for mourners - Jesus embodies this prophecy" },
+        { reference: "Micah 6:8", connection: "Act justly, love mercy, walk humbly - the Beatitudes echo prophetic values" },
+        { reference: "Romans 12:14-21", connection: "Paul applies Jesus' teaching on blessing enemies and overcoming evil with good" },
+        { reference: "James 2:5", connection: "James echoes: 'Has not God chosen the poor in the world to be rich in faith?'" },
+      ],
+      themes: [
+        "The Kingdom of Heaven",
+        "Righteousness",
+        "Transformation of the Heart",
+        "Love (including enemies)",
+        "Law and Grace",
+        "Salt and Light",
+        "Prayer",
+        "Peacemaking",
+      ],
+      symbols: [
+        { symbol: "Salt", meaning: "Preservation, seasoning, covenant faithfulness - disciples preserve society and add 'flavor' to life" },
+        { symbol: "Light", meaning: "God's truth, goodness, and presence shining through His people to expose darkness" },
+        { symbol: "Mountain", meaning: "Place of divine revelation, echoing Mount Sinai where Moses received the Law" },
+      ],
+    },
+    application: {
+      thenAndNow: {
+        originalMeaning: "Jesus established that kingdom citizenship isn't about external compliance but internal transformation. To Jewish hearers expecting a political Messiah, He described a kingdom of humility, mercy, and enemy-love - shocking in an occupied land.",
+        modernApplication: "We live in a culture that celebrates power, winning, and defeating enemies. Jesus still calls us to a counter-cultural life: blessing those who curse us, seeking reconciliation before worship, loving those who seem unlovable. This isn't weakness - it's the power of the kingdom.",
+      },
+      reflectionQuestions: [
+        "Which Beatitude challenges me most? Why?",
+        "Am I more focused on external religious behavior or internal heart transformation?",
+        "Who is my 'enemy' that Jesus calls me to love?",
+        "Where do I need to be 'salt and light' in my community?",
+        "Is my righteousness based on rule-keeping or on knowing Christ?",
+      ],
+      prayerPrompt: "Lord Jesus, I confess that my heart falls short of Your kingdom values. Make me poor in spirit - aware of my need for You. Help me mourn over sin, pursue meekness, hunger for righteousness. Transform my heart so that mercy, purity, and peacemaking flow naturally. Teach me to love even my enemies. In Your name, Amen.",
+      actionStep: "Identify one person you find difficult to love. This week, pray for them daily and look for one concrete way to bless them.",
+    },
+    connections: {
+      relatedStories: [
+        "Moses on Mount Sinai (Exodus 19-20) - the first giving of the Law",
+        "David's Psalms of Blessing (Psalm 1, 32, 128) - earlier 'beatitude' language",
+        "The Good Samaritan (Luke 10) - Jesus illustrating love for 'enemies'",
+      ],
+      prophecyLinks: [
+        {
+          oldTestament: "Isaiah 61:1-2",
+          newTestament: "Matthew 5:3-4",
+          connection: "Isaiah's promise of good news to the poor and comfort for mourners finds fulfillment in Jesus' opening words",
+        },
+        {
+          oldTestament: "Jeremiah 31:31-33",
+          newTestament: "Matthew 5:17-20",
+          connection: "The new covenant with law written on hearts is what Jesus teaches - transformation from within",
+        },
+      ],
+      jesusConnection: "The Sermon on the Mount isn't just about what we must do - it's about who Jesus is. He is the One who fulfills the Law perfectly, embodies the Beatitudes fully, and gives us His Spirit to live this way. We follow the Sermon by following Him.",
+      bigPicture: "God gave the Law through Moses to show Israel how to live as His people. But the Law could only reveal sin, not transform hearts. Jesus comes as a greater Moses, not giving a new Law but fulfilling the old one and offering the Spirit who enables transformed living. The Sermon describes citizens of the kingdom that Jesus inaugurates - a kingdom of mercy, peace, and love that will one day cover the earth.",
+    },
+    difficultQuestions: [
+      {
+        question: "Isn't 'turn the other cheek' just letting people abuse you?",
+        honestAnswer: "Jesus isn't commanding passivity in the face of evil. In context, a slap on the right cheek was an insult, not assault. Jesus calls us to respond to insults without retaliation - breaking the cycle of revenge. This isn't the same as allowing ongoing abuse; Jesus Himself confronted evil directly.",
+        whatWeKnow: "Jesus was not passive - He overturned tables, rebuked hypocrites, and challenged injustice. The principle is non-retaliation for personal insults, not permission for ongoing harm.",
+        whatWeTrust: "God is the ultimate Judge. When we refuse retaliation, we trust Him to make things right. This frees us from the prison of bitterness.",
+      },
+      {
+        question: "How can anyone 'be perfect as your heavenly Father is perfect'?",
+        honestAnswer: "The Greek word 'teleios' means mature, complete, whole - not sinless perfection. In context (5:43-48), it means loving completely, not just those who love you. It's a direction, not a destination we achieve in this life.",
+        whatWeKnow: "No human achieves sinless perfection (1 John 1:8). Jesus is the only one who perfectly embodied these teachings. We grow in maturity through the Spirit.",
+        whatWeTrust: "God looks at the heart's direction, not just the destination. He gives grace for the journey and will complete His work in us (Philippians 1:6).",
+      },
+    ],
+  },
+
+  "ROM.8": {
+    passage: "Romans 8",
+    context: {
+      historical: "Paul writes to the church in Rome around 57 AD, a congregation he has never visited. The Roman church included both Jewish and Gentile believers navigating their relationship. This letter systematically presents the gospel.",
+      cultural: "Rome was the center of the empire - powerful, diverse, and morally complex. Christians there faced social pressure as a small, misunderstood group. The themes of slavery and adoption would resonate deeply in a culture where both were common.",
+      literary: "Romans 8 is the climax of Paul's argument about salvation. Chapters 1-3 establish universal sin, 4-5 explain justification by faith, 6-7 address the struggle with sin, and chapter 8 celebrates life in the Spirit. It's often called the greatest chapter in the Bible.",
+      audience: "Mixed Jewish and Gentile believers in Rome who needed to understand how God's promises to Israel relate to faith in Christ, and how believers should live in a hostile world.",
+    },
+    perspectives: {
+      commonGround: [
+        "There is no condemnation for those in Christ Jesus",
+        "The Holy Spirit dwells in all believers",
+        "Nothing can separate us from God's love in Christ",
+        "Believers are adopted as God's children",
+        "Present sufferings are not worth comparing with future glory",
+        "The Spirit helps us in our weakness",
+      ],
+      differentViews: [
+        {
+          view: "Predestination as God's unconditional choice of individuals",
+          traditions: ["Reformed", "Calvinist"],
+          reasoning: "Foreknew, predestined, called, justified, glorified (v.29-30) - an unbroken chain of God's sovereign action",
+          heartBehind: "Emphasizing that salvation is entirely God's work, giving complete assurance to believers",
+        },
+        {
+          view: "Predestination based on God's foreknowledge of faith",
+          traditions: ["Arminian", "Wesleyan", "some Baptists"],
+          reasoning: "God 'foreknew' those who would believe and predestined them to be conformed to Christ",
+          heartBehind: "Preserving human responsibility and the genuine offer of salvation to all",
+        },
+        {
+          view: "Corporate election - God predestined the church as a body",
+          traditions: ["some Evangelical scholars"],
+          reasoning: "The focus is on God's plan for His people as a whole, conforming them to Christ's image",
+          heartBehind: "Emphasizing the communal nature of salvation and God's redemptive plan",
+        },
+      ],
+      unityNote: "Whatever view believers hold on predestination, all agree on the result: those in Christ are secure, loved, and destined for glory. The debate is about how we got here, not about whether we're safe in Christ.",
+    },
+    deepDive: {
+      keyWords: [
+        {
+          word: "Condemnation",
+          original: "κατάκριμα (katakrima)",
+          meaning: "Adverse sentence, judicial verdict of guilt",
+          significance: "The court has ruled - believers are declared 'not guilty.' This isn't pretending sin didn't happen but a real verdict based on Christ's sacrifice.",
+        },
+        {
+          word: "Adoption",
+          original: "υἱοθεσία (huiothesia)",
+          meaning: "Placement as a son, legal adoption with full rights",
+          significance: "In Roman culture, adopted sons had identical rights to biological sons. We are not second-class children - we are fully God's heirs.",
+        },
+        {
+          word: "Groaning",
+          original: "στενάζω (stenazō)",
+          meaning: "To sigh, groan, expressing deep longing or distress",
+          significance: "Creation groans (v.22), we groan (v.23), the Spirit groans (v.26) - all longing for the completion of redemption. Pain is real but not final.",
+        },
+        {
+          word: "Intercedes",
+          original: "ἐντυγχάνω (entynchanō)",
+          meaning: "To meet with, appeal to, plead on behalf of",
+          significance: "Both the Spirit (v.26-27) and Christ (v.34) intercede for us. We are never alone in our weakness or accusation.",
+        },
+      ],
+      crossReferences: [
+        { reference: "Genesis 3:17-19", connection: "Creation cursed because of sin - Romans 8:20-21 promises its liberation" },
+        { reference: "Isaiah 50:8-9", connection: "The Servant's confidence: 'Who will bring charges?' - echoed in Romans 8:33" },
+        { reference: "John 14:16-17", connection: "Jesus promises the Spirit who will dwell with and in believers" },
+        { reference: "Galatians 4:4-7", connection: "Paul's parallel teaching on adoption and crying 'Abba, Father'" },
+        { reference: "Philippians 1:6", connection: "He who began a good work will complete it - echoing Romans 8:29-30" },
+        { reference: "1 John 3:1-2", connection: "See what love the Father has given - we are God's children, and will be like Christ" },
+      ],
+      themes: [
+        "No Condemnation",
+        "Life in the Spirit",
+        "Adoption as Children",
+        "Future Glory",
+        "Suffering and Hope",
+        "God's Sovereignty",
+        "Intercession",
+        "Inseparable Love",
+      ],
+      symbols: [
+        { symbol: "Firstfruits", meaning: "The Spirit is the initial installment of our full inheritance - a guarantee of what's coming" },
+        { symbol: "Abba", meaning: "Aramaic for 'Father' - intimate, familial address showing our close relationship with God" },
+        { symbol: "Heirs", meaning: "Legal recipients of an inheritance - we share in Christ's inheritance of all things" },
+      ],
+    },
+    application: {
+      thenAndNow: {
+        originalMeaning: "Roman Christians facing potential persecution, social ostracism, and daily temptation needed assurance: nothing could separate them from God's love. Their suffering wasn't meaningless but was working toward glory. The Spirit empowered what the Law could not.",
+        modernApplication: "We too face suffering, doubt, and the nagging fear that we're not good enough. Romans 8 speaks to our deepest fears: you are not condemned, you are God's child, your suffering has purpose, and absolutely nothing can separate you from His love. This isn't positive thinking - it's the declaration of the Judge of the universe.",
+      },
+      reflectionQuestions: [
+        "Do I truly believe there is NO condemnation for me in Christ, or do I still carry guilt?",
+        "Am I living by the flesh (human effort) or the Spirit?",
+        "How does knowing I'm God's adopted child change how I approach Him?",
+        "What present suffering do I need to see in light of future glory?",
+        "Is there anything I fear could separate me from God's love?",
+      ],
+      prayerPrompt: "Abba, Father - thank You that I can call You this. Thank You that there is no condemnation for me in Christ. When I feel accused, remind me that You are for me. When I suffer, help me trust that You are working all things together for good. When I'm too weak to pray, thank You that Your Spirit intercedes. Nothing can separate me from Your love. In Jesus' name, Amen.",
+      actionStep: "Write out Romans 8:38-39 and put it somewhere you'll see it daily. When fear or condemnation arises this week, read it aloud as a declaration of truth.",
+    },
+    connections: {
+      relatedStories: [
+        "The Exodus (Exodus 14) - God's people delivered from slavery, now freed from sin's slavery",
+        "Joseph's story (Genesis 50:20) - God working evil into good, like Romans 8:28",
+        "Job's restoration (Job 42) - suffering leading to greater glory",
+      ],
+      prophecyLinks: [
+        {
+          oldTestament: "Ezekiel 36:26-27",
+          newTestament: "Romans 8:9-11",
+          connection: "The promise of God's Spirit dwelling within - now fulfilled in believers",
+        },
+        {
+          oldTestament: "Isaiah 65:17-25",
+          newTestament: "Romans 8:19-21",
+          connection: "New heavens and new earth where creation is restored - the liberation we await",
+        },
+      ],
+      jesusConnection: "Christ is central throughout: we are 'in Christ Jesus' (v.1), the Spirit is the 'Spirit of Christ' (v.9), we are 'co-heirs with Christ' (v.17), we are 'conformed to the image of Christ' (v.29), and Christ intercedes for us (v.34). Every promise of Romans 8 flows from union with Jesus.",
+      bigPicture: "Romans 8 completes the arc of salvation. Humanity sinned (Rom 1-3), was justified by faith (4-5), struggles with sin (6-7), but now lives in the Spirit with assured hope (8). The chapter looks back to creation's fall, looks around at present suffering, and looks forward to final glory. It's the gospel in miniature: no condemnation, present help, and future hope - all secured by inseparable love.",
+    },
+    difficultQuestions: [
+      {
+        question: "If God works all things for good, why do terrible things happen?",
+        honestAnswer: "Paul doesn't say all things ARE good, but that God works them TOGETHER for good. Evil is real and grieves God. But He is able to weave even tragedy into His redemptive purposes. This is not explanation but promise - ultimately, for those who love God, nothing is wasted.",
+        whatWeKnow: "God is good. Evil exists. God will judge evil. He is able to bring good from bad. The cross itself - the worst event in history - brought our salvation.",
+        whatWeTrust: "God sees what we cannot. His 'good' may not be our comfort but our Christlikeness (v.29). One day we'll understand; today we trust.",
+      },
+      {
+        question: "How can I know if I'm truly 'in Christ' and not condemned?",
+        honestAnswer: "The chapter gives markers: being led by the Spirit, experiencing the Spirit's witness that we're God's children, longing for redemption. But the basis isn't our performance - it's Christ's finished work. Assurance comes from looking to Him, not measuring ourselves.",
+        whatWeKnow: "Faith in Christ is the entry point (Romans 3-5). The Spirit's presence confirms it. Ongoing trust in Christ maintains it. Self-examination has a place, but Christ is our assurance.",
+        whatWeTrust: "If you're concerned about whether you're truly saved, that very concern often indicates the Spirit's work. Rest in Christ's promise, not your feelings.",
+      },
+    ],
+  },
 };
 
 // Helper to get study notes for a passage

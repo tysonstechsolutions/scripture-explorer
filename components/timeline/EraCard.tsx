@@ -10,8 +10,12 @@ interface EraCardProps {
 
 export function EraCard({ era }: EraCardProps) {
   return (
-    <Link href={`/timeline/${era.id}`} className="block">
-      <Card className="hover:bg-parchment-200 transition-colors h-full">
+    <Link
+      href={`/timeline/${era.id}`}
+      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      aria-label={`${era.name}, ${era.dateRange}`}
+    >
+      <Card className="hover:bg-parchment-200 dark:hover:bg-muted/50 transition-colors h-full">
         <CardContent className="p-4">
           <div className="flex items-start gap-3">
             <div className={`w-3 h-3 rounded-full ${era.color} mt-1.5 flex-shrink-0`} />

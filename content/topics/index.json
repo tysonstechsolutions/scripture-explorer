@@ -1,0 +1,45 @@
+{
+  "topics": [
+    {
+      "slug": "dead-sea-scrolls",
+      "title": "The Dead Sea Scrolls",
+      "pillar": "text",
+      "status": "published",
+      "hook": "Ancient manuscripts that revolutionized our understanding of the Hebrew Bible's transmission.",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "slug": "council-of-nicaea",
+      "title": "The Council of Nicaea (325 CE)",
+      "pillar": "church",
+      "status": "published",
+      "hook": "The first ecumenical council that defined orthodox Christianity—and the myths that surround it.",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "slug": "isaiah-53-suffering-servant",
+      "title": "Isaiah 53 and the Suffering Servant",
+      "pillar": "prophecy",
+      "status": "published",
+      "hook": "The most debated messianic prophecy—and why Jews and Christians read it differently.",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "slug": "parting-of-ways",
+      "title": "The Parting of the Ways",
+      "pillar": "judaism",
+      "status": "published",
+      "hook": "How Christianity and Judaism became separate religions—it took longer than you think.",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    },
+    {
+      "slug": "protestant-reformation",
+      "title": "The Protestant Reformation",
+      "pillar": "branches",
+      "status": "published",
+      "hook": "How a monk's protest split Western Christianity—and why it still matters.",
+      "updatedAt": "2026-03-26T00:00:00.000Z"
+    }
+  ],
+  "lastUpdated": "2026-03-26T00:00:00.000Z"
+}

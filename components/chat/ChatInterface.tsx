@@ -103,7 +103,12 @@ export function ChatInterface({ lens = "historical" }: ChatInterfaceProps) {
   return (
     <div className="flex flex-col h-full">
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto space-y-4 pb-4">
+      <div
+        className="flex-1 overflow-y-auto space-y-4 pb-4"
+        role="log"
+        aria-live="polite"
+        aria-label="Chat messages"
+      >
         {messages.length === 0 && (
           <div className="text-center py-8">
             <p className="text-body text-muted-foreground">
