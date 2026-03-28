@@ -64,21 +64,11 @@ export function ScripturePopover({ reference, children }: ScripturePopoverProps)
 
   return (
     <Popover open={open} onOpenChange={handleOpenChange}>
-      <PopoverTrigger asChild>
-        <span
-          role="button"
-          tabIndex={0}
-          className="inline-flex items-center gap-1.5 text-amber-700 dark:text-amber-500 hover:text-amber-900 dark:hover:text-amber-400 underline decoration-amber-400/40 dark:decoration-amber-600/40 decoration-dotted underline-offset-4 cursor-pointer transition-colors"
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              handleOpenChange(true);
-            }
-          }}
-        >
-          <BookOpen className="h-3.5 w-3.5" />
-          {children}
-        </span>
+      <PopoverTrigger
+        className="inline-flex items-center gap-1.5 text-amber-700 dark:text-amber-500 hover:text-amber-900 dark:hover:text-amber-400 underline decoration-amber-400/40 dark:decoration-amber-600/40 decoration-dotted underline-offset-4 cursor-pointer transition-colors"
+      >
+        <BookOpen className="h-3.5 w-3.5" />
+        {children}
       </PopoverTrigger>
       <PopoverContent
         className="w-96 p-0 overflow-hidden bg-gradient-to-br from-amber-50 to-stone-50 dark:from-stone-900 dark:to-stone-950 border-amber-200/60 dark:border-amber-800/40 shadow-xl"

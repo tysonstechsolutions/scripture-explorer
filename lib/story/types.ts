@@ -9,6 +9,7 @@ export interface StoryChapter {
   content: string;
   timeline?: TimelineEvent[];
   deepDives?: string[];
+  glossaryTerms?: string[]; // Terms to explain in the chapter legend
   nextChapter?: string;
   prevChapter?: string;
 }

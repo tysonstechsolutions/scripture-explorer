@@ -1,12 +1,15 @@
 // components/story/StoryChapter.tsx
+// Ancient Manuscript Design: Papyrus, weathered, aged parchment aesthetic
 
 'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronLeft, ChevronRight, Clock, BookOpen, Compass, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, BookOpen, Compass, Sparkles, ArrowRight } from 'lucide-react';
 import { ScripturePopover } from './ScripturePopover';
 import { StoryImage } from './StoryImage';
+import { ChapterLegend } from './ChapterLegend';
+import { KeyInsight } from './KeyInsight';
 import { getStoryImage } from '@/lib/story/images';
 import type { StoryChapter as StoryChapterType, TimelineEvent } from '@/lib/story/types';
 import { STORY_ERAS } from '@/lib/story/types';
@@ -39,40 +42,89 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
       if (section.startsWith('## ')) {
         const title = section.replace('## ', '');
         return (
-          <h2 key={idx} className="font-serif text-2xl md:text-3xl text-stone-800 dark:text-stone-100 mt-16 mb-6 relative">
-            <span className="relative">
+          <div key={idx} className="mt-20 mb-10 animate-fade-in">
+            {/* Ornamental divider */}
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-amber-900/40 to-amber-800/60" />
+              <div className="text-amber-800/60 text-2xl">&#10022;</div>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent via-amber-900/40 to-amber-800/60" />
+            </div>
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-amber-950 dark:text-amber-100 text-center tracking-wide">
               {title}
-              <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-gradient-to-r from-amber-500 to-transparent" />
-            </span>
-          </h2>
+            </h2>
+          </div>
         );
       }
 
       // Scripture blocks with full quote
       if (section.startsWith('{scripture:')) {
-        const match = section.match(/\{scripture:([^}]+)\}\s*>\s*(.+)/s);
+        const match = section.match(/\{scripture:([^}]+)\}\s*>\s*([\s\S]+)/);
         if (match) {
           const [, reference, text] = match;
           return (
-            <figure key={idx} className="my-10 relative">
-              {/* Decorative quote mark */}
-              <div className="absolute -left-4 -top-4 text-7xl font-serif text-amber-200/50 dark:text-amber-800/30 leading-none select-none">
-                &ldquo;
-              </div>
+            <figure key={idx} className="my-14 relative animate-fade-in">
+              {/* Aged paper inset effect */}
+              <div className="absolute -inset-3 bg-amber-900/5 dark:bg-amber-400/5 rounded-sm"
+                   style={{
+                     boxShadow: 'inset 0 2px 8px rgba(120, 80, 40, 0.15), inset 0 -2px 8px rgba(120, 80, 40, 0.1)'
+                   }}
+              />
 
-              <blockquote className="relative bg-gradient-to-br from-amber-50/80 to-stone-50/80 dark:from-amber-950/30 dark:to-stone-900/50 rounded-2xl p-8 border-l-4 border-amber-500/60">
-                <p className="font-serif text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed italic">
+              {/* Decorative corner flourishes */}
+              <div className="absolute -top-2 -left-2 text-amber-800/30 dark:text-amber-400/30 text-4xl leading-none select-none font-serif">&ldquo;</div>
+              <div className="absolute -bottom-2 -right-2 text-amber-800/30 dark:text-amber-400/30 text-4xl leading-none select-none font-serif rotate-180">&ldquo;</div>
+
+              <blockquote className="relative bg-gradient-to-br from-amber-100/80 via-amber-50/60 to-orange-100/40 dark:from-amber-950/60 dark:via-stone-900/40 dark:to-amber-950/30 rounded-sm p-8 border-l-4 border-amber-800/60 dark:border-amber-600/60">
+                <p className="font-serif text-xl md:text-2xl text-amber-950 dark:text-amber-100 leading-relaxed italic">
                   {text.trim()}
                 </p>
               </blockquote>
 
-              <figcaption className="mt-4 flex items-center gap-2 text-amber-700 dark:text-amber-500">
-                <BookOpen className="h-4 w-4" />
+              <figcaption className="mt-4 flex items-center gap-2 justify-end">
+                <BookOpen className="h-4 w-4 text-amber-800/70 dark:text-amber-500" />
                 <ScripturePopover reference={reference}>
-                  <span className="font-medium">{reference}</span>
+                  <span className="font-serif font-semibold text-amber-800 dark:text-amber-400 text-base tracking-wide">{reference}</span>
                 </ScripturePopover>
               </figcaption>
             </figure>
+          );
+        }
+      }
+
+      // Image markers
+      if (section.includes('{image:')) {
+        const match = section.match(/\{image:([^}]+)\}/);
+        if (match) {
+          const imageId = match[1];
+          const imageData = getStoryImage(imageId);
+          if (imageData) {
+            return (
+              <div key={idx} className="animate-fade-in my-12">
+                <StoryImage
+                  src={imageData.src}
+                  alt={imageData.alt}
+                  caption={imageData.caption}
+                  credit={imageData.credit}
+                />
+              </div>
+            );
+          }
+        }
+      }
+
+      // Key insight callouts - comic book style
+      if (section.includes('{insight:')) {
+        const match = section.match(/\{insight:(\w+)\}\s*([\s\S]+)/);
+        if (match) {
+          const [, type, text] = match;
+          const validTypes = ['love', 'truth', 'revelation', 'key'] as const;
+          const insightType = validTypes.includes(type as typeof validTypes[number])
+            ? (type as typeof validTypes[number])
+            : 'key';
+          return (
+            <KeyInsight key={idx} type={insightType}>
+              {text.trim()}
+            </KeyInsight>
           );
         }
       }
@@ -81,7 +133,7 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
       if (section.includes('{deep-dive:')) {
         const parts = section.split(/(\{deep-dive:[^}]+\})/);
         return (
-          <p key={idx} className="font-serif text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
+          <p key={idx} className="font-serif text-lg md:text-xl text-amber-950/90 dark:text-amber-100/90 leading-[1.9] mb-6">
             {parts.map((part, partIdx) => {
               const deepDiveMatch = part.match(/\{deep-dive:([^}]+)\}/);
               if (deepDiveMatch) {
@@ -91,7 +143,7 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
                     key={partIdx}
                     role="button"
                     tabIndex={0}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 ml-2 rounded-full bg-amber-100/80 dark:bg-amber-900/30 text-amber-800 dark:text-amber-400 text-sm font-sans font-medium hover:bg-amber-200/80 dark:hover:bg-amber-800/40 transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-2 px-4 py-2 ml-2 rounded-sm bg-gradient-to-r from-amber-800 to-amber-900 dark:from-amber-700 dark:to-amber-800 text-amber-50 text-sm font-sans font-semibold shadow-md hover:shadow-lg hover:from-amber-700 hover:to-amber-800 active:scale-95 transition-all cursor-pointer border border-amber-700/50"
                     onClick={() => {
                       setExpandedDeepDives(prev => {
                         const next = new Set(prev);
@@ -118,8 +170,9 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
                       }
                     }}
                   >
-                    <Compass className="h-3.5 w-3.5" />
-                    Explore
+                    <Compass className="h-4 w-4" />
+                    Go Deeper
+                    <ArrowRight className="h-3 w-3" />
                   </span>
                 );
               }
@@ -133,7 +186,7 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
       if (section.includes('{scripture:')) {
         const parts = section.split(/(\{scripture:[^}]+\})/);
         return (
-          <p key={idx} className="font-serif text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
+          <p key={idx} className="font-serif text-lg md:text-xl text-amber-950/90 dark:text-amber-100/90 leading-[1.9] mb-6">
             {parts.map((part, partIdx) => {
               const scriptureMatch = part.match(/\{scripture:([^}]+)\}/);
               if (scriptureMatch) {
@@ -150,32 +203,12 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
         );
       }
 
-      // Image markers
-      if (section.includes('{image:')) {
-        const match = section.match(/\{image:([^}]+)\}/);
-        if (match) {
-          const imageId = match[1];
-          const imageData = getStoryImage(imageId);
-          if (imageData) {
-            return (
-              <StoryImage
-                key={idx}
-                src={imageData.src}
-                alt={imageData.alt}
-                caption={imageData.caption}
-                credit={imageData.credit}
-              />
-            );
-          }
-        }
-      }
-
       // Map markers
       if (section.includes('{map:')) {
         return (
-          <div key={idx} className="my-10 rounded-2xl bg-gradient-to-br from-stone-100 to-stone-50 dark:from-stone-900 dark:to-stone-950 border border-stone-200/60 dark:border-stone-800/60 p-8 text-center">
-            <Compass className="h-10 w-10 mx-auto text-amber-600/60 mb-3" />
-            <p className="text-stone-500 dark:text-stone-500">Interactive map coming soon</p>
+          <div key={idx} className="my-12 rounded-sm bg-gradient-to-br from-amber-100/60 to-orange-100/40 dark:from-amber-950/40 dark:to-stone-900/30 border-2 border-amber-800/20 dark:border-amber-700/30 p-8 text-center animate-fade-in">
+            <Compass className="h-12 w-12 mx-auto text-amber-800/60 dark:text-amber-500/60 mb-3" />
+            <p className="text-amber-800 dark:text-amber-400 font-serif italic">Interactive map coming soon</p>
           </div>
         );
       }
@@ -185,18 +218,17 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
         return null;
       }
 
-      // Regular paragraphs
+      // Regular paragraphs - with emphasis handling
       if (section.trim()) {
-        // Check for italicized emphasis (like *text*)
         const processedText = section.split(/(\*[^*]+\*)/g).map((part, i) => {
           if (part.startsWith('*') && part.endsWith('*')) {
-            return <em key={i} className="text-amber-700 dark:text-amber-500">{part.slice(1, -1)}</em>;
+            return <em key={i} className="text-amber-800 dark:text-amber-400 font-medium not-italic">{part.slice(1, -1)}</em>;
           }
           return part;
         });
 
         return (
-          <p key={idx} className="font-serif text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
+          <p key={idx} className="font-serif text-lg md:text-xl text-amber-950/90 dark:text-amber-100/90 leading-[1.9] mb-6 first-letter:text-4xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:mt-1 first-letter:text-amber-800 dark:first-letter:text-amber-500">
             {processedText}
           </p>
         );
@@ -207,90 +239,131 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50/50 via-stone-50 to-amber-50/30 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950">
-      {/* Subtle texture */}
-      <div className="fixed inset-0 opacity-[0.015] dark:opacity-[0.03] pointer-events-none">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+    <div className="min-h-screen relative">
+      {/* Papyrus/Parchment Background */}
+      <div
+        className="fixed inset-0 -z-10"
+        style={{
+          background: `
+            linear-gradient(180deg,
+              hsl(35, 30%, 88%) 0%,
+              hsl(38, 35%, 85%) 20%,
+              hsl(40, 32%, 82%) 40%,
+              hsl(36, 28%, 80%) 60%,
+              hsl(34, 25%, 78%) 80%,
+              hsl(32, 30%, 75%) 100%
+            )
+          `,
+        }}
+      />
+
+      {/* Paper texture overlay */}
+      <div
+        className="fixed inset-0 -z-10 opacity-40 dark:opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {/* Subtle stain/aging effects */}
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-amber-900/10 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-amber-900/15 to-transparent" />
+        <div className="absolute top-1/4 -left-20 w-64 h-64 bg-amber-800/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 -right-20 w-80 h-80 bg-orange-900/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-amber-700/3 rounded-full blur-2xl" />
       </div>
+
+      {/* Burnt/aged edges */}
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-amber-950/20 to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-amber-950/20 to-transparent" />
+      </div>
+
+      {/* Dark mode override */}
+      <div className="dark:fixed dark:inset-0 dark:-z-10 dark:bg-gradient-to-b dark:from-stone-950 dark:via-amber-950/20 dark:to-stone-950" />
 
       <article className="relative max-w-3xl mx-auto px-6 py-12">
         {/* Back Navigation */}
-        <Link href="/story" className="inline-flex items-center gap-2 text-stone-500 dark:text-stone-500 hover:text-amber-700 dark:hover:text-amber-500 transition-colors mb-12 group">
+        <Link
+          href="/story"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-amber-100/80 dark:bg-amber-900/40 border border-amber-800/20 dark:border-amber-700/30 text-amber-900 dark:text-amber-200 hover:bg-amber-200/80 dark:hover:bg-amber-800/40 transition-all group mb-10"
+        >
           <ChevronLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-          <span className="text-sm uppercase tracking-[0.1em]">All Chapters</span>
+          <span className="text-sm font-semibold uppercase tracking-widest">Back to Story</span>
         </Link>
 
         {/* Chapter Header */}
-        <header className="mb-16 text-center">
+        <header className="mb-16 text-center animate-fade-in">
           {/* Era Badge */}
           {era && (
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/60 dark:bg-amber-900/20 border border-amber-200/60 dark:border-amber-800/40 mb-6">
-              <span className="text-sm text-amber-800 dark:text-amber-400 font-medium">
+            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-sm bg-amber-900/10 dark:bg-amber-800/30 border border-amber-800/30 dark:border-amber-600/40 mb-8">
+              <span className="font-serif font-semibold text-amber-900 dark:text-amber-200 tracking-wide">
                 {era.name}
               </span>
-              <span className="text-amber-400 dark:text-amber-600">•</span>
-              <span className="text-sm text-amber-600/80 dark:text-amber-500/80 font-mono">
+              <span className="text-amber-700 dark:text-amber-500">&#8226;</span>
+              <span className="text-sm text-amber-800 dark:text-amber-400 font-mono tracking-wider">
                 {era.range}
               </span>
             </div>
           )}
 
-          {/* Chapter Number */}
-          <p className="text-amber-600/60 dark:text-amber-500/60 uppercase tracking-[0.2em] text-sm mb-4">
-            Chapter {chapter.order}
-          </p>
+          {/* Chapter Number - Decorative */}
+          <div className="flex items-center justify-center gap-6 mb-8">
+            <div className="h-px w-20 bg-gradient-to-r from-transparent via-amber-800/40 to-amber-800/60" />
+            <span className="text-amber-800/70 dark:text-amber-500/70 uppercase tracking-[0.4em] text-xs font-bold font-sans">
+              Chapter {chapter.order}
+            </span>
+            <div className="h-px w-20 bg-gradient-to-l from-transparent via-amber-800/40 to-amber-800/60" />
+          </div>
 
-          {/* Title with decorative elements */}
-          <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 -top-6 flex items-center gap-3">
-              <div className="h-px w-8 bg-gradient-to-r from-transparent to-amber-400/40" />
-              <Sparkles className="h-4 w-4 text-amber-400/40" />
-              <div className="h-px w-8 bg-gradient-to-l from-transparent to-amber-400/40" />
-            </div>
+          {/* Title */}
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-amber-950 dark:text-amber-50 mb-10 leading-tight tracking-tight">
+            {chapter.title}
+          </h1>
 
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-stone-800 dark:text-stone-100 font-light tracking-tight">
-              {chapter.title}
-            </h1>
-
-            <div className="flex items-center justify-center gap-2 mt-8">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700" />
-              <div className="h-2 w-2 rounded-full bg-amber-500/60" />
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700" />
-            </div>
+          {/* Ornamental divider */}
+          <div className="flex items-center justify-center gap-2">
+            <div className="h-px w-8 bg-amber-800/40" />
+            <div className="text-amber-800/50 dark:text-amber-500/50 text-lg">&#10040;</div>
+            <div className="h-1 w-1 rounded-full bg-amber-800/60 dark:bg-amber-500/60" />
+            <div className="text-amber-800/50 dark:text-amber-500/50 text-lg">&#10040;</div>
+            <div className="h-px w-8 bg-amber-800/40" />
           </div>
         </header>
 
-        {/* Drop Cap Effect - First Letter Styling via Content */}
-        <div className="prose-drop-cap">
+        {/* Quick Reference Legend */}
+        <ChapterLegend terms={chapter.glossaryTerms} />
+
+        {/* Content */}
+        <div className="space-y-2">
           {renderContent(content)}
         </div>
 
         {/* Timeline */}
         {chapter.timeline && chapter.timeline.length > 0 && (
-          <section className="mt-20 pt-12 border-t border-stone-200/60 dark:border-stone-800/60">
-            <h3 className="flex items-center gap-3 font-serif text-xl text-stone-800 dark:text-stone-200 mb-8">
-              <Clock className="h-5 w-5 text-amber-600" />
+          <section className="mt-24 pt-12 border-t-2 border-amber-800/20 dark:border-amber-700/30 animate-fade-in">
+            <h3 className="flex items-center justify-center gap-3 font-serif text-2xl font-bold text-amber-950 dark:text-amber-100 mb-12">
+              <Clock className="h-6 w-6 text-amber-800/70 dark:text-amber-500" />
               Timeline
             </h3>
 
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-amber-300 via-amber-400 to-amber-300 dark:from-amber-700 dark:via-amber-600 dark:to-amber-700" />
+              <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-gradient-to-b from-amber-800/40 via-amber-700/30 to-amber-800/40 dark:from-amber-600/40 dark:via-amber-500/30 dark:to-amber-600/40" />
 
               <div className="space-y-6">
                 {chapter.timeline.map((event: TimelineEvent, idx: number) => (
-                  <div key={idx} className="relative flex gap-6 items-start">
+                  <div key={idx} className="relative flex gap-6 items-start group">
                     {/* Dot */}
-                    <div className="relative z-10 flex-shrink-0 w-4 h-4 rounded-full bg-amber-400 dark:bg-amber-600 border-4 border-amber-50 dark:border-stone-900 shadow-sm" />
+                    <div className="relative z-10 flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 dark:from-amber-500 dark:to-amber-700 border-3 border-amber-100 dark:border-stone-900 shadow-md group-hover:scale-110 transition-transform" />
 
-                    {/* Content */}
-                    <div className="flex-1 -mt-0.5">
-                      <span className="font-mono text-sm text-amber-700 dark:text-amber-500">
+                    {/* Content card */}
+                    <div className="flex-1 -mt-1 p-4 rounded-sm bg-amber-100/50 dark:bg-amber-900/20 border border-amber-800/10 dark:border-amber-700/20 group-hover:bg-amber-100/80 dark:group-hover:bg-amber-900/30 transition-colors">
+                      <span className="inline-block px-3 py-1 rounded-sm bg-amber-800/10 dark:bg-amber-700/30 text-amber-900 dark:text-amber-300 font-mono text-sm font-bold mb-2 tracking-wide">
                         {event.date}
                       </span>
-                      <p className="text-stone-700 dark:text-stone-300 mt-0.5">
+                      <p className="text-amber-950 dark:text-amber-100 font-serif">
                         {event.event}
                       </p>
                     </div>
@@ -302,42 +375,36 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
         )}
 
         {/* Chapter Navigation */}
-        <nav className="mt-20 pt-12 border-t border-stone-200/60 dark:border-stone-800/60">
-          <div className="flex items-center justify-between gap-4">
+        <nav className="mt-24 pt-12 border-t-2 border-amber-800/20 dark:border-amber-700/30">
+          <div className="flex flex-col sm:flex-row items-stretch gap-4">
             {chapter.prevChapter ? (
               <Link href={`/story/${chapter.prevChapter}`} className="group flex-1">
-                <div className="p-6 rounded-2xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:border-amber-300/50 dark:hover:border-amber-700/50 hover:shadow-lg transition-all">
-                  <p className="text-xs uppercase tracking-[0.1em] text-stone-400 dark:text-stone-600 mb-1">
+                <div className="h-full p-6 rounded-sm bg-amber-100/60 dark:bg-amber-900/30 border border-amber-800/20 dark:border-amber-700/30 hover:bg-amber-200/60 dark:hover:bg-amber-800/30 transition-all">
+                  <p className="text-xs uppercase tracking-[0.2em] text-amber-700 dark:text-amber-500 font-bold mb-2 flex items-center gap-2">
+                    <ChevronLeft className="h-3 w-3" />
                     Previous
                   </p>
-                  <div className="flex items-center gap-2 text-stone-700 dark:text-stone-300 group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
-                    <ChevronLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
-                    <span className="font-serif text-lg">
-                      {chapter.prevChapter.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                    </span>
-                  </div>
+                  <p className="font-serif text-lg text-amber-900 dark:text-amber-200 group-hover:text-amber-950 dark:group-hover:text-amber-100 transition-colors">
+                    {chapter.prevChapter.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                  </p>
                 </div>
               </Link>
             ) : (
               <div className="flex-1" />
             )}
 
-            {chapter.nextChapter ? (
+            {chapter.nextChapter && (
               <Link href={`/story/${chapter.nextChapter}`} className="group flex-1">
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-100/80 to-amber-50/80 dark:from-amber-900/30 dark:to-stone-800/50 border border-amber-200/60 dark:border-amber-800/40 hover:shadow-lg transition-all text-right">
-                  <p className="text-xs uppercase tracking-[0.1em] text-amber-600/80 dark:text-amber-500/80 mb-1">
+                <div className="h-full p-6 rounded-sm bg-gradient-to-br from-amber-800 to-amber-900 dark:from-amber-700 dark:to-amber-800 text-amber-50 border border-amber-700/50 shadow-lg hover:shadow-xl hover:from-amber-700 hover:to-amber-800 dark:hover:from-amber-600 dark:hover:to-amber-700 transition-all">
+                  <p className="text-xs uppercase tracking-[0.2em] text-amber-200 font-bold mb-2 flex items-center justify-end gap-2">
                     Continue Reading
+                    <ChevronRight className="h-3 w-3" />
                   </p>
-                  <div className="flex items-center justify-end gap-2 text-amber-800 dark:text-amber-400 group-hover:text-amber-900 dark:group-hover:text-amber-300 transition-colors">
-                    <span className="font-serif text-lg">
-                      {chapter.nextChapter.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                    </span>
-                    <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  <p className="font-serif text-xl font-semibold text-right">
+                    {chapter.nextChapter.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                  </p>
                 </div>
               </Link>
-            ) : (
-              <div className="flex-1" />
             )}
           </div>
         </nav>

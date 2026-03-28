@@ -1,9 +1,9 @@
 // components/story/StoryImage.tsx
+// Ancient manuscript style image component
 
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { ZoomIn, X } from 'lucide-react';
 
 interface StoryImageProps {
@@ -16,6 +16,7 @@ interface StoryImageProps {
 
 export function StoryImage({ src, alt, caption, credit, layout = 'full' }: StoryImageProps) {
   const [isZoomed, setIsZoomed] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   const layoutClasses = {
     'full': 'w-full my-10',
@@ -24,41 +25,74 @@ export function StoryImage({ src, alt, caption, credit, layout = 'full' }: Story
     'inline': 'w-full max-w-md mx-auto my-8',
   };
 
+  if (imageError) {
+    return null;
+  }
+
   return (
     <>
       <figure className={`relative ${layoutClasses[layout]}`}>
-        {/* Image Container */}
+        {/* Aged paper frame effect */}
         <div
-          className="relative overflow-hidden rounded-xl bg-stone-100 dark:bg-stone-800 cursor-zoom-in group"
+          className="relative overflow-hidden rounded-sm cursor-zoom-in group"
           onClick={() => setIsZoomed(true)}
+          style={{
+            boxShadow: `
+              0 4px 20px rgba(120, 80, 40, 0.25),
+              inset 0 0 60px rgba(120, 80, 40, 0.1)
+            `,
+          }}
         >
-          {/* Decorative frame */}
-          <div className="absolute inset-0 border-4 border-amber-100/50 dark:border-amber-900/30 rounded-xl pointer-events-none z-10" />
+          {/* Decorative aged border */}
+          <div
+            className="absolute inset-0 pointer-events-none z-10 rounded-sm"
+            style={{
+              border: '6px solid transparent',
+              borderImage: 'linear-gradient(135deg, rgba(139, 90, 43, 0.4), rgba(160, 120, 70, 0.2), rgba(139, 90, 43, 0.4)) 1',
+              boxShadow: 'inset 0 0 20px rgba(100, 60, 30, 0.2)',
+            }}
+          />
 
-          <div className="relative aspect-[4/3] w-full">
-            <Image
-              src={src}
-              alt={alt}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 800px"
-            />
-          </div>
+          {/* Corner aging effects */}
+          <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-amber-900/20 to-transparent pointer-events-none z-10" />
+          <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-amber-900/15 to-transparent pointer-events-none z-10" />
+          <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-amber-900/15 to-transparent pointer-events-none z-10" />
+          <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-amber-900/20 to-transparent pointer-events-none z-10" />
+
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
+            className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={() => setImageError(true)}
+            loading="lazy"
+            style={{
+              filter: 'sepia(15%) saturate(90%)',
+            }}
+          />
 
           {/* Zoom indicator */}
-          <div className="absolute top-3 right-3 p-2 rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity z-20">
+          <div className="absolute top-3 right-3 p-2 rounded-sm bg-amber-950/60 text-amber-100 opacity-0 group-hover:opacity-100 transition-opacity z-20">
             <ZoomIn className="h-4 w-4" />
           </div>
 
-          {/* Gradient overlay */}
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          {/* Bottom gradient for caption readability */}
+          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-amber-950/70 to-transparent pointer-events-none" />
         </div>
 
-        {/* Caption */}
+        {/* Caption - manuscript style */}
         {(caption || credit) && (
-          <figcaption className="mt-3 text-sm text-stone-600 dark:text-stone-400">
-            {caption && <p className="font-medium">{caption}</p>}
-            {credit && <p className="text-xs text-stone-400 dark:text-stone-500 mt-1 italic">{credit}</p>}
+          <figcaption className="mt-4 px-2">
+            {caption && (
+              <p className="font-serif text-amber-900 dark:text-amber-200 italic leading-relaxed">
+                {caption}
+              </p>
+            )}
+            {credit && (
+              <p className="text-xs text-amber-700/70 dark:text-amber-400/70 mt-2 font-mono tracking-wide">
+                {credit}
+              </p>
+            )}
           </figcaption>
         )}
       </figure>
@@ -66,31 +100,33 @@ export function StoryImage({ src, alt, caption, credit, layout = 'full' }: Story
       {/* Lightbox */}
       {isZoomed && (
         <div
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-zoom-out"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 cursor-zoom-out"
           onClick={() => setIsZoomed(false)}
+          style={{
+            background: 'radial-gradient(ellipse at center, rgba(30, 20, 10, 0.95), rgba(15, 10, 5, 0.98))',
+          }}
         >
           <button
-            className="absolute top-4 right-4 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+            className="absolute top-4 right-4 p-2 rounded-sm bg-amber-100/10 text-amber-100 hover:bg-amber-100/20 transition-colors z-10"
             onClick={() => setIsZoomed(false)}
           >
             <X className="h-6 w-6" />
           </button>
 
-          <div className="relative max-w-5xl max-h-[90vh] w-full h-full">
-            <Image
-              src={src}
-              alt={alt}
-              fill
-              className="object-contain"
-              sizes="100vw"
-              priority
-            />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
+            className="max-w-full max-h-[85vh] object-contain rounded-sm"
+            style={{
+              boxShadow: '0 0 60px rgba(139, 90, 43, 0.3)',
+            }}
+          />
 
           {caption && (
             <div className="absolute bottom-4 left-4 right-4 text-center">
-              <p className="text-white/90 text-lg">{caption}</p>
-              {credit && <p className="text-white/60 text-sm mt-1">{credit}</p>}
+              <p className="text-amber-100/90 text-lg font-serif italic">{caption}</p>
+              {credit && <p className="text-amber-200/60 text-sm mt-1 font-mono">{credit}</p>}
             </div>
           )}
         </div>
