@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { ChapterReaderWrapper } from "@/components/bible/ChapterReaderWrapper";
 import { BookChapterNav } from "@/components/bible/BookChapterNav";
+import { ChapterLoadError } from "@/components/bible/ChapterLoadError";
 import { getBookBySlug } from "@/lib/bible/books";
 import { fetchChapter } from "@/lib/bible/api";
 import { DEFAULT_TRANSLATION } from "@/lib/bible/translations";
@@ -26,10 +27,28 @@ export default async function ChapterPage({ params }: PageProps) {
     notFound();
   }
 
-  const chapterData = await fetchChapter({
-    bookId: book.id,
-    chapter,
-  });
+  let chapterData;
+  try {
+    chapterData = await fetchChapter({
+      bookId: book.id,
+      chapter,
+    });
+  } catch (error) {
+    console.error("Failed to fetch chapter:", error);
+    return (
+      <>
+        <Header title={`${book.name} ${chapter}`} showBack />
+        <main className="p-4 max-w-2xl mx-auto">
+          <ChapterLoadError
+            bookName={book.name}
+            chapter={chapter}
+            bookSlug={bookSlug}
+          />
+          <BookChapterNav currentBook={book} currentChapter={chapter} />
+        </main>
+      </>
+    );
+  }
 
   return (
     <>

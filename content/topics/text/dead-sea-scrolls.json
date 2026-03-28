@@ -1,0 +1,40 @@
+{
+  "id": "topic_dead_sea_scrolls",
+  "slug": "dead-sea-scrolls",
+  "title": "The Dead Sea Scrolls",
+  "pillar": "text",
+  "status": "published",
+  "hook": "Ancient manuscripts that revolutionized our understanding of the Hebrew Bible's transmission.",
+  "overview": "In 1947, a Bedouin shepherd accidentally discovered clay jars containing ancient scrolls in caves near the Dead Sea. This find—the Dead Sea Scrolls—would become the most significant manuscript discovery of the 20th century, pushing our earliest Hebrew Bible manuscripts back by over 1,000 years.\n\nThe scrolls include portions of every Old Testament book except Esther, along with previously unknown Jewish texts. They provide remarkable evidence for how carefully the Hebrew Bible was transmitted over millennia.",
+  "deepDive": [
+    {
+      "id": "discovery",
+      "title": "The Discovery",
+      "content": "The first scrolls were found in 1947 by Muhammad edh-Dhib, a Bedouin shepherd searching for a lost goat. He threw a stone into a cave and heard pottery breaking. Inside, he found clay jars containing leather scrolls wrapped in linen.\n\nBetween 1947 and 1956, eleven caves near Qumran yielded approximately 900 manuscripts. The dry desert climate had preserved them remarkably well—some nearly complete, others in thousands of fragments.\n\n### Key Finds\n- **The Great Isaiah Scroll** (1QIsaᵃ): A complete copy of Isaiah, dating to approximately 125 BCE\n- **The Community Rule**: Describes the practices of the Qumran community\n- **The War Scroll**: Describes an apocalyptic battle between \"sons of light\" and \"sons of darkness\"\n- **Pesher commentaries**: Interpretations of biblical prophecies"
+    },
+    {
+      "id": "significance",
+      "title": "Why They Matter",
+      "content": "Before the Dead Sea Scrolls, our oldest complete Hebrew Bible manuscripts were from around 1000 CE (the Masoretic Text tradition). The scrolls pushed this back by over 1,000 years.\n\n### What We Learned\n\n**Remarkable Textual Stability**: When scholars compared the Great Isaiah Scroll (125 BCE) with medieval manuscripts, they found the text was virtually identical. Over 95% of the differences were minor spelling variations or obvious scribal errors.\n\n**Textual Diversity**: The scrolls also revealed that multiple textual traditions existed in the Second Temple period. Some texts matched the Masoretic tradition, others the Septuagint (Greek translation), and some represented previously unknown versions.\n\n**Jewish Diversity**: The scrolls show that Second Temple Judaism was far more diverse than previously thought, with various groups holding different beliefs about eschatology, purity, and calendar calculations."
+    },
+    {
+      "id": "qumran-community",
+      "title": "Who Wrote Them?",
+      "content": "Most scholars believe the scrolls were produced or collected by a Jewish sect living at Qumran, often identified with the Essenes mentioned by ancient historians like Josephus and Philo.\n\n### The Qumran Community\n- Practiced communal living and shared possessions\n- Emphasized ritual purity with frequent immersions\n- Followed a solar calendar (differing from the lunar calendar used in Jerusalem)\n- Believed they were living in the end times\n- Rejected the Jerusalem Temple priesthood as corrupt\n\n### Alternative Theories\nSome scholars argue the scrolls were a library from Jerusalem, hidden during the Roman siege (66-70 CE), rather than a sectarian collection. The debate continues."
+    },
+    {
+      "id": "christian-connection",
+      "title": "Connections to Christianity",
+      "content": "The Dead Sea Scrolls provide crucial context for understanding early Christianity:\n\n### Shared Concepts\n- **Eschatological expectations**: Both the Qumran community and early Christians expected an imminent end of the age\n- **Messianic beliefs**: Some scrolls describe two messiahs (priestly and royal), illuminating the diversity of messianic expectations\n- **Communal practices**: Early Christian communities shared practices like communal meals and property sharing\n\n### Important Distinction\nNo specifically Christian texts were found among the Dead Sea Scrolls. Jesus is not mentioned. The scrolls represent pre-Christian Jewish thought, providing background rather than direct connection.\n\n### John the Baptist\nSome scholars note similarities between John the Baptist's ministry in the Judean wilderness and the Qumran community's location and emphasis on ritual immersion. Whether John had direct contact with the community remains debated."
+    }
+  ],
+  "scriptureRefs": [
+    { "bookId": "ISA", "chapter": 40, "verse": 3 },
+    { "bookId": "ISA", "chapter": 53, "verse": 1, "verseEnd": 12 },
+    { "bookId": "HAB", "chapter": 2, "verse": 4 }
+  ],
+  "relatedTopics": ["textual-criticism", "septuagint", "masoretic-text"],
+  "timelineEra": "second-temple",
+  "createdAt": "2026-03-26T00:00:00.000Z",
+  "updatedAt": "2026-03-26T00:00:00.000Z"
+}

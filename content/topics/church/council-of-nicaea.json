@@ -1,0 +1,45 @@
+{
+  "id": "topic_council_nicaea",
+  "slug": "council-of-nicaea",
+  "title": "The Council of Nicaea (325 CE)",
+  "pillar": "church",
+  "status": "published",
+  "hook": "The first ecumenical council that defined orthodox Christianity—and the myths that surround it.",
+  "overview": "In 325 CE, Emperor Constantine convened approximately 300 bishops at Nicaea (modern-day İznik, Turkey) to address a theological controversy threatening to divide the church. The result was the Nicene Creed, which remains foundational to Catholic, Orthodox, and Protestant Christianity.\n\nBut the Council of Nicaea is also surrounded by popular myths—that it decided which books belong in the Bible, that it invented the divinity of Christ, or that it was purely a political power play. The historical reality is both more mundane and more significant.",
+  "deepDive": [
+    {
+      "id": "background",
+      "title": "Why Nicaea Happened",
+      "content": "The council was called to address the Arian controversy. Arius, a priest from Alexandria, taught that the Son of God was a created being—the first and greatest of God's creations, but not eternal or fully divine.\n\n### The Arian Position\n- \"There was a time when the Son was not\"\n- The Son is of a *different* substance than the Father\n- The Son is divine, but in a lesser sense than the Father\n\n### Why It Mattered\nThis wasn't abstract theology. If Christ was created rather than eternal, it affected:\n- The nature of salvation (can a creature save humanity?)\n- Christian worship (is worshipping Christ idolatry?)\n- The church's understanding of God\n\nConstantine, recently converted and hoping Christianity would unify his empire, found the church bitterly divided. He summoned bishops to resolve the issue."
+    },
+    {
+      "id": "the-council",
+      "title": "What Actually Happened",
+      "content": "### The Gathering\nApproximately 300 bishops attended, mostly from the Eastern church. Only a handful came from the West. Many bore scars from the recent persecutions—missing eyes, maimed limbs—reminders that just years earlier, being a bishop could mean death.\n\n### The Debate\nArius presented his position. According to ancient accounts, most bishops were appalled. The question became how to craft language that excluded Arianism while expressing orthodox faith.\n\n### The Solution: Homoousios\nThe council adopted the term *homoousios* (same substance/essence) to describe the relationship between Father and Son. This word doesn't appear in Scripture but was chosen precisely because Arians couldn't accept it.\n\n### The Vote\nOnly two bishops refused to sign the creed. Arius and his key supporters were exiled.\n\n### Other Business\n- Set the date for Easter\n- Addressed the Meletian schism in Egypt\n- Established rules for clergy conduct\n- **Did NOT** decide the biblical canon (a common myth)"
+    },
+    {
+      "id": "the-creed",
+      "title": "The Nicene Creed",
+      "content": "The original creed of 325 was shorter than the version most Christians know today (which was expanded at Constantinople in 381).\n\n### Key Phrases\n\n**\"Begotten, not made\"**: The Son is generated from the Father's nature, not created like angels or humans.\n\n**\"Of one substance with the Father\"** (*homoousios to patri*): The most controversial phrase. Father and Son share the same divine essence.\n\n**\"True God from true God\"**: Explicitly rejects the Arian notion that the Son is divine in a lesser sense.\n\n### What It Didn't Address\nThe council focused on the Father-Son relationship. The Spirit is mentioned only briefly (\"We believe in the Holy Spirit\"). Trinitarian theology would develop further at Constantinople (381)."
+    },
+    {
+      "id": "myths",
+      "title": "Common Myths Debunked",
+      "content": "### Myth: Nicaea Decided the Biblical Canon\n**Reality**: The council's records mention nothing about the biblical canon. The books of the Bible were determined through centuries of church usage, with various councils and letters discussing the canon, but Nicaea wasn't one of them.\n\n### Myth: Nicaea Invented Christ's Divinity\n**Reality**: Christian worship of Jesus as divine predates Nicaea by nearly 300 years. Paul's letters (50s CE), early hymns, and pre-Nicene church fathers all affirm Christ's divinity. Nicaea *clarified* this belief against Arian challenges; it didn't invent it.\n\n### Myth: Constantine Controlled the Outcome\n**Reality**: Constantine wanted unity more than any specific theological outcome. He initially favored compromise and later even supported Arian bishops. The bishops made the theological decisions.\n\n### Myth: Arius Was Silenced by Political Force\n**Reality**: Arius was exiled, but Arianism remained influential for decades. Constantine's son Constantius II was Arian. Several bishops who signed at Nicaea later supported Arian positions. The controversy continued until approximately 381 CE."
+    },
+    {
+      "id": "aftermath",
+      "title": "The Aftermath",
+      "content": "### The Arian Aftermath\nThe story didn't end in 325. Arian and semi-Arian theology remained influential, especially among Germanic tribes who converted to Arian Christianity. The Visigoths, Vandals, and Ostrogoths were Arian Christians—creating tension when they conquered formerly Nicene Roman territories.\n\n### The Creed's Legacy\nThe Nicene Creed (in its 381 expanded form) became:\n- The standard of orthodoxy for Eastern and Western churches\n- A regular part of Christian liturgy\n- The basis for later creeds and confessions\n\n### Church-State Relations\nNicaea also set a precedent: emperors calling councils to resolve church disputes. This marriage of church and empire would shape Christianity for centuries—for better and worse."
+    }
+  ],
+  "scriptureRefs": [
+    { "bookId": "JHN", "chapter": 1, "verse": 1, "verseEnd": 14 },
+    { "bookId": "COL", "chapter": 1, "verse": 15, "verseEnd": 20 },
+    { "bookId": "PHP", "chapter": 2, "verse": 5, "verseEnd": 11 }
+  ],
+  "relatedTopics": ["arianism", "constantine", "nicene-creed", "early-church-councils"],
+  "timelineEra": "patristic",
+  "createdAt": "2026-03-26T00:00:00.000Z",
+  "updatedAt": "2026-03-26T00:00:00.000Z"
+}

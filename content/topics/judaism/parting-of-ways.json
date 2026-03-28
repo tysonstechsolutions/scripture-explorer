@@ -1,0 +1,46 @@
+{
+  "id": "topic_parting_ways",
+  "slug": "parting-of-ways",
+  "title": "The Parting of the Ways",
+  "pillar": "judaism",
+  "status": "published",
+  "hook": "How Christianity and Judaism became separate religions—it took longer than you think.",
+  "overview": "Jesus was Jewish. His disciples were Jewish. Paul was a Pharisee. The earliest \"Christians\" saw themselves as Jews who believed Jesus was the Messiah. So how did Christianity become a separate religion, often hostile to Judaism?\n\nThe \"parting of the ways\" was not a single event but a gradual process spanning several centuries, shaped by theology, politics, and tragedy.",
+  "deepDive": [
+    {
+      "id": "early-movement",
+      "title": "The Jesus Movement Within Judaism",
+      "content": "### The First Decades\nThe earliest followers of Jesus:\n- Continued worshipping in the Jerusalem Temple\n- Observed Jewish law (Torah)\n- Saw themselves as Jews who recognized the Messiah\n- Debated *how* Gentiles could join, not whether to leave Judaism\n\n### The Jerusalem Council (c. 49 CE)\nActs 15 describes an early controversy: Must Gentile believers be circumcised and follow Torah? The decision: No, but they should avoid certain practices. This allowed Gentiles in without requiring full conversion to Judaism—a fateful decision.\n\n### Paul's Mission\nPaul brought the message primarily to Gentiles. By the end of the first century, Gentile believers likely outnumbered Jewish believers. The demographic balance was shifting."
+    },
+    {
+      "id": "first-century-ruptures",
+      "title": "First-Century Ruptures",
+      "content": "### The Jewish War (66-70 CE)\nThe destruction of the Jerusalem Temple was catastrophic for both groups:\n- Jewish Christians may have fled Jerusalem before the siege (according to Eusebius)\n- The Temple's destruction ended sacrifice-based Judaism\n- Both Rabbinic Judaism and Christianity had to reinvent themselves\n\n### After 70 CE\nJudaism reorganized around Torah study, synagogue, and rabbinic interpretation. The Pharisaic movement became dominant (eventually evolving into Rabbinic Judaism).\n\n### The Gospel of Matthew\nWritten after 70 CE, Matthew shows a community still debating with the synagogue but increasingly defining itself against \"the scribes and Pharisees.\" The relationship is strained but not yet severed.\n\n### The Bar Kokhba Revolt (132-135 CE)\nRabbi Akiva proclaimed Bar Kokhba the Messiah. Jewish Christians couldn't accept this, creating further division. After Rome crushed the revolt, Jews were banned from Jerusalem."
+    },
+    {
+      "id": "second-century",
+      "title": "The Second Century: Defining Boundaries",
+      "content": "### The Birkat HaMinim\nSometime in the late first or early second century, a prayer was added to the synagogue liturgy cursing \"heretics\" (*minim*). Whether this specifically targeted Jewish Christians is debated, but it suggests increasing boundary-marking.\n\n### Gentile Christianity Ascends\nBy the mid-second century:\n- The church was predominantly Gentile\n- Greek philosophy influenced Christian theology\n- Sunday replaced Sabbath; Easter replaced Passover timing\n- Church leaders increasingly saw Judaism as superseded\n\n### Justin Martyr (c. 150 CE)\nIn his *Dialogue with Trypho*, Justin debates a Jewish teacher. The tone is still conversational, but Justin argues Christianity has replaced Israel as God's people.\n\n### The Question of Jewish Christians\nWhat about Jews who believed in Jesus but still observed Torah? Church leaders increasingly viewed them with suspicion. By the fourth century, figures like Jerome would call them neither good Jews nor good Christians."
+    },
+    {
+      "id": "constantine-after",
+      "title": "Constantine and After",
+      "content": "### Christianity Becomes Imperial\nWhen Constantine legalized Christianity (313 CE), power dynamics shifted dramatically:\n- Church councils could rely on imperial enforcement\n- Christian anti-Jewish rhetoric now had political teeth\n- Laws increasingly restricted Jewish life\n\n### The Council of Nicaea (325 CE)\nAmong other decisions, Nicaea mandated calculating Easter independently of Passover, explicitly to separate Christian practice from Jewish practice. Constantine wrote: \"It appeared an unworthy thing that in the celebration of this most holy feast we should follow the practice of the Jews.\"\n\n### Chrysostom's Sermons (386-387 CE)\nJohn Chrysostom preached eight sermons \"Against the Jews,\" attacking Christians who still participated in synagogue worship and Jewish festivals. The venom of these sermons would echo through centuries.\n\n### The Theodosian Code (438 CE)\nImperial law increasingly restricted Jews: banning proselytism, limiting synagogue construction, excluding Jews from certain offices. Christianity's power was now backed by the state."
+    },
+    {
+      "id": "legacy",
+      "title": "The Tragic Legacy",
+      "content": "### What Was Lost\n- The Jewish context of Jesus' teaching\n- Jewish interpretive traditions that illuminated Scripture\n- The diversity of early Christianity\n- Centuries of potential dialogue\n\n### What Replaced It\n- Supersessionism: the belief that Christianity replaced Judaism\n- The \"Christ-killer\" charge applied to all Jews\n- Periodic violence: forced conversions, expulsions, pogroms\n- The Holocaust, enabled by centuries of Christian antisemitism\n\n### Modern Reconsideration\nSince the Holocaust, many Christians have reconsidered:\n- *Nostra Aetate* (1965): Vatican II repudiated the \"Christ-killer\" charge\n- Protestant denominations have issued similar statements\n- Scholars emphasize Jesus' Jewishness\n- Jewish-Christian dialogue has flourished\n\n### The Ongoing Question\nCan Christianity affirm its distinctive claims about Jesus while rejecting antisemitism and honoring its Jewish roots? This question continues to be worked out in theology, scholarship, and interfaith relationships."
+    }
+  ],
+  "scriptureRefs": [
+    { "bookId": "ACT", "chapter": 15, "verse": 1, "verseEnd": 29 },
+    { "bookId": "ROM", "chapter": 9, "verse": 1, "verseEnd": 5 },
+    { "bookId": "ROM", "chapter": 11, "verse": 1, "verseEnd": 32 },
+    { "bookId": "GAL", "chapter": 2, "verse": 11, "verseEnd": 14 }
+  ],
+  "relatedTopics": ["jewish-roots-christianity", "christian-antisemitism", "romans-9-11", "council-of-nicaea"],
+  "timelineEra": "patristic",
+  "createdAt": "2026-03-26T00:00:00.000Z",
+  "updatedAt": "2026-03-26T00:00:00.000Z"
+}

@@ -9,7 +9,7 @@ const navItems = [
   { href: "/explore", label: "Explore", icon: Compass },
   { href: "/read", label: "Bible", icon: BookOpen },
   { href: "/progress", label: "Progress", icon: BarChart3 },
-  { href: "/admin", label: "Settings", icon: Settings },
+  { href: "/settings", label: "Settings", icon: Settings },
 ];
 
 export function BottomNav() {

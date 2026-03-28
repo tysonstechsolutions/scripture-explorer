@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Ensure content files are included in Vercel serverless bundles
+  outputFileTracingIncludes: {
+    "/*": ["./content/**/*"],
+  },
   // Performance optimizations
   experimental: {
     optimizePackageImports: ["lucide-react"],

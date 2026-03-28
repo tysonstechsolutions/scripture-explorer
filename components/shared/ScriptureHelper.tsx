@@ -36,7 +36,7 @@ const TIPS: Tip[] = [
   {
     title: "Choose Your Translation",
     message: "Go to Settings to pick your preferred Bible translation: KJV, NIV, NLT, or NASB.",
-    action: { label: "Settings", href: "/profile" },
+    action: { label: "Settings", href: "/settings" },
   },
 ];
 
