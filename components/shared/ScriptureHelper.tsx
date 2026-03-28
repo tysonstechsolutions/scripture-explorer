@@ -16,21 +16,22 @@ interface Tip {
 const TIPS: Tip[] = [
   {
     title: "Welcome to Scripture Explorer!",
-    message: "I'm Scrollie, your guide to exploring the Bible. Let me show you around!",
+    message: "I'm Scrollie! This app tells the story of the Bible from beginning to end. Start the journey and dive deeper whenever you want.",
+    action: { label: "Start the Story", href: "/story" },
+  },
+  {
+    title: "The Story",
+    message: "Follow the narrative from Creation through the early church. Each chapter walks you through the history, the evidence, and the people.",
+    action: { label: "Begin Reading", href: "/story/the-world-before-israel" },
   },
   {
     title: "Read the Bible",
-    message: "Tap the book icon below to browse all 66 books of the Bible. Pick any chapter to start reading!",
-    action: { label: "Start Reading", href: "/read" },
-  },
-  {
-    title: "Explore the Timeline",
-    message: "Discover 14 eras of biblical history, from Creation to the Early Church. See how it all connects!",
-    action: { label: "View Timeline", href: "/timeline" },
+    message: "Want to read the actual text? Browse all 66 books and read any chapter in your preferred translation.",
+    action: { label: "Open Bible", href: "/read" },
   },
   {
     title: "Ask Questions",
-    message: "Got questions about Scripture? Ask me anything! I'm powered by AI to help you understand the Bible better.",
+    message: "Got questions about what you're reading? Ask the AI anything about Scripture, history, or theology.",
     action: { label: "Ask a Question", href: "/ask" },
   },
   {

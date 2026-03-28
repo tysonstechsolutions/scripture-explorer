@@ -2,129 +2,36 @@
 
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Header } from '@/components/layout/Header';
-import { useAdmin } from '@/contexts/AdminContext';
 import { usePreferences } from '@/contexts/PreferencesContext';
-import { useTopicProgress } from '@/contexts/TopicProgressContext';
+import { useAdmin } from '@/contexts/AdminContext';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
+  Scroll,
+  ArrowRight,
   BookOpen,
-  ScrollText,
-  Church,
-  Star,
-  GitBranch,
-  Settings,
   Compass,
-  Book,
   Clock,
+  MessageCircle,
+  Settings,
   ChevronRight,
-  Route,
 } from 'lucide-react';
-import type { Pillar, TopicIndexEntry } from '@/lib/topics/types';
-import { PILLAR_INFO } from '@/lib/topics/types';
-import { PathCard } from '@/components/paths/PathCard';
-import type { PathIndexEntry } from '@/lib/paths/types';
-
-const pillarIcons: Record<Pillar, React.ReactNode> = {
-  text: <ScrollText className="h-8 w-8" />,
-  prophecy: <Star className="h-8 w-8" />,
-  church: <Church className="h-8 w-8" />,
-  judaism: <BookOpen className="h-8 w-8" />,
-  branches: <GitBranch className="h-8 w-8" />,
-};
-
-const pillarColors: Record<Pillar, string> = {
-  text: 'border-blue-500 bg-blue-50 dark:bg-blue-950',
-  prophecy: 'border-purple-500 bg-purple-50 dark:bg-purple-950',
-  church: 'border-amber-500 bg-amber-50 dark:bg-amber-950',
-  judaism: 'border-green-500 bg-green-50 dark:bg-green-950',
-  branches: 'border-red-500 bg-red-50 dark:bg-red-950',
-};
-
-const pillars: Pillar[] = ['text', 'prophecy', 'church', 'judaism', 'branches'];
+import { getAllChapters } from '@/lib/story/chapters';
+import { STORY_ERAS } from '@/lib/story/types';
 
 export default function HomePage() {
-  const { isAdmin } = useAdmin();
   const { preferences } = usePreferences();
-  const { getRecentlyRead, progress, getActivePaths } = useTopicProgress();
+  const { isAdmin } = useAdmin();
   const router = useRouter();
-  const [recentTopics, setRecentTopics] = useState<TopicIndexEntry[]>([]);
-  const [paths, setPaths] = useState<PathIndexEntry[]>([]);
-  const [pathTopics, setPathTopics] = useState<Record<string, string[]>>({});
 
   useEffect(() => {
     if (!preferences.hasCompletedOnboarding) {
       router.replace('/onboarding');
     }
   }, [preferences.hasCompletedOnboarding, router]);
-
-  // Fetch recent topic details
-  useEffect(() => {
-    async function fetchRecentTopics() {
-      const recent = getRecentlyRead(3);
-      if (recent.length === 0) return;
-
-      try {
-        const topicDetails: TopicIndexEntry[] = [];
-        for (const entry of recent) {
-          const res = await fetch(`/api/topics/${entry.slug}`);
-          if (res.ok) {
-            const data = await res.json();
-            topicDetails.push({
-              slug: data.topic.slug,
-              title: data.topic.title,
-              pillar: data.topic.pillar,
-              status: data.topic.status,
-              hook: data.topic.hook,
-              updatedAt: data.topic.updatedAt,
-            });
-          }
-        }
-        setRecentTopics(topicDetails);
-      } catch (error) {
-        console.error('Failed to fetch recent topics:', error);
-      }
-    }
-
-    if (preferences.hasCompletedOnboarding) {
-      fetchRecentTopics();
-    }
-  }, [getRecentlyRead, preferences.hasCompletedOnboarding]);
-
-  // Fetch learning paths
-  useEffect(() => {
-    async function fetchPaths() {
-      try {
-        const res = await fetch('/api/paths?status=published');
-        if (res.ok) {
-          const data = await res.json();
-          setPaths(data.paths.slice(0, 3)); // Show up to 3 paths
-
-          // Fetch topics for each path
-          const topicsMap: Record<string, string[]> = {};
-          for (const path of data.paths.slice(0, 3)) {
-            const pathRes = await fetch(`/api/paths/${path.slug}`);
-            if (pathRes.ok) {
-              const pathData = await pathRes.json();
-              topicsMap[path.slug] = pathData.path.topics;
-            }
-          }
-          setPathTopics(topicsMap);
-        }
-      } catch (error) {
-        console.error('Failed to fetch paths:', error);
-      }
-    }
-
-    if (preferences.hasCompletedOnboarding) {
-      fetchPaths();
-    }
-  }, [preferences.hasCompletedOnboarding]);
 
   if (!preferences.hasCompletedOnboarding) {
     return (
@@ -134,158 +41,205 @@ export default function HomePage() {
     );
   }
 
+  const chapters = getAllChapters();
+  const availableEras = STORY_ERAS.filter(era =>
+    chapters.some(c => c.era === era.id)
+  );
+  const upcomingEras = STORY_ERAS.filter(era =>
+    !chapters.some(c => c.era === era.id)
+  );
+
   return (
-    <div className="pb-20">
-      <Header
-        title="Scripture Explorer"
-        rightAction={
-          <Link href="/admin">
-            <Button variant="ghost" size="icon">
-              <Settings className="h-5 w-5" />
-            </Button>
-          </Link>
-        }
-      />
-
-      <div className="p-4 space-y-6">
-        {/* Welcome Section */}
-        <div className="text-center py-4">
-          <h2 className="text-xl font-semibold mb-2">
-            Explore Biblical History & Scholarship
-          </h2>
-          <p className="text-muted-foreground">
-            Intellectually honest exploration of hard questions
-          </p>
-        </div>
-
-        {/* Continue Reading Section */}
-        {recentTopics.length > 0 && (
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <Clock className="h-5 w-5 text-muted-foreground" />
-              <h3 className="font-semibold">Continue Reading</h3>
-            </div>
-            {recentTopics.map(topic => {
-              const info = PILLAR_INFO[topic.pillar];
-              return (
-                <Link key={topic.slug} href={`/explore/${topic.slug}`}>
-                  <Card className="hover:shadow-md transition-shadow cursor-pointer">
-                    <CardContent className="flex items-center gap-3 py-3">
-                      <div className="flex-1 min-w-0">
-                        <p className="font-medium truncate">{topic.title}</p>
-                        <p className="text-sm text-muted-foreground">{info.name}</p>
-                      </div>
-                      <ChevronRight className="h-5 w-5 text-muted-foreground flex-shrink-0" />
-                    </CardContent>
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Five Pillars */}
-        <div className="space-y-3">
-          {pillars.map(pillar => {
-            const info = PILLAR_INFO[pillar];
-            return (
-              <Link key={pillar} href={`/explore?pillar=${pillar}`}>
-                <Card
-                  className={`border-l-4 ${pillarColors[pillar]} hover:shadow-md transition-shadow cursor-pointer`}
-                >
-                  <CardContent className="flex items-center gap-4 py-4">
-                    <div className="text-muted-foreground">
-                      {pillarIcons[pillar]}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold">{info.name}</h3>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
-                        {info.description}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* Learning Paths */}
-        {paths.length > 0 && (
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Route className="h-5 w-5 text-muted-foreground" />
-                <h3 className="font-semibold">Learning Paths</h3>
-              </div>
-              <Link href="/paths">
-                <Button variant="ghost" size="sm">
-                  View All
-                  <ChevronRight className="h-4 w-4 ml-1" />
-                </Button>
-              </Link>
-            </div>
-            {paths.map(path => {
-              const topics = pathTopics[path.slug] || [];
-              const completedTopics = topics.filter(slug => progress.readTopics.includes(slug)).length;
-              const pathProgress = topics.length > 0 ? {
-                completedTopics,
-                totalTopics: topics.length,
-                isStarted: completedTopics > 0,
-                isCompleted: completedTopics === topics.length,
-              } : undefined;
-
-              return (
-                <PathCard
-                  key={path.slug}
-                  path={path}
-                  progress={pathProgress}
-                />
-              );
-            })}
-          </div>
-        )}
-
-        {/* Quick Actions */}
-        <div className="grid grid-cols-2 gap-4">
-          <Link href="/explore">
-            <Card className="hover:shadow-md transition-shadow cursor-pointer">
-              <CardContent className="flex flex-col items-center justify-center py-6">
-                <Compass className="h-8 w-8 mb-2 text-primary" />
-                <span className="font-medium">All Topics</span>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Link href="/read">
-            <Card className="hover:shadow-md transition-shadow cursor-pointer">
-              <CardContent className="flex flex-col items-center justify-center py-6">
-                <Book className="h-8 w-8 mb-2 text-primary" />
-                <span className="font-medium">Read Bible</span>
-              </CardContent>
-            </Card>
-          </Link>
-        </div>
-
-        {/* Admin Quick Access */}
-        {isAdmin && (
-          <Card className="border-dashed">
-            <CardContent className="py-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <Badge variant="secondary">Admin Mode</Badge>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Content management enabled
-                  </p>
-                </div>
-                <Link href="/admin/topics/new">
-                  <Button size="sm">New Topic</Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+    <div className="min-h-screen bg-gradient-to-b from-amber-50/50 via-stone-50 to-amber-50/30 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950">
+      {/* Subtle texture */}
+      <div className="fixed inset-0 opacity-[0.015] dark:opacity-[0.03] pointer-events-none">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
       </div>
+
+      {/* Admin bar */}
+      {isAdmin && (
+        <div className="relative z-10 px-4 pt-3">
+          <div className="flex items-center justify-between p-3 rounded-lg border border-dashed border-stone-300 dark:border-stone-700 bg-white/60 dark:bg-stone-800/40">
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary">Admin</Badge>
+              <Link href="/admin" className="text-sm text-muted-foreground hover:text-foreground">
+                Manage Content
+              </Link>
+            </div>
+            <Link href="/admin">
+              <Settings className="h-4 w-4 text-muted-foreground" />
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Hero */}
+      <header className="relative pt-16 pb-12 px-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent via-amber-600/40 to-amber-600/60" />
+            <Scroll className="h-8 w-8 text-amber-700 dark:text-amber-500" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent via-amber-600/40 to-amber-600/60" />
+          </div>
+
+          <h1 className="font-serif text-4xl md:text-6xl font-light tracking-tight text-stone-800 dark:text-stone-100 mb-4">
+            Scripture Explorer
+          </h1>
+
+          <p className="font-serif text-lg md:text-xl text-stone-600 dark:text-stone-400 max-w-lg mx-auto leading-relaxed italic">
+            The story of the Bible&mdash;told from beginning to end. Explore the evidence. Follow the history. Draw your own conclusions.
+          </p>
+
+          <div className="flex items-center justify-center gap-2 mt-8">
+            <div className="h-px w-24 bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700" />
+            <div className="h-1.5 w-1.5 rounded-full bg-amber-600/60" />
+            <div className="h-px w-24 bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700" />
+          </div>
+        </div>
+      </header>
+
+      {/* Start / Continue the Story */}
+      {chapters.length > 0 && (
+        <section className="px-4 pb-8">
+          <div className="max-w-2xl mx-auto">
+            <Link href={`/story/${chapters[0].slug}`} className="group block">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 p-8 shadow-2xl shadow-amber-900/20">
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%" height="100%" filter="url(%23noise)"/%3E%3C/svg%3E")',
+                  }} />
+                </div>
+
+                <div className="relative">
+                  <p className="text-amber-300/80 text-sm uppercase tracking-[0.2em] mb-3">
+                    Begin the Journey
+                  </p>
+                  <h2 className="font-serif text-2xl md:text-3xl text-white mb-3">
+                    {chapters[0].title}
+                  </h2>
+                  <p className="text-amber-100/70 mb-5 max-w-lg">
+                    Before there was Israel, before Abraham, there was a world already ancient, already wrestling with eternal questions.
+                  </p>
+                  <div className="inline-flex items-center gap-2 text-amber-300 group-hover:text-white transition-colors">
+                    <span className="font-medium">Start Reading</span>
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+
+                <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-amber-500/30 rounded-tr-lg" />
+                <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-amber-500/30 rounded-bl-lg" />
+              </div>
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {/* Story Chapters */}
+      <section className="px-4 pb-8">
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-3 mb-6">
+            <BookOpen className="h-5 w-5 text-amber-700 dark:text-amber-500" />
+            <h2 className="font-serif text-xl text-stone-800 dark:text-stone-200">
+              The Story So Far
+            </h2>
+            <div className="flex-1 h-px bg-gradient-to-r from-stone-200 dark:from-stone-800 to-transparent" />
+          </div>
+
+          <div className="space-y-8">
+            {availableEras.map(era => {
+              const eraChapters = chapters.filter(c => c.era === era.id);
+              return (
+                <div key={era.id}>
+                  <div className="flex items-baseline gap-3 mb-3">
+                    <h3 className="font-serif text-lg text-stone-700 dark:text-stone-300">
+                      {era.name}
+                    </h3>
+                    <span className="text-xs text-stone-400 dark:text-stone-600 font-mono">
+                      {era.range}
+                    </span>
+                  </div>
+
+                  <div className="space-y-2">
+                    {eraChapters.map(chapter => (
+                      <Link key={chapter.id} href={`/story/${chapter.slug}`} className="group block">
+                        <div className="flex items-center gap-4 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 hover:shadow-lg hover:shadow-amber-900/5 transition-all duration-300">
+                          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-amber-100 to-amber-50 dark:from-amber-900/30 dark:to-stone-800 flex items-center justify-center border border-amber-200/60 dark:border-amber-800/40">
+                            <span className="font-serif text-amber-800 dark:text-amber-400">
+                              {chapter.order}
+                            </span>
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h4 className="font-serif text-stone-800 dark:text-stone-200 group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors">
+                              {chapter.title}
+                            </h4>
+                          </div>
+                          <ArrowRight className="flex-shrink-0 h-4 w-4 text-stone-300 dark:text-stone-600 group-hover:text-amber-600 group-hover:translate-x-1 transition-all" />
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* Coming Soon */}
+            {upcomingEras.length > 0 && (
+              <div className="pt-4 border-t border-stone-200/60 dark:border-stone-800/60">
+                <p className="text-xs uppercase tracking-[0.15em] text-stone-400 dark:text-stone-600 mb-4 flex items-center gap-2">
+                  <Clock className="h-3.5 w-3.5" />
+                  Coming Soon
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  {upcomingEras.slice(0, 6).map(era => (
+                    <div
+                      key={era.id}
+                      className="flex items-center justify-between p-3 rounded-lg bg-stone-100/50 dark:bg-stone-800/20 border border-stone-200/40 dark:border-stone-800/40"
+                    >
+                      <span className="text-sm text-stone-400 dark:text-stone-500 truncate">{era.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Access - secondary features */}
+      <section className="px-4 pb-24">
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-3 mb-4">
+            <Compass className="h-5 w-5 text-stone-500" />
+            <h2 className="font-serif text-lg text-stone-600 dark:text-stone-400">
+              More to Explore
+            </h2>
+            <div className="flex-1 h-px bg-gradient-to-r from-stone-200 dark:from-stone-800 to-transparent" />
+          </div>
+
+          <div className="grid grid-cols-3 gap-3">
+            <Link href="/read" className="group">
+              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
+                <BookOpen className="h-6 w-6 text-amber-700 dark:text-amber-500" />
+                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Bible</span>
+              </div>
+            </Link>
+            <Link href="/explore" className="group">
+              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
+                <Compass className="h-6 w-6 text-amber-700 dark:text-amber-500" />
+                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Topics</span>
+              </div>
+            </Link>
+            <Link href="/ask" className="group">
+              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
+                <MessageCircle className="h-6 w-6 text-amber-700 dark:text-amber-500" />
+                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Ask AI</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

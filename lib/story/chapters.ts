@@ -58,7 +58,39 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     prevChapter: 'the-world-before-israel',
     nextChapter: 'exodus-and-liberation',
   },
-  // More chapters to be added...
+  {
+    id: '03',
+    slug: 'exodus-and-liberation',
+    title: 'Exodus & Liberation',
+    order: 3,
+    era: 'exodus',
+    content: '',
+    glossaryTerms: [
+      'Exodus', 'Pharaoh', 'Passover', 'YHWH', 'Covenant', 'Tabernacle',
+      'Sinai', 'Decalogue', 'Habiru', 'Ark of the Covenant', 'Levite',
+      'Yam Suph', 'Midian', 'Goshen', 'Code of Hammurabi'
+    ],
+    timeline: [
+      { date: '~1700-1550 BCE', event: 'Israelites settle in Egypt (~3,600 years ago)', approximate: true },
+      { date: '~1550 BCE', event: 'New dynasty rises, Israelites enslaved (~3,550 years ago)', approximate: true },
+      { date: '~1526 BCE', event: 'Moses born (~3,500 years ago)', approximate: true },
+      { date: '~1486 BCE', event: 'Moses flees to Midian (~3,500 years ago)', approximate: true },
+      { date: '~1446 BCE', event: 'The Burning Bush — God calls Moses (~3,450 years ago)', approximate: true },
+      { date: '~1446 BCE', event: 'Ten Plagues and the first Passover', approximate: true },
+      { date: '~1446 BCE', event: 'The Exodus — Israel leaves Egypt', approximate: true },
+      { date: '~1446 BCE', event: 'Crossing of the Sea', approximate: true },
+      { date: '~1446 BCE', event: 'Covenant at Mount Sinai — Ten Commandments given', approximate: true },
+    ],
+    deepDives: [
+      'dating-the-exodus',
+      'egyptian-plagues-and-gods',
+      'passover-and-jesus',
+      'code-of-hammurabi',
+      'tabernacle-symbolism',
+    ],
+    prevChapter: 'the-patriarchs',
+    nextChapter: 'judges-and-kings', // Future chapter
+  },
 ];
 
 export function getChapterBySlug(slug: string): StoryChapter | undefined {
