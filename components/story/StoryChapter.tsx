@@ -11,6 +11,7 @@ import { StoryImage } from './StoryImage';
 import { ChapterLegend } from './ChapterLegend';
 import { KeyInsight } from './KeyInsight';
 import { SelectionToolbar } from './SelectionToolbar';
+import { HighlightHint } from './HighlightHint';
 import { getStoryImage } from '@/lib/story/images';
 import type { StoryChapter as StoryChapterType, TimelineEvent } from '@/lib/story/types';
 import { STORY_ERAS } from '@/lib/story/types';
@@ -292,6 +293,9 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
             <div className="h-px w-12 bg-[#4A3F33]" />
           </div>
         </header>
+
+        {/* Highlight-to-ask hint for new users */}
+        <HighlightHint />
 
         {/* Quick Reference Legend */}
         <ChapterLegend terms={chapter.glossaryTerms} />

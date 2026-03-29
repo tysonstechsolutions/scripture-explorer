@@ -122,6 +122,20 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* AI Feature Teaser */}
+      <section className="px-4 pb-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-3 p-4 rounded-xl bg-[#271F18] border border-[#3A3028]">
+            <div className="w-9 h-9 rounded-full bg-emerald-900/40 flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-emerald-400">WT</span>
+            </div>
+            <p className="text-sm text-[#8C7B68] leading-relaxed">
+              <span className="text-[#D5C4AF] font-medium">Wes Tament</span> is your built-in debate partner. Highlight any passage while reading to discuss it with an apologetics scholar.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Story Chapters */}
       <section className="px-4 pb-24">
         <div className="max-w-2xl mx-auto">
