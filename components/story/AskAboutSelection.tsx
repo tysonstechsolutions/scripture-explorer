@@ -31,7 +31,6 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
   // Focus input when not streaming
   useEffect(() => {
     if (initialLoadDone && !isStreaming) {
-      // Small delay to ensure DOM is ready
       setTimeout(() => inputRef.current?.focus(), 100);
     }
   }, [initialLoadDone, isStreaming]);
@@ -67,7 +66,6 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
             const parsed = JSON.parse(data);
             if (parsed.text) {
               fullText += parsed.text;
-              // Update the assistant message in real-time
               setMessages(prev => {
                 const updated = [...prev];
                 const lastIdx = updated.length - 1;
@@ -102,7 +100,6 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
         content: `I'm reading "${chapterTitle}" in Scripture Explorer and I highlighted the following passage. Help me understand it better — explain what it means, why it matters, and any historical or theological context that would help:\n\n"${selectedText}"`,
       };
 
-      // Show user bubble + empty assistant bubble
       setMessages([userMsg, { role: "assistant", content: "" }]);
       setIsStreaming(true);
 
@@ -140,7 +137,6 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
     const text = inputValue.trim();
     if (!text || isStreaming) return;
 
-    // Check if user wants to continue reading
     const continuePatterns = /^(continue|continue the story|keep reading|go back|back to story|close|done|yes|yeah|yep|sure|ok|okay)$/i;
     if (continuePatterns.test(text)) {
       onClose();
@@ -155,7 +151,6 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
     const newMessages = [...messages, userMsg, { role: "assistant" as const, content: "" }];
     setMessages(newMessages);
 
-    // Build API messages (use all messages for context)
     const apiMessages = [...messages, userMsg];
 
     try {
@@ -178,9 +173,9 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
 
   return (
     <>
-      {/* Backdrop - stop propagation on mousedown to prevent stealing input focus */}
+      {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/40 z-50 animate-in fade-in duration-200"
+        className="fixed inset-0 bg-black/60 z-50 animate-in fade-in duration-200"
         onMouseDown={(e) => {
           e.stopPropagation();
           onClose();
@@ -192,24 +187,24 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
         className="fixed bottom-0 left-0 right-0 z-[60] animate-in slide-in-from-bottom duration-300"
         onMouseDown={(e) => e.stopPropagation()}
       >
-        <div className="bg-white dark:bg-stone-900 rounded-t-2xl shadow-2xl max-h-[80vh] flex flex-col border-t border-emerald-200 dark:border-emerald-800">
+        <div className="bg-[#1C1612] rounded-t-2xl shadow-2xl max-h-[80vh] flex flex-col border-t border-[#3A3028]">
           {/* Handle + Header */}
-          <div className="flex-shrink-0 pt-3 pb-2 px-4 border-b border-stone-100 dark:border-stone-800">
-            <div className="w-10 h-1 rounded-full bg-stone-300 dark:bg-stone-700 mx-auto mb-3" />
+          <div className="flex-shrink-0 pt-3 pb-2 px-4 border-b border-[#3A3028]">
+            <div className="w-10 h-1 rounded-full bg-[#4A3F33] mx-auto mb-3" />
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center">
-                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 leading-none">WT</span>
+                <div className="w-7 h-7 rounded-full bg-emerald-900/40 flex items-center justify-center">
+                  <span className="text-[10px] font-bold text-emerald-400 leading-none">WT</span>
                 </div>
-                <span className="font-semibold text-stone-800 dark:text-stone-200 text-sm">
+                <span className="font-semibold text-[#E8DCC8] text-sm">
                   Wes Tament
                 </span>
               </div>
               <button
                 onClick={onClose}
-                className="p-1.5 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                className="p-1.5 rounded-full hover:bg-[#271F18] transition-colors"
               >
-                <X className="h-5 w-5 text-stone-400" />
+                <X className="h-5 w-5 text-[#8C7B68]" />
               </button>
             </div>
           </div>
@@ -219,21 +214,19 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                 {msg.role === "user" ? (
-                  /* User bubble - right aligned */
                   <div className="max-w-[85%] px-4 py-2.5 rounded-2xl rounded-br-md bg-emerald-700 text-white text-sm leading-relaxed whitespace-pre-wrap">
                     {msg.content}
                   </div>
                 ) : (
-                  /* AI bubble - left aligned */
                   <div className="max-w-[90%] flex gap-2">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center">
-                        <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 leading-none">WT</span>
+                      <div className="w-7 h-7 rounded-full bg-emerald-900/40 flex items-center justify-center">
+                        <span className="text-[10px] font-bold text-emerald-400 leading-none">WT</span>
                       </div>
                     </div>
-                    <div className="px-4 py-2.5 rounded-2xl rounded-bl-md bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-sm leading-relaxed whitespace-pre-wrap">
+                    <div className="px-4 py-2.5 rounded-2xl rounded-bl-md bg-[#271F18] text-[#D5C4AF] text-sm leading-relaxed whitespace-pre-wrap">
                       {msg.content || (
-                        <span className="flex items-center gap-2 text-stone-400">
+                        <span className="flex items-center gap-2 text-[#8C7B68]">
                           <Loader2 className="h-3.5 w-3.5 animate-spin" />
                           Wes is thinking...
                         </span>
@@ -251,7 +244,7 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
                   <div className="flex-shrink-0 mt-1 w-7" />
                   <button
                     onClick={onClose}
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-emerald-700 text-white hover:bg-emerald-800 active:scale-[0.98] transition-all text-sm font-medium"
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-emerald-700 text-white hover:bg-emerald-600 active:scale-[0.98] transition-all text-sm font-medium"
                   >
                     <BookOpen className="h-4 w-4" />
                     Continue Reading
@@ -264,7 +257,7 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
           </div>
 
           {/* Input Area */}
-          <div className="flex-shrink-0 p-3 border-t border-stone-200 dark:border-stone-800 safe-area-pb bg-white dark:bg-stone-900">
+          <div className="flex-shrink-0 p-3 border-t border-[#3A3028] safe-area-pb bg-[#1C1612]">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -278,14 +271,14 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder='Ask Wes anything, or type "continue"...'
-                className="flex-1 px-4 py-2.5 rounded-full border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-sm text-stone-800 dark:text-stone-200 placeholder-stone-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/30"
+                className="flex-1 px-4 py-2.5 rounded-full border border-[#3A3028] bg-[#271F18] text-sm text-[#D5C4AF] placeholder-[#6B5D4F] focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/30"
                 disabled={isStreaming}
                 autoComplete="off"
               />
               <button
                 type="submit"
                 disabled={!inputValue.trim() || isStreaming}
-                className="p-2.5 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                className="p-2.5 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 <Send className="h-4 w-4" />
               </button>

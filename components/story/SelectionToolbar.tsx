@@ -87,10 +87,10 @@ export function SelectionToolbar({ chapterTitle }: SelectionToolbarProps) {
               e.preventDefault(); // Prevent losing selection
               handleAskAI();
             }}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-amber-700 text-white shadow-lg shadow-amber-900/30 hover:bg-amber-800 active:scale-95 transition-all text-sm font-medium"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-emerald-600 text-white shadow-lg shadow-black/40 hover:bg-emerald-500 active:scale-95 transition-all text-sm font-medium"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            Ask AI
+            Ask Wes
           </button>
         </div>
       )}

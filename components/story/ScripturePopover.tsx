@@ -65,24 +65,24 @@ export function ScripturePopover({ reference, children }: ScripturePopoverProps)
   return (
     <Popover open={open} onOpenChange={handleOpenChange}>
       <PopoverTrigger
-        className="inline-flex items-center gap-1.5 text-amber-700 dark:text-amber-500 hover:text-amber-900 dark:hover:text-amber-400 underline decoration-amber-400/40 dark:decoration-amber-600/40 decoration-dotted underline-offset-4 cursor-pointer transition-colors"
+        className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 underline decoration-emerald-600/40 decoration-dotted underline-offset-4 cursor-pointer transition-colors"
       >
         <BookOpen className="h-3.5 w-3.5" />
         {children}
       </PopoverTrigger>
       <PopoverContent
-        className="w-96 p-0 overflow-hidden bg-gradient-to-br from-amber-50 to-stone-50 dark:from-stone-900 dark:to-stone-950 border-amber-200/60 dark:border-amber-800/40 shadow-xl"
+        className="w-96 p-0 overflow-hidden bg-[#271F18] border-[#3A3028] shadow-xl"
         align="start"
       >
         {/* Header */}
-        <div className="px-5 py-4 bg-gradient-to-r from-amber-100/80 to-amber-50/80 dark:from-amber-900/30 dark:to-stone-900/50 border-b border-amber-200/40 dark:border-amber-800/30">
+        <div className="px-5 py-4 bg-[#231C15] border-b border-[#3A3028]">
           <div className="flex items-center justify-between">
-            <h4 className="font-serif text-lg text-amber-900 dark:text-amber-300 font-medium">
+            <h4 className="font-serif text-lg text-emerald-400 font-medium">
               {reference}
             </h4>
             <Link
               href={`/read/${linkRef}`}
-              className="inline-flex items-center gap-1 text-xs text-amber-600 dark:text-amber-500 hover:text-amber-800 dark:hover:text-amber-400 transition-colors"
+              className="inline-flex items-center gap-1 text-xs text-[#8C7B68] hover:text-[#D5C4AF] transition-colors"
             >
               <span>Read in context</span>
               <ExternalLink className="h-3 w-3" />
@@ -93,14 +93,14 @@ export function ScripturePopover({ reference, children }: ScripturePopoverProps)
         {/* Content */}
         <div className="px-5 py-4">
           {loading && (
-            <div className="flex items-center justify-center gap-3 py-6 text-amber-600/70">
+            <div className="flex items-center justify-center gap-3 py-6 text-[#8C7B68]">
               <Loader2 className="h-5 w-5 animate-spin" />
               <span className="text-sm">Loading passage...</span>
             </div>
           )}
 
           {error && (
-            <p className="text-red-600 dark:text-red-400 text-sm py-4 text-center">
+            <p className="text-red-400 text-sm py-4 text-center">
               {error}
             </p>
           )}
@@ -108,10 +108,10 @@ export function ScripturePopover({ reference, children }: ScripturePopoverProps)
           {verseData && (
             <div className="relative">
               {/* Decorative quote */}
-              <div className="absolute -left-2 -top-2 text-4xl font-serif text-amber-200/60 dark:text-amber-700/40 leading-none select-none">
+              <div className="absolute -left-2 -top-2 text-4xl font-serif text-emerald-700/30 leading-none select-none">
                 &ldquo;
               </div>
-              <p className="font-serif text-base text-stone-700 dark:text-stone-300 leading-relaxed italic pl-4">
+              <p className="font-serif text-base text-[#D5C4AF] leading-relaxed italic pl-4">
                 {verseData.text}
               </p>
             </div>
@@ -119,7 +119,7 @@ export function ScripturePopover({ reference, children }: ScripturePopoverProps)
         </div>
 
         {/* Footer accent */}
-        <div className="h-1 bg-gradient-to-r from-amber-300/60 via-amber-400/60 to-amber-300/60 dark:from-amber-700/40 dark:via-amber-600/40 dark:to-amber-700/40" />
+        <div className="h-1 bg-gradient-to-r from-emerald-800/40 via-emerald-600/40 to-emerald-800/40" />
       </PopoverContent>
     </Popover>
   );
