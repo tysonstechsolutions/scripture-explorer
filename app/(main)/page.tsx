@@ -46,14 +46,7 @@ export default function HomePage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50/50 via-stone-50 to-amber-50/30 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950">
-      {/* Subtle texture */}
-      <div className="fixed inset-0 opacity-[0.015] dark:opacity-[0.03] pointer-events-none">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
-      </div>
-
+    <div className="min-h-screen bg-[#FAF7F2] dark:bg-stone-950">
       {/* Admin bar */}
       {isAdmin && (
         <div className="relative z-10 px-4 pt-3">
@@ -75,22 +68,22 @@ export default function HomePage() {
       <header className="relative pt-16 pb-12 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-amber-600/40 to-amber-600/60" />
-            <Scroll className="h-8 w-8 text-amber-700 dark:text-amber-500" />
-            <div className="h-px w-16 bg-gradient-to-l from-transparent via-amber-600/40 to-amber-600/60" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-600" />
+            <Scroll className="h-8 w-8 text-emerald-700 dark:text-emerald-400" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-600" />
           </div>
 
           <h1 className="font-serif text-4xl md:text-6xl font-light tracking-tight text-stone-800 dark:text-stone-100 mb-4">
             Scripture Explorer
           </h1>
 
-          <p className="font-serif text-lg md:text-xl text-stone-600 dark:text-stone-400 max-w-lg mx-auto leading-relaxed italic">
+          <p className="font-serif text-lg md:text-xl text-stone-500 dark:text-stone-400 max-w-lg mx-auto leading-relaxed italic">
             The story of the Bible&mdash;told from beginning to end. Explore the evidence. Follow the history. Draw your own conclusions.
           </p>
 
-          <div className="flex items-center justify-center gap-2 mt-8">
+          <div className="flex items-center justify-center gap-3 mt-8">
             <div className="h-px w-24 bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700" />
-            <div className="h-1.5 w-1.5 rounded-full bg-amber-600/60" />
+            <div className="h-1.5 w-1.5 rounded-full bg-emerald-600/60" />
             <div className="h-px w-24 bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700" />
           </div>
         </div>
@@ -101,7 +94,7 @@ export default function HomePage() {
         <section className="px-4 pb-8">
           <div className="max-w-2xl mx-auto">
             <Link href={`/story/${chapters[0].slug}`} className="group block">
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 p-8 shadow-2xl shadow-amber-900/20">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-800 via-emerald-700 to-stone-800 p-8 shadow-xl">
                 <div className="absolute inset-0 opacity-10">
                   <div className="absolute inset-0" style={{
                     backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%" height="100%" filter="url(%23noise)"/%3E%3C/svg%3E")',
@@ -109,23 +102,20 @@ export default function HomePage() {
                 </div>
 
                 <div className="relative">
-                  <p className="text-amber-300/80 text-sm uppercase tracking-[0.2em] mb-3">
+                  <p className="text-emerald-300/80 text-sm uppercase tracking-[0.2em] mb-3">
                     Begin the Journey
                   </p>
                   <h2 className="font-serif text-2xl md:text-3xl text-white mb-3">
                     {chapters[0].title}
                   </h2>
-                  <p className="text-amber-100/70 mb-5 max-w-lg">
+                  <p className="text-emerald-100/70 mb-5 max-w-lg">
                     Before there was Israel, before Abraham, there was a world already ancient, already wrestling with eternal questions.
                   </p>
-                  <div className="inline-flex items-center gap-2 text-amber-300 group-hover:text-white transition-colors">
+                  <div className="inline-flex items-center gap-2 text-emerald-300 group-hover:text-white transition-colors">
                     <span className="font-medium">Start Reading</span>
                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-
-                <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-amber-500/30 rounded-tr-lg" />
-                <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-amber-500/30 rounded-bl-lg" />
               </div>
             </Link>
           </div>
@@ -136,7 +126,7 @@ export default function HomePage() {
       <section className="px-4 pb-24">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <BookOpen className="h-5 w-5 text-amber-700 dark:text-amber-500" />
+            <BookOpen className="h-5 w-5 text-emerald-700 dark:text-emerald-400" />
             <h2 className="font-serif text-xl text-stone-800 dark:text-stone-200">
               The Story So Far
             </h2>
@@ -160,18 +150,18 @@ export default function HomePage() {
                   <div className="space-y-2">
                     {eraChapters.map(chapter => (
                       <Link key={chapter.id} href={`/story/${chapter.slug}`} className="group block">
-                        <div className="flex items-center gap-4 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 hover:shadow-lg hover:shadow-amber-900/5 transition-all duration-300">
-                          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-amber-100 to-amber-50 dark:from-amber-900/30 dark:to-stone-800 flex items-center justify-center border border-amber-200/60 dark:border-amber-800/40">
-                            <span className="font-serif text-amber-800 dark:text-amber-400">
+                        <div className="flex items-center gap-4 p-4 rounded-xl bg-white/70 dark:bg-stone-800/40 border border-stone-200/80 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-emerald-300/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center border border-emerald-200/60 dark:border-emerald-700/40">
+                            <span className="font-serif text-emerald-700 dark:text-emerald-400">
                               {chapter.order}
                             </span>
                           </div>
                           <div className="flex-1 min-w-0">
-                            <h4 className="font-serif text-stone-800 dark:text-stone-200 group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors">
+                            <h4 className="font-serif text-stone-700 dark:text-stone-200 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
                               {chapter.title}
                             </h4>
                           </div>
-                          <ArrowRight className="flex-shrink-0 h-4 w-4 text-stone-300 dark:text-stone-600 group-hover:text-amber-600 group-hover:translate-x-1 transition-all" />
+                          <ArrowRight className="flex-shrink-0 h-4 w-4 text-stone-300 dark:text-stone-600 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" />
                         </div>
                       </Link>
                     ))}
@@ -191,7 +181,7 @@ export default function HomePage() {
                   {upcomingEras.slice(0, 6).map(era => (
                     <div
                       key={era.id}
-                      className="flex items-center justify-between p-3 rounded-lg bg-stone-100/50 dark:bg-stone-800/20 border border-stone-200/40 dark:border-stone-800/40"
+                      className="flex items-center justify-between p-3 rounded-lg bg-white/40 dark:bg-stone-800/20 border border-stone-200/40 dark:border-stone-800/40"
                     >
                       <span className="text-sm text-stone-400 dark:text-stone-500 truncate">{era.name}</span>
                     </div>
