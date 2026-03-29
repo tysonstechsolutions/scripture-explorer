@@ -17,6 +17,44 @@ Here's what's interesting: for most of human history, most scientists assumed th
 
 {insight:key} A Belgian Catholic priest proposed the Big Bang. Many atheist scientists resisted it because a universe with a beginning sounded too much like creation. The science and the Scripture agreed on the most fundamental point: something came from nothing. The universe started.
 
+But the Bible isn't the only ancient text that claims to know how things began. Before we go further, let's look at what the other major religions and traditions say—because if we're going to be honest about this, we need to see the full picture.
+
+## What Other Religions Say About Creation
+
+**Islam** — The Quran describes creation in a way very similar to Genesis. Allah created the heavens and the earth in six "periods" (*ayyam*), formed Adam from clay, breathed life into him, and placed him in a garden. The angel Iblis (Satan) refused to bow to Adam and was cast out. Adam and Eve were tempted, ate from the forbidden tree, and were sent down to earth. The overlap with Genesis is striking, which makes sense—Islam considers the Torah to be an earlier (but corrupted) revelation from the same God. The key difference: in Islam, Adam repented and was fully forgiven. There is no "original sin" that passes to all humanity. Humanity is flawed but not fallen in the way Christianity teaches.
+
+**Hinduism** — Hindu creation accounts are radically different. The *Rigveda* (composed roughly 1500-1200 BCE, making it one of the oldest religious texts in the world) contains the famous "Hymn of Creation" that asks: "Who really knows? Who will here proclaim it? Whence was it produced? Whence is this creation?" Even the gods may not know, it suggests, because they came *after* creation. Later Hindu texts describe the universe as cyclical—it is created, exists for billions of years (*kalpas*), is destroyed, and then recreated endlessly. One *kalpa* (a single day of the god Brahma) lasts 4.32 billion years. Interestingly, this is surprisingly close to modern estimates of Earth's age (4.6 billion years)—though Hindu cosmology wasn't trying to make a scientific claim.
+
+**Buddhism** — The Buddha essentially refused to answer the question. When asked about the origin of the universe, he compared it to a man shot with a poisoned arrow who demands to know who made the arrow before allowing a doctor to treat him. The question is irrelevant to the real problem, which is suffering. Buddhism has no creator god. The universe is beginningless and cyclical—worlds arise and dissolve endlessly. What matters is not where everything came from, but how to escape the cycle of suffering.
+
+**Chinese Tradition** — The ancient Chinese myth of *Pangu* describes a cosmic egg containing chaos. Pangu grew inside it for 18,000 years, then broke it open. The light parts rose to become the sky, the heavy parts sank to become the earth. When Pangu died, his body became the world—his breath became wind, his voice thunder, his eyes the sun and moon, his blood the rivers. Confucianism and Taoism, which came later, were less interested in creation origins and more focused on how to live rightly within the world as it is.
+
+**Aboriginal Australian** — The Aboriginal Dreamtime traditions (among the oldest continuous religious traditions on earth, possibly 50,000+ years old) describe ancestral beings who rose from the earth, shaped the landscape, created animals and people, and then returned to the land—remaining present in it forever. Creation isn't a past event but an ongoing reality. The land itself is sacred and alive with the presence of these beings.
+
+**Norse** — In Norse mythology, the universe began in a void called *Ginnungagap* between a world of fire and a world of ice. When fire and ice met, the frost giant Ymir formed. The gods killed Ymir and made the world from his body—his flesh became the earth, his blood the seas, his skull the sky. Humans were carved from two logs found on a beach.
+
+**Zoroastrianism** — The ancient Persian religion (founded roughly 1000-600 BCE) describes a single good creator god, Ahura Mazda, who created the world in six stages—sky, water, earth, plants, animals, humans. Sound familiar? Some scholars believe Zoroastrian ideas influenced later Jewish thought during the Persian period (539-332 BCE), when Jews lived under Persian rule. Others argue the similarities reflect independent revelation. Zoroastrianism also introduced the idea of a cosmic battle between good and evil, a final judgment, and a future resurrection—concepts that appear in later biblical texts.
+
+{insight:key} Every culture asked the same question: where did all this come from? The answers divide sharply. Some say the universe is cyclical with no beginning (Hinduism, Buddhism). Some say it was born from violence and chaos (Babylonian, Norse). Some say the question doesn't matter (Buddhism, Confucianism). And a small number—Genesis, the Quran, and Zoroastrianism—insist that one God intentionally created everything from nothing, with purpose. Modern science sided with the last group on the most basic question: the universe had a beginning.
+
+## How Genesis Compares
+
+So how does the biblical account stack up? Here's what's worth noticing:
+
+**On the question of a beginning:** Genesis, Islam, and Zoroastrianism say the universe started. Hinduism and Buddhism say it's cyclical or eternal. Science confirmed a beginning in the 20th century. Score one for the traditions that insisted on a starting point.
+
+**On the question of order:** Most ancient creation myths describe chaos, violence, and accident. Genesis describes intention, order, and purpose. Science has discovered that the universe operates by remarkably consistent, mathematically precise laws—which fits better with a purposeful creation than a chaotic one.
+
+**On the question of human dignity:** In Babylonian myth, humans are slaves made from a dead god's blood. In Norse myth, we're carved from driftwood. In Genesis, humans are made in the *image of God*—deliberately, personally, with inherent dignity. This concept—that every human being has intrinsic worth—didn't come from Greek philosophy or Enlightenment thinking. It came from Genesis 1:27. And it remains the foundation of human rights to this day.
+
+**On the question of suffering:** Buddhism says the world is suffering and the goal is escape. Hinduism says suffering is the result of past-life karma. Genesis says the world was created *good* and suffering entered through a specific event—the Fall. This means suffering is real but not original, not permanent, and not the final word.
+
+**On the question of a personal God:** Most traditions either have impersonal forces (Taoism, Buddhism), many competing gods (Hinduism, Norse, Greek), or a distant creator who wound things up and stepped back (some forms of Deism). Genesis describes a God who creates, speaks, relates, grieves, promises, and pursues. The God of the Bible is not a cosmic watchmaker. He's a father looking for his children.
+
+None of this *proves* Genesis is true. But it's worth noticing which ancient account best anticipated what modern science would discover, which one best accounts for the world as we actually experience it—ordered but broken, beautiful but painful—and which one offers the most compelling vision of what it means to be human.
+
+That's for you to decide.
+
 ## The Six Days and the Age of the Universe
 
 Now here's where things get interesting—and where Christians honestly disagree with each other.
@@ -53,9 +91,9 @@ This is one of the most debated questions in Christianity, and there are serious
 
 {insight:truth} We're presenting all these views because honest people disagree, and this story isn't here to tell you what to think—it's here to lay out the evidence and let you draw your own conclusions. What every Christian view shares is this: the universe exists because God created it, not by accident. The "how" is debated. The "who" is not.
 
-## What Everyone Agrees On
+## What Genesis Claims That No One Else Did
 
-Regardless of which view Christians hold about the age of the earth, there are things Genesis claims that stand in stark contrast to both ancient mythology and modern materialism:
+Regardless of which view Christians hold about the age of the earth, there are things Genesis claims that stood in stark contrast to every other ancient tradition—and that modern science has unexpectedly supported:
 
 **The universe is not eternal.** It had a beginning. Modern science agrees.
 
@@ -424,6 +462,7 @@ The story has begun.
 
 ## Go Deeper
 - {deep-dive:creation-and-science} Genesis and Modern Science: The Full Debate
+- {deep-dive:world-creation-accounts} Creation Stories From Every Major Religion
 - {deep-dive:gods-of-the-ancient-world} The Gods Israel's Neighbors Worshipped
 - {deep-dive:ancient-creation-myths} How Genesis Differs From Other Creation Stories
 - {deep-dive:ur-of-the-chaldees} What Archaeology Reveals About Abraham's Hometown
