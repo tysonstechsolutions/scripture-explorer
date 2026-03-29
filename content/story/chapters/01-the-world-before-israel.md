@@ -1,17 +1,97 @@
 # The World Before Israel
 
-## In the Beginning
+## Before Anything Existed
 
-Every great story has a beginning. The Bible opens with words that have echoed through thousands of years:
+Before there was an earth. Before there was a sun. Before there were stars or galaxies or light of any kind. Before time itself had meaning.
+
+The Bible opens with ten words that have echoed through thousands of years:
 
 {scripture:Genesis 1:1-2}
 > In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.
 
-This is where our story starts—not with dates or dynasties, but with God creating everything that exists. Light and darkness. Sky and sea. Land and life. And finally, humanity.
+Science has its own version of this moment. In 1927, a Belgian priest and physicist named Georges Lemaître proposed that the universe began from a single, infinitely dense point—what he called the "primeval atom." Other scientists mocked the idea at first. The name "Big Bang" was actually invented as an insult by astronomer Fred Hoyle, who thought the whole concept was ridiculous.
 
-The Bible tells us God formed the first human from the dust of the ground, breathed life into him, and placed him in a garden called Eden {scripture:Genesis 2:7}. This first man, Adam, and the first woman, Eve, lived in perfect relationship with God—until they chose to go their own way {scripture:Genesis 3:6-7}.
+But the evidence kept piling up. In 1964, two engineers at Bell Labs in New Jersey accidentally discovered a faint background radiation coming from every direction in space—the leftover glow from the moment the universe exploded into existence. The Big Bang was real. The universe had a beginning.
 
-That choice—what the Bible calls "the Fall"—changed everything. Death entered the world. Humans were cast out of Eden. But even in the moment of judgment, God was already promising that one day, things would be set right {scripture:Genesis 3:15}. He clothed Adam and Eve when they were ashamed {scripture:Genesis 3:21}. And from that day forward, the Bible tells the story of God pursuing humanity—not humanity pursuing God.
+Here's what's interesting: for most of human history, most scientists assumed the universe was eternal—it had always existed, with no beginning and no end. The Bible disagreed. Genesis 1:1 insisted the universe had a starting point. It took modern physics until the 20th century to confirm what Scripture had always claimed: **there was a beginning.**
+
+{insight:key} A Belgian Catholic priest proposed the Big Bang. Many atheist scientists resisted it because a universe with a beginning sounded too much like creation. The science and the Scripture agreed on the most fundamental point: something came from nothing. The universe started.
+
+## The Six Days and the Age of the Universe
+
+Now here's where things get interesting—and where Christians honestly disagree with each other.
+
+**What science says:**
+
+The universe is approximately 13.8 billion years old. The Big Bang produced hydrogen and helium, which gravity slowly pulled together into the first stars. Those stars burned, exploded, and scattered heavier elements across space. New stars formed from that debris, and around some of them, planets coalesced from swirling discs of dust and rock.
+
+Our sun formed about 4.6 billion years ago. Earth formed shortly after—a molten ball of rock that slowly cooled over hundreds of millions of years. Water appeared on the surface. The atmosphere changed. And eventually, life appeared—first simple single-celled organisms, then increasingly complex forms over billions of years.
+
+**What Genesis says:**
+
+God created everything in six days, then rested on the seventh:
+
+- **Day 1** — Light separated from darkness
+- **Day 2** — The sky separated from the waters
+- **Day 3** — Dry land appeared; plants grew
+- **Day 4** — Sun, moon, and stars placed in the sky
+- **Day 5** — Sea creatures and birds
+- **Day 6** — Land animals, then humanity
+- **Day 7** — God rested
+
+**So which is it? Six days or billions of years?**
+
+This is one of the most debated questions in Christianity, and there are serious, thoughtful Christians on every side. Here are the main views:
+
+**Young Earth Creationism:** The six days are literal 24-hour days. The universe is roughly 6,000-10,000 years old. The scientific dating methods are either flawed or God created the universe with the appearance of age (like Adam being created as an adult, not a baby). This is the most traditional reading and the one held by many conservative Christians.
+
+**Old Earth Creationism:** The six "days" represent long ages or epochs. The Hebrew word *yom* (day) can mean a literal day, but it's also used elsewhere in Scripture to mean an indefinite period of time—like when we say "back in my grandfather's day." In this view, the sequence in Genesis roughly matches the scientific order: light, atmosphere, land, vegetation, sea life, land animals, humans. The universe really is billions of years old, and God worked through long processes.
+
+**The Framework View:** Genesis 1 isn't trying to give a scientific timeline at all. It's a structured literary piece—a theological declaration that God made everything with purpose and order. Days 1-3 create the *realms* (light, sky/sea, land), and Days 4-6 fill those realms with *rulers* (sun/moon, birds/fish, animals/humans). It's a carefully crafted text making a theological point, not a science textbook.
+
+**Evolutionary Creationism:** God created the universe and used evolution as His method. The Big Bang, star formation, planetary development, and biological evolution are all part of how God chose to create. Genesis tells the *who* and *why*; science describes the *how*.
+
+{insight:truth} We're presenting all these views because honest people disagree, and this story isn't here to tell you what to think—it's here to lay out the evidence and let you draw your own conclusions. What every Christian view shares is this: the universe exists because God created it, not by accident. The "how" is debated. The "who" is not.
+
+## What Everyone Agrees On
+
+Regardless of which view Christians hold about the age of the earth, there are things Genesis claims that stand in stark contrast to both ancient mythology and modern materialism:
+
+**The universe is not eternal.** It had a beginning. Modern science agrees.
+
+**The universe is not an accident.** It was intentional, purposeful, designed. The fine-tuning of physical constants—gravity, the strong nuclear force, the cosmological constant—is so precise that even tiny variations would make life impossible. Many physicists acknowledge this, even if they disagree about what it means.
+
+**Matter is not all there is.** Genesis opens with God existing *before* the physical universe. Something—Someone—preceded and caused everything we can see, measure, and touch.
+
+**The universe is ordered, not chaotic.** This is why science is even possible. If the universe were random, there would be no consistent laws of physics to discover. The biblical idea that a rational God created an ordered cosmos is actually the philosophical foundation that made modern science possible. It's no coincidence that the scientific revolution happened in Christian Europe—people like Galileo, Kepler, Newton, and Faraday believed they were "thinking God's thoughts after Him."
+
+**Humans are not cosmic accidents.** Whether God shaped us from dust in an instant or guided a process over billions of years, Genesis insists we were *intended*. We bear the image of our Creator {scripture:Genesis 1:27}. We have dignity, purpose, and value—not because of what we can do, but because of *whose* we are.
+
+## The Garden and the Fall
+
+After creating the heavens and the earth, God turned His attention to humanity.
+
+{scripture:Genesis 2:7}
+> Then the Lord God formed a man from the dust of the ground and breathed into his nostrils the breath of life, and the man became a living being.
+
+God placed the first man, Adam, in a garden called Eden—a place of abundance, beauty, and unbroken relationship with God. He created a companion for Adam: Eve, the first woman. Together they lived in what the Bible describes as paradise.
+
+But there was one rule: don't eat from the tree of the knowledge of good and evil {scripture:Genesis 2:17}.
+
+A serpent—later identified in Scripture as Satan—convinced Eve that God was holding out on them. That the forbidden fruit would make them "like God, knowing good and evil" {scripture:Genesis 3:5}. Eve ate. Adam ate. And everything changed.
+
+{scripture:Genesis 3:7}
+> Then the eyes of both of them were opened, and they realized they were naked; so they sewed fig leaves together and made coverings for themselves.
+
+This moment—what the Bible calls "the Fall"—is the hinge on which the entire biblical story turns. Before this, humanity lived in harmony with God, each other, and creation. After this, death entered the world. Shame. Hiding. Blame. Broken relationships.
+
+God confronted them. There were consequences—pain in childbirth, hard labor to survive, exile from the garden. But even in judgment, God did two remarkable things:
+
+First, He made a promise. Speaking to the serpent, God said that one day, an offspring of the woman would crush the serpent's head {scripture:Genesis 3:15}. Something was coming that would undo what had just been done.
+
+Second, He clothed them. Adam and Eve had covered themselves with fig leaves. God replaced those with garments of animal skin {scripture:Genesis 3:21}. Something had to die to cover their shame. It's the first death in the Bible, and it sets a pattern that will repeat for thousands of years.
+
+From this point forward, the Bible tells one continuous story: God pursuing humanity—not humanity pursuing God. People keep running away, and God keeps coming after them.
 
 ## The First Murder
 
@@ -327,7 +407,9 @@ The story has begun.
 ---
 
 ## Timeline
-- In the beginning: God creates the heavens and earth
+- ~13.8 billion years ago: The Big Bang — the universe begins (science) / "In the beginning God created the heavens and the earth" (Bible)
+- ~4.6 billion years ago: Earth forms (science) / God creates the world in six days (Bible — timing debated)
+- Creation of humanity: God forms Adam and Eve, places them in Eden
 - The Fall: Adam and Eve expelled from Eden
 - Cain and Abel: the first murder
 - Noah: the Flood and God's covenant with humanity
@@ -341,6 +423,7 @@ The story has begun.
 - ~1792-1750 BCE: Hammurabi rules Babylon, writes his law code
 
 ## Go Deeper
+- {deep-dive:creation-and-science} Genesis and Modern Science: The Full Debate
 - {deep-dive:gods-of-the-ancient-world} The Gods Israel's Neighbors Worshipped
 - {deep-dive:ancient-creation-myths} How Genesis Differs From Other Creation Stories
 - {deep-dive:ur-of-the-chaldees} What Archaeology Reveals About Abraham's Hometown
