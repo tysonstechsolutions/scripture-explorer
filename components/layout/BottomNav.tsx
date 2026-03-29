@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Scroll, BookOpen, Compass, Settings } from "lucide-react";
+import { Home, Scroll, BookOpen, Settings } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Home", icon: Home, exact: true },
   { href: "/story", label: "Story", icon: Scroll },
   { href: "/read", label: "Bible", icon: BookOpen },
-  { href: "/explore", label: "Topics", icon: Compass },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 

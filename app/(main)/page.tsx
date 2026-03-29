@@ -8,16 +8,12 @@ import Link from 'next/link';
 import { usePreferences } from '@/contexts/PreferencesContext';
 import { useAdmin } from '@/contexts/AdminContext';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import {
   Scroll,
   ArrowRight,
   BookOpen,
-  Compass,
   Clock,
-  MessageCircle,
   Settings,
-  ChevronRight,
 } from 'lucide-react';
 import { getAllChapters } from '@/lib/story/chapters';
 import { STORY_ERAS } from '@/lib/story/types';
@@ -137,7 +133,7 @@ export default function HomePage() {
       )}
 
       {/* Story Chapters */}
-      <section className="px-4 pb-8">
+      <section className="px-4 pb-24">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="h-5 w-5 text-amber-700 dark:text-amber-500" />
@@ -203,40 +199,6 @@ export default function HomePage() {
                 </div>
               </div>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Access - secondary features */}
-      <section className="px-4 pb-24">
-        <div className="max-w-2xl mx-auto">
-          <div className="flex items-center gap-3 mb-4">
-            <Compass className="h-5 w-5 text-stone-500" />
-            <h2 className="font-serif text-lg text-stone-600 dark:text-stone-400">
-              More to Explore
-            </h2>
-            <div className="flex-1 h-px bg-gradient-to-r from-stone-200 dark:from-stone-800 to-transparent" />
-          </div>
-
-          <div className="grid grid-cols-3 gap-3">
-            <Link href="/read" className="group">
-              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
-                <BookOpen className="h-6 w-6 text-amber-700 dark:text-amber-500" />
-                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Bible</span>
-              </div>
-            </Link>
-            <Link href="/explore" className="group">
-              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
-                <Compass className="h-6 w-6 text-amber-700 dark:text-amber-500" />
-                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Topics</span>
-              </div>
-            </Link>
-            <Link href="/ask" className="group">
-              <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/60 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/40 hover:bg-white dark:hover:bg-stone-800/60 hover:border-amber-300/50 transition-all text-center">
-                <MessageCircle className="h-6 w-6 text-amber-700 dark:text-amber-500" />
-                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Ask AI</span>
-              </div>
-            </Link>
           </div>
         </div>
       </section>
