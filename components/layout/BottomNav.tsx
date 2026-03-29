@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Scroll, BookOpen, Settings } from "lucide-react";
+import { Scroll, BookOpen, Settings } from "lucide-react";
 
 const navItems = [
-  { href: "/", label: "Home", icon: Home, exact: true },
-  { href: "/story", label: "Story", icon: Scroll },
+  { href: "/", label: "Story", icon: Scroll, exact: true },
   { href: "/read", label: "Bible", icon: BookOpen },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
@@ -19,7 +18,7 @@ export function BottomNav() {
       <div className="flex items-center justify-around h-16">
         {navItems.map((item) => {
           const isActive = item.exact
-            ? pathname === item.href
+            ? pathname === item.href || pathname.startsWith("/story")
             : pathname.startsWith(item.href);
           const Icon = item.icon;
 
