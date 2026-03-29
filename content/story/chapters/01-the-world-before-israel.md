@@ -200,6 +200,81 @@ Egypt would play a huge role in what's coming:
 
 Canaan—Ham's son—gave his name to the land between Egypt and Mesopotamia. When God later promises this land to Abraham's descendants, the Canaanites are already living there. The Bible explains why: they'd been there since the Table of Nations, descendants of Ham who settled along the Mediterranean coast and inland.
 
+### The Gods of the Ancient World
+
+To understand the Bible, you need to understand what everyone else believed—because Israel's faith didn't emerge in a vacuum. It emerged in a world absolutely saturated with gods.
+
+Every ancient culture was polytheistic—they worshipped many gods. This wasn't ignorance or stupidity. People looked at the world and saw powerful forces they couldn't control: storms, floods, fertility, death, the sun, the moon. They personified these forces. If the river floods and destroys your crops, there must be a river god who's angry. If the rain comes and your fields produce grain, the storm god must be pleased. Different forces meant different gods, and different cities had their own patron deities they depended on for protection.
+
+Here's who the major players were:
+
+**The Gods of Mesopotamia (Sumer, Babylon, Assyria)**
+
+These are the gods Abraham grew up around in Ur:
+
+- **Anu** — the sky god, king of the gods, distant and powerful
+- **Enlil** — god of wind and storms, the one who decided to send the Flood in the Gilgamesh epic
+- **Enki (Ea)** — god of wisdom, fresh water, and magic; the one who warned the flood hero to build a boat
+- **Inanna (Ishtar)** — goddess of love, sex, and war; the most popular goddess in Mesopotamia, worshipped with temple prostitution and elaborate festivals
+- **Nanna (Sin)** — the moon god, patron deity of Ur (Abraham's hometown). Ur's great ziggurat was dedicated to Nanna. Abraham's family likely worshipped this god before God called him out
+- **Shamash** — the sun god and god of justice. Hammurabi claimed Shamash gave him his famous law code
+- **Marduk** — Babylon's chief god, who rose to supremacy when Babylon became the dominant empire. The Babylonian creation story (*Enuma Elish*) was basically Marduk's origin story, justifying Babylon's rule
+
+{insight:key} When God called Abraham out of Ur, He was calling him away from Nanna the moon god—away from the religion of his entire city, his family, his culture. Joshua later reminded Israel: "Long ago your ancestors, including Terah the father of Abraham, lived beyond the Euphrates River and worshiped other gods" {scripture:Joshua 24:2}. Abraham didn't start as a monotheist. He started as a pagan.
+
+**The Gods of Egypt**
+
+Egypt had one of the most complex religious systems in the ancient world—hundreds of gods, many depicted with animal heads:
+
+- **Ra (Amun-Ra)** — the sun god, considered the supreme creator god. Pharaohs claimed to be his sons
+- **Osiris** — god of the dead and the afterlife. His death and resurrection myth was central to Egyptian religion
+- **Isis** — wife of Osiris, goddess of magic and motherhood. One of the most popular goddesses in the ancient world
+- **Horus** — the falcon-headed sky god. Each living pharaoh was considered an incarnation of Horus
+- **Hathor** — the cow goddess of love, beauty, and music
+- **Anubis** — the jackal-headed god who guided souls to the afterlife
+- **Thoth** — the ibis-headed god of writing, wisdom, and the moon
+- **Seth (Set)** — god of chaos, storms, and the desert. Murdered his brother Osiris
+- **Ptah** — the craftsman god, creator deity of Memphis. The name "Egypt" probably comes from Ptah's temple name
+
+The Egyptians believed the pharaoh was divine—a god walking on earth. This is important for understanding the Exodus story later. When God sends plagues against Egypt, He's not just punishing a king. He's systematically proving that Egypt's gods are powerless. Each plague targets a specific Egyptian deity.
+
+**The Gods of Canaan**
+
+These are the gods Israel would encounter when they eventually entered the Promised Land, and the ones they'd keep being tempted to worship for centuries:
+
+- **El** — the chief god, the "father of the gods." Interestingly, *El* is also a Hebrew word for God. Some scholars believe the Canaanite concept of El and the God of Israel share ancient roots. The name "Isra-*el*" contains this word
+- **Baal** — the storm and fertility god, son of El. Baal was the rock star of Canaanite religion. His worship involved elaborate rituals, and his name simply meant "lord" or "master." Baal shows up constantly in the Bible as Israel's biggest temptation
+- **Asherah** — the mother goddess, consort of El (and sometimes of Baal). Worship often involved sacred poles or trees set up at shrines. The Bible repeatedly condemns "Asherah poles" {scripture:Deuteronomy 16:21}
+- **Ashtoreth (Astarte)** — goddess of love and war, similar to Ishtar. Solomon would later be condemned for worshipping her {scripture:1 Kings 11:5}
+- **Molech** — a god associated with child sacrifice. Worshippers would burn their children alive as offerings. The Bible's horror at this practice is intense and repeated {scripture:Leviticus 18:21}
+- **Dagon** — a grain or fish god, later the chief deity of the Philistines. The ark of the covenant would famously be placed in Dagon's temple {scripture:1 Samuel 5}
+
+{insight:truth} Canaanite religion wasn't just "different" from Israel's faith—some of it was genuinely horrifying. Archaeological excavations at Canaanite sites have found the remains of child sacrifices, confirming what the Bible describes. When the Bible condemns Canaanite religion, it's not being intolerant of harmless differences. It's condemning practices that included burning children alive.
+
+**Why Did People Worship These Gods?**
+
+It's easy to look back and wonder how anyone could worship a statue. But put yourself in their world:
+
+You're a farmer. Your entire family's survival depends on rain coming at the right time. There's no weather forecast, no irrigation system, no grocery store backup plan. If the rain doesn't come, your children starve. Someone tells you that Baal controls the rain, and if you perform certain rituals, he'll send it. What do you do?
+
+This is why polytheism was so persistent. It felt *practical*. It offered a sense of control in a terrifying world. Every god handled a different domain, so you worshipped whichever god you needed at the moment—the fertility goddess when you wanted children, the war god when enemies threatened, the harvest god when crops were planted.
+
+**Why Israel's God Was Different**
+
+Against this backdrop, the God of Israel made claims that were genuinely shocking to the ancient world:
+
+There is only *one* God. Not "our god is the strongest"—but every other so-called god is *nothing*. This wasn't a minor theological adjustment. It was a complete rejection of how every civilization understood reality.
+
+This God couldn't be represented by an image. In a world where every temple had a statue and every god had an animal form, Israel's God said "you shall not make for yourself an idol" {scripture:Exodus 20:4}. No statue. No image. Nothing you could carve or control.
+
+This God didn't need to be fed. In every other religion, the gods depended on human sacrifices and offerings for sustenance. Israel's God says: "every animal of the forest is mine, and the cattle on a thousand hills... If I were hungry I would not tell you, for the world is mine, and all that is in it" {scripture:Psalm 50:10-12}.
+
+This God cared about morality, not just ritual. Other gods could be appeased with the right sacrifice regardless of how you treated people. Israel's God said: "I desire mercy, not sacrifice" {scripture:Hosea 6:6}. How you treated the poor, the widow, the orphan, and the foreigner mattered more than how many animals you burned.
+
+This God chose the weak, not the powerful. Every other god backed the winning empire. Israel's God chose slaves in Egypt, the smallest nation, the youngest son, the barren wife. Over and over.
+
+{insight:revelation} Understanding the gods of the ancient world isn't just background information—it's essential context. When you know what everyone else believed, you can see just how radical, how strange, and how revolutionary Israel's God truly was. Nothing like this had ever appeared in human religion before.
+
 ### Ancient Laws
 
 Long before Moses, kings in Mesopotamia were writing laws. The most famous is the *Code of Hammurabi* (around 1750 BCE)—nearly 300 laws carved on a stone pillar over 7 feet tall.
@@ -212,12 +287,12 @@ What matters most are the differences. Hammurabi's laws treated people different
 
 ### Creation Stories
 
-The Mesopotamians and Egyptians had their own stories about how the world began:
+Now that you know who these gods were, their creation stories make more sense:
 
 **The Babylonian story (Enuma Elish):**
-- The world formed from the corpse of a slain goddess
-- Creation resulted from violence among the gods
-- Humans were created as slaves to serve the gods
+In the beginning, the gods Apsu (fresh water) and Tiamat (salt water) mixed together and produced younger gods. But the younger gods were noisy and annoying. Apsu wanted to destroy them. The god Ea killed Apsu, and then Tiamat went to war against the younger gods. Marduk, Babylon's champion, volunteered to fight Tiamat—but only if the other gods made him supreme king. He killed Tiamat, split her body in half, and made the sky from one half and the earth from the other. Then he created humans from the blood of a defeated god—specifically so humans could do the manual labor the gods didn't want to do.
+
+That's the Babylonian creation story. The universe was made from violence, and humans exist as slaves.
 
 **Now read Genesis again:**
 
@@ -266,6 +341,7 @@ The story has begun.
 - ~1792-1750 BCE: Hammurabi rules Babylon, writes his law code
 
 ## Go Deeper
+- {deep-dive:gods-of-the-ancient-world} The Gods Israel's Neighbors Worshipped
 - {deep-dive:ancient-creation-myths} How Genesis Differs From Other Creation Stories
 - {deep-dive:ur-of-the-chaldees} What Archaeology Reveals About Abraham's Hometown
 - {deep-dive:egypt-in-the-bible} Archaeological Evidence for the Bible in Egypt
