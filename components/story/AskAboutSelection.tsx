@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { X, Sparkles, Send, Loader2, BookOpen } from "lucide-react";
+import { X, Send, Loader2, BookOpen } from "lucide-react";
 
 interface AskAboutSelectionProps {
   selectedText: string;
@@ -192,17 +192,17 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
         className="fixed bottom-0 left-0 right-0 z-[60] animate-in slide-in-from-bottom duration-300"
         onMouseDown={(e) => e.stopPropagation()}
       >
-        <div className="bg-white dark:bg-stone-900 rounded-t-2xl shadow-2xl max-h-[80vh] flex flex-col border-t border-amber-200 dark:border-amber-800">
+        <div className="bg-white dark:bg-stone-900 rounded-t-2xl shadow-2xl max-h-[80vh] flex flex-col border-t border-emerald-200 dark:border-emerald-800">
           {/* Handle + Header */}
           <div className="flex-shrink-0 pt-3 pb-2 px-4 border-b border-stone-100 dark:border-stone-800">
             <div className="w-10 h-1 rounded-full bg-stone-300 dark:bg-stone-700 mx-auto mb-3" />
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="p-1.5 rounded-full bg-amber-100 dark:bg-amber-900/40">
-                  <Sparkles className="h-4 w-4 text-amber-700 dark:text-amber-400" />
+                <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center">
+                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 leading-none">WT</span>
                 </div>
                 <span className="font-semibold text-stone-800 dark:text-stone-200 text-sm">
-                  Scripture Explorer AI
+                  Wes Tament
                 </span>
               </div>
               <button
@@ -220,22 +220,22 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
               <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                 {msg.role === "user" ? (
                   /* User bubble - right aligned */
-                  <div className="max-w-[85%] px-4 py-2.5 rounded-2xl rounded-br-md bg-amber-600 text-white text-sm leading-relaxed whitespace-pre-wrap">
+                  <div className="max-w-[85%] px-4 py-2.5 rounded-2xl rounded-br-md bg-emerald-700 text-white text-sm leading-relaxed whitespace-pre-wrap">
                     {msg.content}
                   </div>
                 ) : (
                   /* AI bubble - left aligned */
                   <div className="max-w-[90%] flex gap-2">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="w-7 h-7 rounded-full bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center">
-                        <Sparkles className="h-3.5 w-3.5 text-amber-700 dark:text-amber-400" />
+                      <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center">
+                        <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 leading-none">WT</span>
                       </div>
                     </div>
                     <div className="px-4 py-2.5 rounded-2xl rounded-bl-md bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-sm leading-relaxed whitespace-pre-wrap">
                       {msg.content || (
                         <span className="flex items-center gap-2 text-stone-400">
                           <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                          Thinking...
+                          Wes is thinking...
                         </span>
                       )}
                     </div>
@@ -251,7 +251,7 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
                   <div className="flex-shrink-0 mt-1 w-7" />
                   <button
                     onClick={onClose}
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-700 text-white hover:bg-amber-800 active:scale-[0.98] transition-all text-sm font-medium"
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-emerald-700 text-white hover:bg-emerald-800 active:scale-[0.98] transition-all text-sm font-medium"
                   >
                     <BookOpen className="h-4 w-4" />
                     Continue Reading
@@ -277,15 +277,15 @@ export function AskAboutSelection({ selectedText, chapterTitle, onClose }: AskAb
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder='Ask more, or type "continue"...'
-                className="flex-1 px-4 py-2.5 rounded-full border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-sm text-stone-800 dark:text-stone-200 placeholder-stone-400 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/30"
+                placeholder='Ask Wes anything, or type "continue"...'
+                className="flex-1 px-4 py-2.5 rounded-full border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-sm text-stone-800 dark:text-stone-200 placeholder-stone-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/30"
                 disabled={isStreaming}
                 autoComplete="off"
               />
               <button
                 type="submit"
                 disabled={!inputValue.trim() || isStreaming}
-                className="p-2.5 rounded-full bg-amber-600 text-white hover:bg-amber-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                className="p-2.5 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 <Send className="h-4 w-4" />
               </button>
