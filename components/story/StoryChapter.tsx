@@ -10,6 +10,7 @@ import { ScripturePopover } from './ScripturePopover';
 import { StoryImage } from './StoryImage';
 import { ChapterLegend } from './ChapterLegend';
 import { KeyInsight } from './KeyInsight';
+import { SelectionToolbar } from './SelectionToolbar';
 import { getStoryImage } from '@/lib/story/images';
 import type { StoryChapter as StoryChapterType, TimelineEvent } from '@/lib/story/types';
 import { STORY_ERAS } from '@/lib/story/types';
@@ -240,6 +241,9 @@ export function StoryChapter({ chapter, content }: StoryChapterProps) {
 
   return (
     <div className="min-h-screen relative">
+      {/* Highlight-to-AI feature */}
+      <SelectionToolbar chapterTitle={chapter.title} />
+
       {/* Papyrus/Parchment Background */}
       <div
         className="fixed inset-0 -z-10"
