@@ -98,7 +98,7 @@ The "cutting" ritual was common. Animals were cut in half, and both parties walk
 
 **Here's what's revolutionary about Genesis 15:** Only God (represented by the smoking firepot and torch) passes through the pieces. Abraham doesn't walk through at all.
 
-{insight:revelation} God took the curse of covenant-breaking entirely on Himself. This is grace before the Law—unconditional promise that depends on God's faithfulness, not ours. Millennia later, Jesus would fulfill this, bearing the curse we deserved.
+{insight:revelation} God took the curse of covenant-breaking entirely on Himself. This is grace before the Law—unconditional promise that depends on God's faithfulness, not ours. The entire weight of the covenant rested on God, not Abraham.
 
 ### The Binding of Isaac
 
@@ -113,12 +113,12 @@ But that's exactly what makes the ending so revolutionary. God *stops* Abraham. 
 - Unlike Canaanite gods, Israel's God provides the sacrifice Himself
 - Abraham trusted that God would somehow keep His promise about Isaac {scripture:Hebrews 11:17-19}
 
-**The location matters too:** Mount Moriah is later identified with the Temple Mount in Jerusalem {scripture:2 Chronicles 3:1}. The place where Abraham almost sacrificed his son became the place where Israel would sacrifice animals for centuries—pointing forward to the ultimate sacrifice.
+**The location matters too:** Mount Moriah is later identified with the Temple Mount in Jerusalem {scripture:2 Chronicles 3:1}. The place where Abraham almost sacrificed his son became the place where Israel would build the Temple and sacrifice animals for centuries.
 
 {scripture:Genesis 22:14}
 > So Abraham called that place "The Lord Will Provide." And to this day it is said, "On the mountain of the Lord it will be provided."
 
-Christians see this as a foreshadowing of Jesus: a father offering his only son, a son carrying wood up a mountain, a substitute provided at the last moment.
+This pattern—God providing a substitute sacrifice—runs deep through the rest of Scripture. We'll see it again and again as the story unfolds.
 
 ## Isaac: The Quiet Patriarch
 
@@ -198,7 +198,7 @@ Jacob (now Israel) had twelve sons by four women: Leah and Rachel (his wives), a
 
 This family structure created immediate problems. Jacob favored Rachel over Leah, Joseph over his brothers, Benjamin over everyone (after Joseph's apparent death). Favoritism bred resentment, resentment bred hatred, and hatred nearly destroyed them.
 
-**Important for later:** The tribes that came from each son would remember their ancestry. Judah's descendants would produce David and eventually Jesus. Levi's descendants would become the priests. Joseph's sons (Ephraim and Manasseh) would become the dominant northern tribes after the kingdom divided. These family dynamics echo through 1,500 years of biblical history.
+**Important for later:** The tribes that came from each son would remember their ancestry. Judah's descendants would produce the royal line. Levi's descendants would become the priests. Joseph's sons (Ephraim and Manasseh) would become the dominant northern tribes after the kingdom divided. These family dynamics echo through 1,500 years of biblical history.
 
 ## Joseph: The Dreamer in Egypt
 
@@ -258,7 +258,7 @@ The patriarchal narratives provide the historical foundation for everything that
 - Why Israel has a claim to Canaan (God promised it to Abraham)
 - Why they went to Egypt (famine brought Jacob's family there)
 - Why there were twelve tribes (Jacob's twelve sons)
-- Why the Messiah came through Judah (Jacob's prophetic blessing)
+- Why Judah's tribe carries a special promise (Jacob's prophetic blessing)
 
 ### Covenant Theology
 
@@ -267,7 +267,7 @@ The covenants God made with Abraham become the foundation of biblical theology:
 - Descendants (as numerous as the stars)
 - Blessing (through Abraham, all nations would be blessed)
 
-The New Testament explicitly connects these promises to Jesus. Paul argues that the "seed" promised to Abraham is ultimately Christ {scripture:Galatians 3:16}. The blessing to all nations is the gospel going to Gentiles.
+These three promises drive the entire story forward. Every time Israel gains or loses the land, every time their population grows or shrinks, every time they bless or fail to bless the nations—it connects back to what God promised Abraham.
 
 ### Apologetic Value
 

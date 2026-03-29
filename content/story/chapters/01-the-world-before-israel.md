@@ -11,280 +11,228 @@ This is where our story starts—not with dates or dynasties, but with God creat
 
 The Bible tells us God formed the first human from the dust of the ground, breathed life into him, and placed him in a garden called Eden {scripture:Genesis 2:7}. This first man, Adam, and the first woman, Eve, lived in perfect relationship with God—until they chose to go their own way {scripture:Genesis 3:6-7}.
 
-That choice—what the Bible calls "the Fall"—changed everything. Death entered the world. Humans were cast out of Eden. But here's the remarkable thing:
+That choice—what the Bible calls "the Fall"—changed everything. Death entered the world. Humans were cast out of Eden. But even in the moment of judgment, God was already promising that one day, things would be set right {scripture:Genesis 3:15}. He clothed Adam and Eve when they were ashamed {scripture:Genesis 3:21}. And from that day forward, the Bible tells the story of God pursuing humanity—not humanity pursuing God.
 
-{insight:love} God didn't wait for humanity to find their way back. He came looking for them. This is the story of GOD pursuing US—not us pursuing God.
+## The First Murder
 
-Even in the moment of judgment, God was already promising redemption {scripture:Genesis 3:15}. He clothed Adam and Eve when they were ashamed {scripture:Genesis 3:21}. And from that day forward, the entire Bible becomes the story of God relentlessly chasing after a humanity that keeps running away.
+It didn't take long for things to go wrong.
 
-## The Ancient World Awakens
+Adam and Eve's first two sons—Cain and Abel—brought offerings to God. Abel, a shepherd, brought the best portions of his flock. Cain, a farmer, brought some of his crops. God accepted Abel's offering but not Cain's {scripture:Genesis 4:3-5}.
 
-Now, the Bible doesn't give us exact dates for these early events. Different Christians read Genesis differently—some see it as literal history with a young earth, others as ancient literature describing deep truths about an old earth. What everyone agrees on is that by the time we get to Abraham (whom we'll meet soon), we're in a world that archaeology can verify.
+The text doesn't say exactly why. Maybe it was the attitude behind it. Maybe it was that Abel brought his *best* while Cain brought whatever. What we know is that Cain's response was rage. God warned him: "Sin is crouching at your door; it desires to have you, but you must rule over it" {scripture:Genesis 4:7}.
 
-So let's step back and look at that world—because understanding the ancient context makes the Bible come alive in ways you might not expect.
+Cain didn't listen. He led Abel into a field and killed him {scripture:Genesis 4:8}.
 
-Thousands of years ago—long before anyone wrote about Israel, before Moses, before even Abraham—human civilizations were already flourishing. People had learned to farm, to build cities, to write, and to organize complex societies.
+One generation out of Eden, and humanity had its first murder—brother killing brother. This is the Bible being unflinchingly honest about what happens when people turn away from God. It doesn't get cleaned up or softened. The violence escalates.
 
-The first great civilization we know about arose in a region we call *Mesopotamia*.
+{insight:truth} The Bible never sugarcoats human nature. Within the first few pages, we go from paradise to murder. This honesty is one of the things that sets Scripture apart from other ancient texts, which often glorified their founders.
 
-{image:mesopotamia-map}
+## Cain's Line and Seth's Line
 
-## A Quick Word About Dates: BC, AD, BCE, CE
+After killing Abel, Cain was driven away to wander the earth. But he didn't just disappear. The Bible traces his descendants, and they built things:
 
-Before we go further, you'll see dates written like "3500 BCE" or "2000 BC" throughout this story. What do these mean, and who decided to use them?
+- **Enoch** — Cain built the first city and named it after his son Enoch {scripture:Genesis 4:17}
+- **Lamech** — a descendant of Cain who bragged about killing a man for wounding him {scripture:Genesis 4:23}
+- **Jabal** — the father of those who live in tents and raise livestock
+- **Jubal** — the father of musicians
+- **Tubal-Cain** — a metalworker who forged tools of bronze and iron {scripture:Genesis 4:22}
 
-**The Short Version:**
-- **BC** = "Before Christ" (years before Jesus was born)
-- **AD** = "Anno Domini" (Latin for "Year of Our Lord"—years after Jesus)
-- **BCE** = "Before Common Era" (same as BC, just different words)
-- **CE** = "Common Era" (same as AD, just different words)
+Cain's line produced civilization—cities, art, technology—but also increasing violence. The Bible is making a point: human achievement and human wickedness can grow side by side.
 
-So 3000 BC and 3000 BCE mean the exact same thing: 3,000 years before year 1, which is about 5,000 years ago from today.
+Meanwhile, Adam and Eve had another son: **Seth**. Seth's line is presented as the line that "called on the name of the Lord" {scripture:Genesis 4:26}. From Seth came a different kind of legacy—not cities and weapons, but faith.
 
-**Who invented this system?**
+The genealogy in Genesis 5 traces Seth's line all the way down through names like Enosh, Methuselah (the longest-lived person in the Bible at 969 years), and eventually to a man named **Noah**.
 
-A Christian monk named **Dionysius Exiguus** (which hilariously translates to "Dennis the Small") created the BC/AD system around 525 AD. He was trying to calculate when Easter should fall each year and decided to count years from Jesus's birth instead of using the old Roman system that counted from when various emperors took power.
+## The Flood
 
-Here's the funny part: **Dionysius got the math wrong.** Based on what the Gospels tell us about King Herod (who died in 4 BC) and other historical details, Jesus was probably born around 4-6 BC. So Jesus was born "Before Christ"! But by the time scholars figured this out, the system was too established to change.
+By Noah's time, things had gotten bad. Really bad.
 
-**Why do some people use BCE/CE instead of BC/AD?**
+{scripture:Genesis 6:5-6}
+> The Lord saw how great the wickedness of the human race had become on the earth, and that every inclination of the thoughts of the human heart was only evil all the time. The Lord regretted that he had made human beings on the earth, and his heart was deeply troubled.
 
-Starting in the 1700s, some scholars began using "Common Era" as a more neutral way to refer to the same dates. Since Jews, Muslims, Hindus, and secular historians all use this calendar now, BCE/CE lets everyone reference the same dates without explicitly referencing Christ.
+God decided to start over—almost. He found one man, Noah, who "walked faithfully with God" {scripture:Genesis 6:9}. God told Noah to build an enormous boat, an ark, and to bring his family and pairs of every kind of animal aboard.
 
-**Here's what's interesting for Christians:** Even the "neutral" version is still based on Jesus. The entire world counts time from His birth (even if the date is slightly off). Every time anyone writes a date, they're unconsciously acknowledging that Jesus split history in two.
+Then the floodwaters came. The Bible describes it as both rain from above and water bursting from below—the entire world submerged {scripture:Genesis 7:11-12}. Everything outside the ark was destroyed. After the waters receded, Noah's family and the animals stepped out onto dry ground to begin again.
 
-We'll use BCE/CE in this story because that's what most academic sources use, but remember—they mean exactly the same as BC/AD.
+God made a covenant with Noah—a promise never to destroy the earth by flood again—and set a rainbow as the sign {scripture:Genesis 9:12-13}.
 
-## Wait—Who Named It "Mesopotamia"?
+**A note on the Flood:** Christians read this account differently. Some believe it describes a worldwide flood that covered the entire planet. Others believe it describes a massive regional flood in the Mesopotamian river valley that would have seemed like "the whole world" to the people who lived there. What everyone agrees on: other ancient cultures have flood stories too. The Babylonians had the *Epic of Gilgamesh*, which describes a man named Utnapishtim building a boat to survive a divine flood. The similarities—and the differences—between these accounts are fascinating.
 
-Here's something interesting: the people who lived there never called it "Mesopotamia." That's a Greek word!
+{insight:truth} Nearly every ancient culture in the Near East had a flood tradition. The Bible's version stands out because in it, the flood isn't caused by annoyed gods who can't sleep. It's a moral judgment by a grieving God—and even in judgment, God saves a remnant.
 
-Around 400 BCE (about 2,400 years ago), Greek historians like Herodotus started writing about this region. Since it sat between two great rivers—the Tigris and the Euphrates—they called it *Mesopotamia*, which literally means "between the rivers" (*mesos* = middle, *potamos* = river).
+## Noah's Sons and the Table of Nations
 
-**So what did the people who lived there call it?**
+This is where the story gets really interesting, because the Bible is about to explain where all the nations of the ancient world came from.
 
-The Sumerians called their land *Ki-en-gir* ("land of the civilized lords"). The Akkadians called it *Māt Akkadī* ("land of Akkad"). Later, the Babylonians called the southern region *Babylonia* and the northern region *Assyria*.
+Noah had three sons: **Shem**, **Ham**, and **Japheth**. After the flood, these three families spread out and became the ancestors of every people group the Bible describes. Genesis 10—sometimes called the "Table of Nations"—traces who came from whom.
 
-The Bible uses different names too. Genesis calls the region *Shinar* {scripture:Genesis 11:2} and mentions specific cities like Ur, Babylon, and Nineveh. These weren't translations or guesses—these were the actual names used at the time, preserved in Scripture.
+This matters because every major nation in the biblical story traces back to one of these three brothers.
 
-**And what about "Iraq"?**
+### Japheth's Descendants — The Northern Peoples
 
-The name "Iraq" comes from the Arabic word *ʿIrāq*, which may derive from the ancient Sumerian city of *Uruk* (mentioned in Genesis 10:10 as "Erech")! After World War I, when the British drew new borders in the Middle East, they created the modern nation of Iraq in 1921. So the land has been called many things over 5,000 years:
+Japheth's sons spread to the north and west. Their names map to peoples and regions that ancient readers would have recognized:
 
-- **Sumer** (by the Sumerians, ~3500-2000 BCE)
-- **Akkad/Babylonia/Assyria** (various empires, ~2300-539 BCE)
-- **Mesopotamia** (by the Greeks, ~400 BCE onward)
-- **Iraq** (modern nation, 1921-present)
+- **Gomer** — associated with the Cimmerians (north of the Black Sea)
+- **Magog** — associated with the Scythians or peoples of the north
+- **Madai** — the Medes (later part of the Persian Empire)
+- **Javan** — the Greeks (the Hebrew word for Greece)
+- **Tubal** and **Meshech** — peoples of Asia Minor (modern Turkey)
 
-Same land, different names, continuous history. This is the land where Abraham was born, where the Tower of Babel rose, where Israel would later be exiled—and where some of the most important archaeological discoveries confirming the Bible have been made.
+{scripture:Genesis 10:5}
+> From these the maritime peoples spread out into their territories by their clans within their nations, each with its own language.
 
-## How Do We Know Ancient City Names?
+### Ham's Descendants — Egypt, Canaan, Babylon
 
-You might wonder: if these civilizations collapsed thousands of years ago, how do we know what they called their cities? How do we know the Bible got the names right?
+Now pay attention, because this is where the nations that dominate the biblical story come from.
 
-The answer is one of the most exciting stories in archaeology.
+Ham's sons were **Cush**, **Mizraim**, **Put**, and **Canaan** {scripture:Genesis 10:6}.
 
-In the 1800s, European explorers started digging in the deserts of Iraq. They found massive ruined cities buried under mounds of sand and dirt. But the real treasure wasn't gold or jewels—it was clay.
+**Mizraim** is the Hebrew word for **Egypt**. That's right—the Bible says Egypt came from Ham's son Mizraim. To this day, the Hebrew name for Egypt is *Mitzrayim*. When the Bible mentions Egypt, it's talking about the descendants of Ham.
 
-The ancient Mesopotamians wrote on clay tablets, pressing wedge-shaped marks (cuneiform) into wet clay that then hardened. Tens of thousands of these tablets survived. When scholars finally cracked the code and learned to read cuneiform in the mid-1800s, they discovered:
+**Cush** is associated with the region south of Egypt—what we'd call Sudan/Ethiopia today. But Cush also had a famous son:
 
-- **City records** that named Ur, Uruk, Babylon, Nineveh, and dozens of other cities
-- **King lists** naming rulers mentioned in the Bible (like the Assyrian kings who attacked Israel)
-- **Legal documents, letters, stories, and religious texts** that matched details in Scripture
-- **The Epic of Gilgamesh**, which contains a flood story remarkably similar to Noah's
+{scripture:Genesis 10:8-10}
+> Cush was the father of Nimrod, who became a mighty warrior on the earth... The first centers of his kingdom were Babylon, Uruk, Akkad and Kalneh, in Shinar.
 
-{insight:truth} When critics said the Bible invented places like Ur and Nineveh, archaeology proved them wrong. These cities were real, their names preserved exactly as Scripture recorded them.
+**Nimrod** founded **Babylon**. And not just Babylon—also Uruk (one of the world's first cities), Akkad, and then he moved north and built **Nineveh** {scripture:Genesis 10:11}, which would become the capital of the Assyrian Empire.
 
-This is why the Bible can be fact-checked in ways that most ancient religious texts cannot. We have external confirmation from the very civilizations the Bible describes.
+So according to the Bible, one man—Nimrod, grandson of Ham—established both Babylon and Nineveh, the two empires that would later conquer and exile Israel. The seeds of Israel's greatest enemies were planted right here in Genesis 10.
 
-## The First Cities: Sumer
+**Canaan** — Ham's other son — became the father of the Canaanites, the people who lived in the land God would later promise to Abraham. The Canaanites, Sidonians, Hittites, Jebusites, Amorites—all descended from Canaan {scripture:Genesis 10:15-18}. This is the land Israel would eventually enter, and the peoples they would encounter there.
 
-Around 5,500 years ago (about 3500 BCE), the *Sumerians* built the world's first cities in southern Mesopotamia.
+**Put** is generally associated with Libya, the region west of Egypt along the North African coast.
 
-**Who were the Sumerians?**
+{insight:key} The Table of Nations isn't just a genealogy—it's a map of the ancient world as the Bible understands it. Egypt, Babylon, Assyria, Canaan, the Greeks—they all trace back to Noah's three sons. When these nations show up later in the story, you'll know where they came from.
 
-Honestly, we don't know where they came from. Their language isn't related to any other known language family—it's a complete mystery. They appeared in southern Iraq, built incredible cities, invented writing, and laid the foundation for all later Mesopotamian civilization.
+### Shem's Descendants — The Line That Leads to Abraham
 
-Their major cities included:
-- **Uruk** (biblical Erech) — possibly the world's first true city, with 40,000+ residents
-- **Ur** — Abraham's hometown, with its great ziggurat
-- **Eridu** — which the Sumerians believed was the first city ever built
-- **Nippur** — the religious center where the chief god Enlil was worshipped
+Shem's line is the one the Bible follows most closely. The name "Semitic" (as in Semitic peoples and languages) comes from Shem.
 
-{image:cuneiform-tablet}
+From Shem came:
 
-**Why does this matter for Christians?** Because it means we have written records from before Abraham's time. We can cross-reference biblical accounts with contemporary documents. When the Bible mentions cities, customs, or names from this period, we can often verify them through archaeology.
+- **Elam** — a kingdom east of Mesopotamia (in modern Iran)
+- **Asshur** — Assyria
+- **Arpachshad** — the line that leads directly to Abraham
+- **Aram** — the Arameans (Syria), whose language became the common tongue of the ancient Near East
 
-## The Ziggurats: Stairways to Heaven
+{scripture:Genesis 11:10-26} traces the genealogy from Shem through Arpachshad, Shelah, Eber (from whom we get the word "Hebrew"), and eventually to **Terah**, who was the father of **Abram** (later renamed Abraham).
 
-The Sumerians built massive stepped temples called *ziggurats*—towering structures that reached toward the sky.
+So the Bible's family tree works like this: God created humanity → the Flood → Noah's sons repopulate the earth → Shem's line carries the promise → and eventually we reach one man in the city of Ur.
 
-**Why did they build them?**
+## The Tower of Babel
 
-The Sumerians believed their gods lived in the heavens but would descend to earth to meet with humans. The ziggurat was meant to be a meeting place—a "mountain" in the flat river plain where heaven and earth could connect. At the top was a small temple where priests would serve the god, offering food, drink, and worship.
+Before we get to Abraham, there's one more critical event: the Tower of Babel.
 
-Each city had its own ziggurat dedicated to its patron deity:
-- **Ur's ziggurat** was dedicated to Nanna, the moon god
-- **Uruk's ziggurat** was dedicated to Inanna, goddess of love and war
-- **Babylon's ziggurat** (built later) was called Etemenanki—"House of the Foundation of Heaven and Earth"
-
-Does this sound familiar? The Bible tells of a tower that humans built to reach the heavens:
+After the flood, as humanity multiplied, they settled together in a plain in Shinar (Mesopotamia) and decided to build something:
 
 {scripture:Genesis 11:4}
-> Then they said, "Come, let us build ourselves a city, with a tower that reaches to the heavens, so that we may make a name for ourselves."
+> Then they said, "Come, let us build ourselves a city, with a tower that reaches to the heavens, so that we may make a name for ourselves; otherwise we will be scattered over the face of the whole earth."
 
-The Tower of Babel. Whether this refers to a specific ziggurat (some scholars point to Babylon's Etemenanki) or represents all such human attempts to reach God on their own terms, the biblical author clearly knew about these structures and was making a theological point about them.
+God came down, saw what they were doing, and confused their languages. Unable to communicate, the people scattered across the earth—exactly what they'd been trying to prevent.
+
+**Why did God do this?** The text suggests it wasn't the building itself that was the problem. It was the motivation: "so that we may make a name for ourselves." Humanity, united in rebellion, was trying to reach God on their own terms—to control the divine instead of being in relationship with it.
+
+The Hebrew name for the city is *Babel*—which became *Babylon*. And remember, Babylon was founded by Nimrod, Ham's grandson. The city that represents human pride and rebellion against God shows up right here at the beginning of the story, and it will keep showing up all the way to the end.
+
+**The Archaeological Connection:**
+
+The Babylonians built massive stepped temples called *ziggurats*—towering structures that reached toward the sky. The most famous was Babylon's *Etemenanki*—"House of the Foundation of Heaven and Earth." These ziggurats were meant to be meeting places between heaven and earth, stairways where gods could descend.
+
+The Sumerians (who lived in this same region starting around 3500 BCE) built them too. Ur had one. Uruk had one. Every major city had a ziggurat dedicated to its patron god. Whether the Tower of Babel refers to a specific ziggurat or represents all such human attempts to reach God on their own terms, the biblical author clearly knew about these structures.
 
 {image:ziggurat-ur}
 
-**The Sumerians' message:** We can build our way to the gods.
-**The Bible's message:** God comes down to us.
+**The contrast the Bible draws:** Humans tried to build their way up to God. The rest of the Bible tells the story of God coming *down* to humanity—in fire, in cloud, in covenant, and eventually in person.
 
-This contrast runs through the entire Bible. Human religion tries to reach up to God through effort, ritual, and achievement. Biblical faith is about God reaching down to humanity—in the garden, in the flood, in Abraham's call, and ultimately in Jesus.
+## The Ancient World Awakens
 
-## Babylon: The City That Haunts the Bible
+Now let's step back and look at this world from an archaeological perspective—because understanding the ancient context makes the Bible come alive.
 
-We need to talk about Babylon, because this city appears again and again throughout Scripture—from Genesis to Revelation.
+### A Quick Word About Dates
 
-Babylon (from the Akkadian *Bāb-ilim*, meaning "Gate of the Gods") started as a small town but rose to become one of history's greatest cities. Its story interweaves with Israel's at crucial moments:
+You'll see dates written like "3500 BCE" or "2000 BC" throughout this story. These are straightforward:
 
-- **Genesis 11** — The Tower of Babel (the Hebrew word for Babylon is *Babel*)
-- **2 Kings 24-25** — Babylon conquers Jerusalem and takes Israel into exile
-- **Daniel** — Daniel serves in the Babylonian court
-- **Jeremiah, Isaiah, Ezekiel** — Prophets warn about Babylon and promise restoration
-- **Revelation 17-18** — "Babylon the Great" symbolizes all human empires opposed to God
+- **BC** = "Before Christ" and **AD** = "Anno Domini" (Latin for "Year of Our Lord")
+- **BCE** = "Before Common Era" and **CE** = "Common Era" — same dates, just different labels
 
-We'll explore Babylon in detail in later chapters—its rise under Hammurabi, its glory under Nebuchadnezzar, its hanging gardens (one of the Seven Wonders), its fall to Persia, and its symbolic meaning throughout the Bible.
+A Christian monk named Dionysius Exiguus created the BC/AD system around 525 AD. We'll use BCE/CE because that's what most academic sources use, but they mean exactly the same thing.
 
-For now, just know: when you see "Babylon" in Scripture, you're seeing the Bible's symbol for human civilization trying to succeed without God—impressive, powerful, but ultimately doomed.
+Different Christians read Genesis differently regarding dates—some see a young earth, others an old earth. What everyone agrees on: by the time we get to Abraham (around 2000 BCE), we're in a world that archaeology can verify.
 
-## Why This Matters: The Bible in Context
+### Mesopotamia — "Between the Rivers"
 
-Here's something important for understanding Scripture: **the Bible wasn't written in a vacuum.**
+The people who lived in modern-day Iraq never called it "Mesopotamia"—that's a Greek word meaning "between the rivers" (the Tigris and Euphrates). The Sumerians called their land *Ki-en-gir* ("land of the civilized lords"). The Bible calls the region *Shinar* {scripture:Genesis 11:2}.
 
-When Moses wrote (or compiled) Genesis, his audience already knew about Babylonian creation myths, Egyptian gods, and Mesopotamian law codes. The Bible is often *responding* to these other traditions—sometimes agreeing, sometimes correcting, sometimes offering a radically different vision.
+And what about "Iraq"? The name may come from the ancient Sumerian city of *Uruk*—mentioned in Genesis 10:10 as "Erech," one of Nimrod's cities. Same land, different names across 5,000 years.
 
-Understanding this context doesn't weaken the Bible's authority. It actually helps us see how revolutionary the biblical message was. When you know what everyone else was saying, you can appreciate just how different—and how profound—God's word truly is.
+The Sumerians built the world's first cities here around 3500 BCE. Their major cities included:
+- **Uruk** (biblical Erech) — possibly the world's first true city, with 40,000+ residents
+- **Ur** — Abraham's future hometown, with its great ziggurat
+- **Eridu** — which the Sumerians believed was the first city ever built
 
-## Egypt: The Superpower to the South
+{image:mesopotamia-map}
 
-To the southwest of Mesopotamia lay another incredible civilization: *Egypt*.
+### How Do We Know Any of This?
 
-**Why is it called "Egypt"?**
+The ancient Mesopotamians wrote on clay tablets, pressing wedge-shaped marks (*cuneiform*) into wet clay that then hardened. Tens of thousands of these tablets survived. When scholars cracked the code in the mid-1800s, they found city records, king lists, legal documents, and stories—including the *Epic of Gilgamesh* with its flood story similar to Noah's.
 
-Like "Mesopotamia," "Egypt" is a Greek name. The Greeks called it *Aigyptos*, which probably came from *Hwt-ka-Ptah* ("House of the Spirit of Ptah"), the Egyptian name for the city of Memphis.
+{insight:truth} When critics said the Bible invented places like Ur and Nineveh, archaeology proved them wrong. These cities were real, their names preserved exactly as Scripture recorded them.
 
-The Egyptians themselves called their land *Kemet* ("the Black Land," referring to the dark, fertile soil along the Nile) or *Ta-Meri* ("the Beloved Land").
+{image:cuneiform-tablet}
 
-The Bible uses the Hebrew name *Mitzrayim*, which may mean "the two straits" or "the two narrow places"—possibly referring to Upper and Lower Egypt, or the narrow fertile strip along the Nile surrounded by desert.
+### Egypt — The Land of Mizraim
 
-By the time our biblical story begins, Egypt was already ancient. The Great Pyramids—those massive stone monuments that still stand today—were built around 4,600 years ago (about 2600 BCE). When Abraham visited Egypt, those pyramids were already over a thousand years old!
+Remember Ham's son Mizraim from the Table of Nations? His descendants became the Egyptians.
+
+The Greeks called the land *Aigyptos*. The Egyptians themselves called it *Kemet* ("the Black Land," for the fertile soil along the Nile). The Bible uses the Hebrew name *Mitzrayim*—the same name as Ham's son.
+
+By the time Abraham visited Egypt, the Great Pyramids were already over a thousand years old. Egypt was a superpower with writing, massive architecture, complex religion, and a powerful military. The Bible doesn't explain all this—it assumes you know Egypt is a big deal. But now you know *where the Bible says Egypt came from*: the descendants of Ham, through Mizraim.
 
 {image:pyramids-giza}
 
-Egypt would play a huge role in the Bible's story:
-- **Abraham** goes to Egypt during a famine {scripture:Genesis 12:10}
-- **Joseph** rises from slave to second-in-command of all Egypt
-- **Israel** spends 400 years in Egypt, eventually enslaved
-- **Moses** leads the Exodus—God's greatest act of salvation in the Old Testament
-- **Jesus** flees to Egypt as a baby {scripture:Matthew 2:14}
-- **Prophets** constantly warn Israel not to trust in Egypt's power
+Egypt would play a huge role in what's coming:
+- **Abraham** goes there during a famine {scripture:Genesis 12:10}
+- **Joseph** rises from slave to second-in-command
+- **Israel** spends centuries there, eventually enslaved
+- **Moses** leads the most dramatic liberation in the Old Testament
 
-**Archaeological note:** We have extensive Egyptian records from this period. While debates continue about the exact dating of the Exodus, Egyptian records do describe Semitic peoples living in Egypt, building projects using slave labor, and various social upheavals. The biblical story fits within a historically plausible framework.
+### Canaan — The Promised Land's Original Inhabitants
 
-{image:egyptian-hieroglyphs}
+Canaan—Ham's son—gave his name to the land between Egypt and Mesopotamia. When God later promises this land to Abraham's descendants, the Canaanites are already living there. The Bible explains why: they'd been there since the Table of Nations, descendants of Ham who settled along the Mediterranean coast and inland.
 
-## Laws Before Moses—And Why That's Actually Important
+### Ancient Laws
 
-Here's something that might surprise you: the Bible's laws weren't the first laws ever written.
-
-Long before Moses received the Ten Commandments, kings in Mesopotamia were writing down laws for their people. The most famous is the *Code of Hammurabi*, written by a Babylonian king around 3,750 years ago (about 1750 BCE).
+Long before Moses, kings in Mesopotamia were writing laws. The most famous is the *Code of Hammurabi* (around 1750 BCE)—nearly 300 laws carved on a stone pillar over 7 feet tall.
 
 {image:code-hammurabi}
 
-This stone pillar, standing over 7 feet tall, contains nearly 300 laws covering everything from property rights to medical malpractice to marriage contracts. Some of these laws sound surprisingly similar to laws in the Bible. The famous phrase "an eye for an eye" {scripture:Exodus 21:24}? Hammurabi's code said the same thing centuries earlier.
+Some laws sound similar to what Moses would later receive. "An eye for an eye" {scripture:Exodus 21:24} appears in both. But similar problems produce similar solutions—every society needs rules about property, injury, and family.
 
-**So did the Bible copy from Babylon?**
+What matters most are the differences. Hammurabi's laws treated people differently based on social class. God's law would later insist on the same standard for everyone—Israelite and foreigner alike {scripture:Leviticus 24:22}. We'll see that contrast play out when we get to Mount Sinai.
 
-Not at all—and here's why this actually *strengthens* the case for Scripture:
+### Creation Stories
 
-1. **God speaks in ways people understand.** When God gave Israel laws, He used legal forms and concepts they already knew. This is how good communication works—you meet people where they are.
-
-2. **Similar problems require similar solutions.** Every society needs rules about property, injury, and family. It's not surprising that different cultures arrived at similar conclusions.
-
-3. **The differences are what matter most.** While surface similarities exist, the *theological foundation* of biblical law is radically different. Hammurabi's laws came from a king claiming divine authority. Israel's laws came directly from God in relationship with His people. Hammurabi's laws treat people differently based on social class. God's law insists "you shall have the same law for the foreigner and the native" {scripture:Leviticus 24:22}.
-
-This is a pattern you'll see throughout Scripture: God works *within* human culture while simultaneously *transforming* it.
-
-{deep-dive:ancient-law-codes}
-
-## Creation Stories: What Makes Genesis Different
-
-The Mesopotamians and Egyptians had their own stories about how the world began. Understanding them helps us see what Genesis was really saying.
+The Mesopotamians and Egyptians had their own stories about how the world began:
 
 **The Babylonian story (Enuma Elish):**
-- The world was formed from the corpse of a slain goddess, Tiamat
+- The world formed from the corpse of a slain goddess
 - Creation resulted from violence among the gods
 - Humans were created as slaves to serve the gods
-- The gods were petty, jealous, and often cruel
-
-**The Egyptian stories:**
-- Multiple creator gods, each with their own story
-- Creation through magic, violence, or divine bodily fluids
-- Humans were almost an afterthought
-- The gods needed humans to feed them through sacrifice
 
 **Now read Genesis again:**
 
 {scripture:Genesis 1:3}
 > And God said, "Let there be light," and there was light.
 
-No battle. No violence. No chaos. Just one God who speaks, and creation happens. Light, order, life—all flowing from a single creative voice.
+No battle. No violence. No chaos. Just one God who speaks, and creation happens. And humanity? Not slaves created to serve divine needs, but beings made *in the image of God* {scripture:Genesis 1:27}, created for relationship.
 
-And humanity? Not slaves created to serve divine needs, but beings made *in the image of God* {scripture:Genesis 1:27}, created for relationship, given authority over creation.
-
-{insight:revelation} In a world where every culture said humans were cosmic accidents or divine slaves, Genesis declared that EVERY person bears the image of the Creator. This one idea would transform the world.
-
-This revolutionary concept—human dignity rooted in being made in God's image—would eventually end slavery, establish human rights, and inspire science (because a rational God made a rational universe we can study). The ancient Israelites weren't copying their neighbors. They were contradicting them.
-
-{deep-dive:ancient-creation-myths}
-
-## Why Other Religions Believe What They Believe
-
-If you want to have meaningful conversations with people of other faiths—or understand your own faith more deeply—it helps to know how religious traditions developed.
-
-**Ancient polytheism** (belief in many gods) arose naturally from human experience. People saw powerful forces they couldn't control—storms, rivers, fertility, death—and personified them. Different gods for different domains. This is how Mesopotamian, Egyptian, Greek, and most ancient religions worked.
-
-**Judaism was different from the start.** Abraham left a polytheistic culture to follow one God who claimed to be the only God. This wasn't a "my god is better than your god" argument—it was a fundamental claim that there *is* only one God, and everything else people called "gods" were either nothing at all or spiritual beings far below the Creator.
-
-Understanding this helps explain:
-- Why Israel's neighbors thought they were strange
-- Why the prophets were so harsh about idol worship
-- Why early Christians caused such controversy by refusing to honor other gods
-
-We'll trace how different religious traditions developed throughout this story—not to mock or dismiss them, but to understand them honestly and see how Christianity emerged and spread.
-
-## The Crossroads of History
-
-Look at a map of the ancient world, and you'll notice something important: the land that would become Israel sits right in the middle of everything.
-
-Egypt to the southwest. Mesopotamia to the northeast. And between them, a narrow strip of fertile land along the Mediterranean coast that every army, every trade caravan, and every migration had to pass through.
-
-This is no accident. The story that's about to unfold happens at the crossroads of human civilization—where empires clash, cultures mix, and the fate of nations is decided.
-
-The people of Israel would never be left alone. They would always be caught between great powers, always fighting for survival, always being conquered or threatened. This geography shaped everything about their faith: their understanding of God as protector, their hope for a coming deliverer, their wrestling with why bad things happen to God's people.
-
-**From an apologetics perspective**, this geography also explains why we have so much external evidence for biblical history. Israel existed at the crossroads of literate civilizations. Egyptian, Assyrian, Babylonian, Persian, Greek, and Roman records all mention Israel, its kings, and its events. The Bible can be fact-checked against external sources in ways that most ancient religious texts cannot.
-
-{map:ancient-near-east-trade-routes}
+{insight:revelation} In a world where every culture said humans were cosmic accidents or divine slaves, Genesis declared that every person bears the image of the Creator. This was a radical claim unlike anything the ancient world had heard.
 
 ## Enter Abraham
 
-Into this world—a world of ziggurats and pyramids, of cuneiform tablets and hieroglyphs, of gods and kings and empires—comes a man from the city of Ur.
+Into this world—a world of ziggurats and pyramids, of clay tablets and hieroglyphs, of gods and kings and empires—comes a man from the city of Ur.
 
-His name is Abram (later changed to Abraham). He's from one of the most sophisticated cities in the world, a place with libraries, schools, temples, and thriving trade.
-
-Archaeologists have excavated Ur. We know it was a real place, a major city dedicated to the moon god Nanna. We've found its ziggurat (still partially standing today!), its royal tombs filled with treasure, its cuneiform records of daily life. When the Bible says Abraham came from "Ur of the Chaldeans" {scripture:Genesis 11:31}, we can visit that very site in modern Iraq.
+His name is Abram (later changed to Abraham). He's from one of the most sophisticated cities in the world, a place with libraries, schools, temples, and thriving trade. Archaeologists have excavated Ur. We know it was real—a major city dedicated to the moon god Nanna. Its ziggurat is still partially standing today.
 
 From this wealthy, cultured, polytheistic city, God calls one man out:
 
@@ -295,13 +243,7 @@ From this wealthy, cultured, polytheistic city, God calls one man out:
 
 Think about what God is asking. Leave everything familiar—family, culture, security, the known world—for a promise from a God that his society didn't worship, to go to a land he'd never seen.
 
-This is where the story of Israel truly begins. Not with a nation, but with one man willing to trust a voice that called him to something new.
-
-And from this one man would come:
-- The Jewish people
-- The scriptures we call the Old Testament
-- The prophets who foretold a Messiah
-- Eventually, Jesus of Nazareth—and through Him, a faith that would spread to every corner of the earth
+And remember the Table of Nations: Abraham is from the line of **Shem**. God is choosing one family from Shem's descendants to carry His promise forward. The story of Israel—and everything that flows from it—begins here, with one man willing to trust a voice that called him to something new.
 
 The story has begun.
 
@@ -311,18 +253,23 @@ The story has begun.
 
 ## Timeline
 - In the beginning: God creates the heavens and earth
+- The Fall: Adam and Eve expelled from Eden
+- Cain and Abel: the first murder
+- Noah: the Flood and God's covenant with humanity
+- Table of Nations: Noah's sons (Shem, Ham, Japheth) and their descendants
+- Nimrod founds Babylon, Uruk, Akkad, and Nineveh
+- Tower of Babel: languages confused, peoples scattered
 - ~3500 BCE: Sumerian civilization emerges (~5,500 years ago)
 - ~2600 BCE: Great Pyramids built (~4,600 years ago)
-- ~2300 BCE: Akkadian Empire unites Mesopotamia (~4,300 years ago)
-- ~2100 BCE: City of Ur at its height under the Third Dynasty (~4,100 years ago)
+- ~2100 BCE: City of Ur at its height (~4,100 years ago)
 - ~2000 BCE: Abraham's journey begins (~4,000 years ago)
 - ~1792-1750 BCE: Hammurabi rules Babylon, writes his law code
-- ~1200 BCE: Bronze Age collapse reshapes the ancient world
 
 ## Go Deeper
-- {deep-dive:ancient-creation-myths} How Genesis Contradicts (Not Copies) Other Creation Stories
+- {deep-dive:ancient-creation-myths} How Genesis Differs From Other Creation Stories
 - {deep-dive:ur-of-the-chaldees} What Archaeology Reveals About Abraham's Hometown
 - {deep-dive:egypt-in-the-bible} Archaeological Evidence for the Bible in Egypt
 - {deep-dive:archaeology-and-the-patriarchs} Can We Trust the Patriarchal Narratives?
 - {deep-dive:ancient-law-codes} Biblical Law in Its Ancient Context
 - {deep-dive:babylon-in-scripture} Babylon: From Genesis to Revelation
+- {deep-dive:table-of-nations} The Table of Nations and Ancient Geography

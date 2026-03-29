@@ -88,16 +88,14 @@ This is important: the plagues weren't random disasters. Many scholars believe e
 
 ## The Passover
 
-The final plague was the most devastating—and the most theologically significant event before Jesus himself.
+The final plague was the most devastating—and the most theologically significant event in the Old Testament.
 
 God told Moses that a destroying angel would pass through Egypt, striking every firstborn. But the Israelites could be protected. Each family was to sacrifice a lamb and paint its blood on their doorposts {scripture:Exodus 12:7}. When the angel saw the blood, he would "pass over" that house.
 
 {scripture:Exodus 12:13}
 > The blood will be a sign for you on the houses where you are, and when I see the blood, I will pass over you. No destructive plague will touch you when I strike Egypt.
 
-This wasn't magic. It was a picture—a foreshadowing. A life was given so other lives could be spared. The innocent lamb died so the firstborn could live.
-
-Christians believe this points directly to Jesus. John the Baptist would later call Jesus "the Lamb of God, who takes away the sin of the world" {scripture:John 1:29}. Jesus was crucified during the Passover festival. Paul would write, "Christ, our Passover lamb, has been sacrificed" {scripture:1 Corinthians 5:7}.
+A life was given so other lives could be spared. The innocent lamb died so the firstborn could live. This pattern—a substitute sacrifice, blood as protection, God providing a way of escape—will echo through the rest of Scripture. Remember this moment. It's going to come back.
 
 Jews have celebrated Passover every year for over 3,000 years—making it one of the oldest continuously observed religious ceremonies in human history.
 
@@ -161,7 +159,7 @@ This was a tent. An elaborate, beautiful tent—but still a tent. The creator of
 
 The Tabernacle had three zones of increasing holiness: the outer court (where anyone could come), the Holy Place (where priests served), and the Holy of Holies (where only the high priest could enter once a year). At its center was the Ark of the Covenant, containing the stone tablets of the Law.
 
-This structure would later be replicated in the Temple that Solomon built in Jerusalem. Christians see the Tabernacle as pointing forward to Jesus, whom John described as literally "tabernacling" among us {scripture:John 1:14}.
+This structure would later be replicated in the Temple that Solomon built in Jerusalem. The idea of God dwelling *with* His people—not in a distant heaven but right in the middle of their camp—becomes one of the defining themes of the entire Bible.
 
 ## What the Exodus Means
 
